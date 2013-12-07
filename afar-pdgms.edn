@@ -1,6 +1,21 @@
 :lang :afar
+:schemata [:case {:Absolutive, :Emphatic, :Emphatic-m, :Nominative, :Possessive-m, :Reflexive}
+	  :conjClass {:CompoundIntransitive, :CompoundStative, :CompoundTransitive, :Prefix, :Stative, :StativeIrregular, :Suffix}
+	  :formType {:Affix}
+	  :gender {:Common, :Fem, :Masc}
+	  :mainStem {:EForm--invar, :Imperative, :Imperfect, :Imperfect-m, :ImperfectParticiple, :Jussive, :Ma-requestive, :Participle-k--invar, :Perfect, :Perfect-m, :PerfectParticiple, :Requestive, :Stem, :U-Form, :mà-imperfect, :mà-stem, :mà-stem-in--imperative}
+	  :nonFiniteForm {:NonFinite}
+	  :number {:Plural, :Singular}
+	  :pdgmSubType {:SubjMarker}
+	  :pdgmType {:Compound, :StemForm}
+	  :person {:Common, :Person1, :Person2, :Person3, :PersonNon-1}
+	  :polarity {:Affirmative, :Negative}
+	  :pos {:Pronoun, :Verb}
+	  :proClass {:Independent, :PossessiveDefinite, :Reflexive}
+	  :tam {:Anticipatory, :Conditional1, :Conditional2, :Contrafactual, :ContrafactualStative, :Hypothetical, :I-Form, :Imperative, :Imperative--p2Only, :Imperfect, :ImperfectAnticipatory, :ImperfectPast1, :ImperfectPast2, :ImperfectPresent, :ImperfectProbable1, :ImperfectProbable2, :Infinitive, :Intentive, :Jussive, :PastState1, :PastState2, :Perfect, :PerfectAnticipatory, :PerfectConditional, :PerfectPast1, :PerfectPast2, :PerfectPresent, :PerfectProbable, :PresentState1, :PresentState2, :Probable, :Purposive1, :Purposive2, :RelativeIndeterminate, :Requestive, :Requestive--p1Only, :VH-Participle, :VHPart}
+	  ]
 :morphemes {
-  :AFFIX {:gloss "Subject Marker", :lemma "ZERO LEX", :pos :Verb}
+  :AFFIX-V {:gloss "Subject Marker", :lemma "ZERO LEX", :pos :Verb}
 }
 :lexemes {
   :PRO {:gloss "Pronoun", :lemma "PRO", :pos :Pronoun}
@@ -3507,7 +3522,7 @@
 :muterms #{
     {:common {:pdgmSubType :SubjMarker,
 	    :pos :Verb,
-	    :morpheme :AFFIX,
+	    :morpheme :AFFIX-V,
 	    :formType :Affix}
     :terms [[:conjClass, :gender, :number, :person, :token]  ;; schema
 	    [:CompoundIntransitive, :Common, :Plural, :Person2, "-t-n"],
