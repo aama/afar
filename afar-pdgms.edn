@@ -14,23 +14,23 @@
 	  :proClass {:Independent, :PossessiveDefinite, :Reflexive}
 	  :tam {:Anticipatory, :Conditional1, :Conditional2, :Contrafactual, :ContrafactualStative, :Hypothetical, :I-Form, :Imperative, :Imperative--p2Only, :Imperfect, :ImperfectAnticipatory, :ImperfectPast1, :ImperfectPast2, :ImperfectPresent, :ImperfectProbable1, :ImperfectProbable2, :Infinitive, :Intentive, :Jussive, :PastState1, :PastState2, :Perfect, :PerfectAnticipatory, :PerfectConditional, :PerfectPast1, :PerfectPast2, :PerfectPresent, :PerfectProbable, :PresentState1, :PresentState2, :Probable, :Purposive1, :Purposive2, :RelativeIndeterminate, :Requestive, :Requestive--p1Only, :VH-Participle, :VHPart}
 	  ]
-:morphemes {
-  :AFFIX-V {:gloss "Subject Marker", :lemma "ZERO LEX", :pos :Verb}
-}
 :lexemes {
+  :AFFIX {:gloss "Subject Marker", :lemma "ZERO LEX", :pos :Verb}
   :PRO {:gloss "Pronoun", :lemma "PRO", :pos :Pronoun}
+  :ab {:conjClass :Suffix, :gloss "do", :lemma "ab-", :pos :Verb}
   :anay-qunda {:conjClass :CompoundStative, :gloss "be softly spoken", :lemma "anày-ʕunɗa-", :pos :Verb}
+  :eedheg {:conjClass :Prefix, :gloss "know", :lemma "eeɗeg-", :pos :Verb}
+  :fak {:conjClass :Suffix, :gloss "open", :lemma "fak-", :pos :Verb}
+  :kad-hee {:conjClass :CompoundTransitive, :gloss "bow", :lemma "kàɗ-hee", :pos :Verb}
+  :le??? {:conjClass :StativeIrregular, :gloss "have", :lemma "le-", :pos :Verb}
+  :meq {:conjClass :Stative, :gloss "be good", :lemma "meʕ-", :pos :Verb}
   :ruffa-edh {:conjClass :CompoundIntransitive, :gloss "become happy", :lemma "ruffa-eɗḥ-", :pos :Verb}
   :uduur {:conjClass :Prefix, :gloss "return", :lemma "uduur-", :pos :Verb}
-  :le??? {:conjClass :StativeIrregular, :gloss "have", :lemma "le-", :pos :Verb}
-  :kad-hee {:conjClass :CompoundTransitive, :gloss "bow", :lemma "kàɗ-hee", :pos :Verb}
-  :meq {:conjClass :Stative, :gloss "be good", :lemma "meʕ-", :pos :Verb}
-  :fak {:conjClass :Suffix, :gloss "open", :lemma "fak-", :pos :Verb}
-  :ab {:conjClass :Suffix, :gloss "do", :lemma "ab-", :pos :Verb}
-  :eedheg {:conjClass :Prefix, :gloss "know", :lemma "eeɗeg-", :pos :Verb}
 }
 :lxterms #{
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffJuss-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table l"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -44,7 +44,9 @@
 	    [:Common, :Singular, :Person1, "fàkay"],
 	    [:Common, :Singular, :Person2, "fàktay"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegCond2Aux3-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table t"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -59,7 +61,9 @@
 	    [:Common, :Plural, :Person3, "kàɗ-heè waan ken tekkek"],
 	    [:Common, :Plural, :Person1, "kàɗ-heè wayna nee tekkek"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffHypothAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table y"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -74,7 +78,9 @@
 	    [:Common, :Plural, :Person3, "kàɗ-heè ɗaaɗen"],
 	    [:Common, :Plural, :Person2, "kàɗ-heè ɗaɗɗen"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffImprtvAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table r"
+    :common {:conjClass :CompoundTransitive,
 	    :gender :Common,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
@@ -86,7 +92,9 @@
 	    [:Singular, "kàɗ-hay"],
 	    [:Plural, "kàɗ-haya"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfCondAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table u"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -101,62 +109,66 @@
 	    [:Common, :Plural, :Person2, "rùffa-inteenìh sugteenik"],
 	    [:Common, :Singular, :Person1, "rùffa-eɗḥèh sugek"]]
     }
-    {:common {:lexeme :fak,
+    {:label "afar-VTAMStemStructure"
+    :note "Parker-Hayward1985 p. 257,tab 22. This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open."
+    :common {:lexeme :fak,
 	    :pdgmType :StemForm,
 	    :pos :Verb}
     :terms [[:token-auxAdjunct, :token, :gloss, :mainStem, :polarity, :tam]  ;; schema
-	    [:sug[perf], "fak-è-h sug-e", "he had opened", :PerfectParticiple, :Affirmative, :PerfectPast2],
-	    [:Common, "fàk", "open!", :Imperative, :Affirmative, :Imperative--p2Only],
-	    [:takkeh--invar, "fàk-u takkeh", "he may open", :U-Form, :Affirmative, :ImperfectProbable1],
-	    [:wa-, "fàk-u wa-a", "he is intending / about to open", :U-Form, :Affirmative, :Intentive],
-	    [:wa[jussive], "fakè wà-ay", "_NULL", :EForm--invar, :Negative, :Jussive],
-	    [:Common, "ma-fako", "_NULL", :Ma-requestive, :Negative, :Requestive--p1Only],
-	    [:wa[imperf]–m takkeh--invar, "fakè wa-a-m takkeh", "_NULL", :EForm--invar, :Negative, :ImperfectProbable2],
-	    [:sug[eForm] wa[perf]-k, "fak-è-h sugè we-e-k", "_NULL", :PerfectParticiple, :Negative, :PerfectConditional],
-	    [:k--invar, "fak-e-k", "if he opens", :Perfect, :Affirmative, :Conditional1],
-	    [:wa-inn-[subordinate]-y, "fakè wa-nn-a-y", "_NULL", :EForm--invar, :Negative, :Contrafactual],
-	    [:Common, "fak-o", "may I open?", :Requestive, :Affirmative, :Requestive--p1Only],
-	    [:mà-en-(i)nn-[subordinate], "fak-è-h mà-na-nn-a", "_NULL", :PerfectParticiple, :Negative, :PerfectPast1],
-	    [:Common, "mà-fak-a", "_NULL", :mà-imperfect, :Negative, :Anticipatory],
-	    [:pro[absolutive] tekkek--invar, "fak-è kaa tekkek", "if he opens", :Perfect, :Affirmative, :Conditional2],
-	    [:wa[imperf] pro[absolutive] tekkek, "fakè wa-a kaa tekkek", "_NULL", :EForm--invar, :Negative, :Conditional2],
-	    [:sug[anticipatory], "fàk-ak sug-è-le", "he will be opening", :Participle-k--invar, :Affirmative, :ImperfectAnticipatory],
-	    [:(-h)--invar, "fak-a(-h)", "he opens / is opening / will open", :Imperfect, :Affirmative, :Imperfect],
-	    [:wa[uForm]-h, "fakè wày-u-h", "_NULL", :EForm--invar, :Negative, :Purposive1],
-	    [:mà-sug[imperf], "fàkak mà-sug-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectAnticipatory],
-	    [:-inn-[subordinate], "mà-fak-inn-a", "_NULL", :mà-stem, :Negative, :Perfect],
-	    [:mà-ɗaaɗ [perf], "fakè mà- ɗaaɗ-e", "_NULL", :EForm--invar, :Negative, :Hypothetical],
-	    [:Common, "mà-fak-in", "_NULL", :mà-stem-in--imperative, :Negative, :Imperative],
-	    [:takkeh--invar, "fak-à-m takkeh", "he may open", :Imperfect-m, :Affirmative, :ImperfectProbable2],
-	    [:mà-en[imperf], "fak-è-h mà-y-an", "_NULL", :PerfectParticiple, :Negative, :PerfectPresent],
-	    [:ɗaaɗ [perf], "fakè ɗaaɗ-e", "he would have opened", :EForm--invar, :Affirmative, :Hypothetical],
-	    [:en[imperf], "fak-à-h y-an", "he is opening", :ImperfectParticiple, :Affirmative, :ImperfectPresent],
-	    [:en[perf], "fàkak y-en", "he was opening / used to open /had been opening", :Participle-k--invar, :Affirmative, :ImperfectPast1],
-	    [:en[perf], "fak-è-h y-en", "he had opened", :PerfectParticiple, :Affirmative, :PerfectPast1],
-	    [:mà-sug-inn-[subordinate], "fak-è-h mà-sug-inn-a", "_NULL", :PerfectParticiple, :Negative, :PerfectPast2],
-	    [:-inn-[subordinate]-y, "fak-inn-a-y", "if he had opened / had he opened", :Stem, :Affirmative, :Contrafactual],
-	    [:-nkeh--invar, "fak-à-nkeh", "that he open", :Imperfect, :Affirmative, :Purposive2],
-	    [:wa[perf]–m takkeh--invar, "fakè we-e-m takkeh", "_NULL", :Perfect-m, :Negative, :PerfectProbable],
-	    [:Common, "mà-fak-a", "_NULL", :mà-imperfect, :Negative, :Imperfect],
-	    [:sug[perf], "fàkak y-an", "he was opening / used to open /had been opening", :Participle-k--invar, :Affirmative, :ImperfectPast2],
-	    [:sug[anticipatory], "fak-è-h sug-è-le", "he will have opened", :PerfectParticiple, :Affirmative, :PerfectAnticipatory],
-	    [:wa[u-Form] takkeh--invar, "fakè wày-u(-h) takkeh", "_NULL", :EForm--invar, :Negative, :ImperfectProbable1],
-	    [:en[imperf], "fak-è-h y-an", "he has opened", :PerfectParticiple, :Affirmative, :PerfectPresent],
-	    [:mà-sug[imperf], "fak-è-h mà-sug-a", "_NULL", :PerfectParticiple, :Negative, :PerfectAnticipatory],
-	    [:mà-en[imperf], "fak-à-h mà-y-an", "_NULL", :ImperfectParticiple, :Negative, :ImperfectPresent],
-	    [:Common, "fàk-ay", "let him open", :Jussive, :Affirmative, :Jussive],
-	    [:mà-sug-inn-[subordinate], "fàkak mà-sug-inn-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectPast2],
-	    [:(-h)--invar, "fak-e(-h)", "he opened / has opened", :Perfect, :Affirmative, :Perfect],
-	    [:mà-wa[imperf], "fàk-u mà-wa-a", "_NULL", :U-Form, :Negative, :Intentive],
-	    [:wa[perf]-k, "fakè we-e-k", "_NULL", :EForm--invar, :Negative, :Conditional1],
-	    [:sug[perf]-k--invar, "fak-è-h sug-e-k", "if he has opened", :PerfectParticiple, :Affirmative, :PerfectConditional],
-	    [:-le [enclitic verb have], "fakè-le", "he will open", :EForm--invar, :Affirmative, :Anticipatory],
-	    [:-h--invar, "fàk-u-h", "that he open", :U-Form, :Affirmative, :Purposive1],
-	    [:mà-en-(i)nn-[subordinate], "fàkak mà-na-nn-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectPast1],
-	    [:wa[imperf]-nkeh, "fak-è wa-à-nkeh", "_NULL", :EForm--invar, :Negative, :Purposive2],
-	    [:takkeh--invar, "fak-è-m takkeh", "he may / might have opened", :Perfect-m, :Affirmative, :PerfectProbable]]
+	    ["sug[perf]", "fak-è-h sug-e", "he had opened", :PerfectParticiple, :Affirmative, :PerfectPast2],
+	    ["Common", "fàk", "open!", :Imperative, :Affirmative, :Imperative--p2Only],
+	    ["takkeh--invar", "fàk-u takkeh", "he may open", :U-Form, :Affirmative, :ImperfectProbable1],
+	    ["wa-", "fàk-u wa-a", "he is intending / about to open", :U-Form, :Affirmative, :Intentive],
+	    ["wa[jussive]", "fakè wà-ay", "_NULL", :EForm--invar, :Negative, :Jussive],
+	    ["Common", "ma-fako", "_NULL", :Ma-requestive, :Negative, :Requestive--p1Only],
+	    ["wa[imperf]–m takkeh--invar", "fakè wa-a-m takkeh", "_NULL", :EForm--invar, :Negative, :ImperfectProbable2],
+	    ["sug[eForm] wa[perf]-k", "fak-è-h sugè we-e-k", "_NULL", :PerfectParticiple, :Negative, :PerfectConditional],
+	    ["k--invar", "fak-e-k", "if he opens", :Perfect, :Affirmative, :Conditional1],
+	    ["wa-inn-[subordinate]-y", "fakè wa-nn-a-y", "_NULL", :EForm--invar, :Negative, :Contrafactual],
+	    ["Common", "fak-o", "may I open?", :Requestive, :Affirmative, :Requestive--p1Only],
+	    ["mà-en-(i)nn-[subordinate]", "fak-è-h mà-na-nn-a", "_NULL", :PerfectParticiple, :Negative, :PerfectPast1],
+	    ["Common", "mà-fak-a", "_NULL", :mà-imperfect, :Negative, :Anticipatory],
+	    ["pro[absolutive] tekkek--invar", "fak-è kaa tekkek", "if he opens", :Perfect, :Affirmative, :Conditional2],
+	    ["wa[imperf] pro[absolutive] tekkek", "fakè wa-a kaa tekkek", "_NULL", :EForm--invar, :Negative, :Conditional2],
+	    ["sug[anticipatory]", "fàk-ak sug-è-le", "he will be opening", :Participle-k--invar, :Affirmative, :ImperfectAnticipatory],
+	    ["(-h)--invar", "fak-a(-h)", "he opens / is opening / will open", :Imperfect, :Affirmative, :Imperfect],
+	    ["wa[uForm]-h", "fakè wày-u-h", "_NULL", :EForm--invar, :Negative, :Purposive1],
+	    ["mà-sug[imperf]", "fàkak mà-sug-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectAnticipatory],
+	    ["-inn-[subordinate]", "mà-fak-inn-a", "_NULL", :mà-stem, :Negative, :Perfect],
+	    ["mà-ɗaaɗ [perf]", "fakè mà- ɗaaɗ-e", "_NULL", :EForm--invar, :Negative, :Hypothetical],
+	    ["Common", "mà-fak-in", "_NULL", :mà-stem-in--imperative, :Negative, :Imperative],
+	    ["takkeh--invar", "fak-à-m takkeh", "he may open", :Imperfect-m, :Affirmative, :ImperfectProbable2],
+	    ["mà-en[imperf]", "fak-è-h mà-y-an", "_NULL", :PerfectParticiple, :Negative, :PerfectPresent],
+	    ["ɗaaɗ [perf]", "fakè ɗaaɗ-e", "he would have opened", :EForm--invar, :Affirmative, :Hypothetical],
+	    ["en[imperf]", "fak-à-h y-an", "he is opening", :ImperfectParticiple, :Affirmative, :ImperfectPresent],
+	    ["en[perf]", "fàkak y-en", "he was opening / used to open /had been opening", :Participle-k--invar, :Affirmative, :ImperfectPast1],
+	    ["en[perf]", "fak-è-h y-en", "he had opened", :PerfectParticiple, :Affirmative, :PerfectPast1],
+	    ["mà-sug-inn-[subordinate]", "fak-è-h mà-sug-inn-a", "_NULL", :PerfectParticiple, :Negative, :PerfectPast2],
+	    ["-inn-[subordinate]-y", "fak-inn-a-y", "if he had opened / had he opened", :Stem, :Affirmative, :Contrafactual],
+	    ["-nkeh--invar", "fak-à-nkeh", "that he open", :Imperfect, :Affirmative, :Purposive2],
+	    ["wa[perf]–m takkeh--invar", "fakè we-e-m takkeh", "_NULL", :Perfect-m, :Negative, :PerfectProbable],
+	    ["Common", "mà-fak-a", "_NULL", :mà-imperfect, :Negative, :Imperfect],
+	    ["sug[perf]", "fàkak y-an", "he was opening / used to open /had been opening", :Participle-k--invar, :Affirmative, :ImperfectPast2],
+	    ["sug[anticipatory]", "fak-è-h sug-è-le", "he will have opened", :PerfectParticiple, :Affirmative, :PerfectAnticipatory],
+	    ["wa[u-Form] takkeh--invar", "fakè wày-u(-h) takkeh", "_NULL", :EForm--invar, :Negative, :ImperfectProbable1],
+	    ["en[imperf]", "fak-è-h y-an", "he has opened", :PerfectParticiple, :Affirmative, :PerfectPresent],
+	    ["mà-sug[imperf]", "fak-è-h mà-sug-a", "_NULL", :PerfectParticiple, :Negative, :PerfectAnticipatory],
+	    ["mà-en[imperf]", "fak-à-h mà-y-an", "_NULL", :ImperfectParticiple, :Negative, :ImperfectPresent],
+	    ["Common", "fàk-ay", "let him open", :Jussive, :Affirmative, :Jussive],
+	    ["mà-sug-inn-[subordinate]", "fàkak mà-sug-inn-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectPast2],
+	    ["(-h)--invar", "fak-e(-h)", "he opened / has opened", :Perfect, :Affirmative, :Perfect],
+	    ["mà-wa[imperf]", "fàk-u mà-wa-a", "_NULL", :U-Form, :Negative, :Intentive],
+	    ["wa[perf]-k", "fakè we-e-k", "_NULL", :EForm--invar, :Negative, :Conditional1],
+	    ["sug[perf]-k--invar", "fak-è-h sug-e-k", "if he has opened", :PerfectParticiple, :Affirmative, :PerfectConditional],
+	    ["-le [enclitic verb have]", "fakè-le", "he will open", :EForm--invar, :Affirmative, :Anticipatory],
+	    ["-h--invar", "fàk-u-h", "that he open", :U-Form, :Affirmative, :Purposive1],
+	    ["mà-en-(i)nn-[subordinate]", "fàkak mà-na-nn-a", "_NULL", :Participle-k--invar, :Negative, :ImperfectPast1],
+	    ["wa[imperf]-nkeh", "fak-è wa-à-nkeh", "_NULL", :EForm--invar, :Negative, :Purposive2],
+	    ["takkeh--invar", "fak-è-m takkeh", "he may / might have opened", :Perfect-m, :Affirmative, :PerfectProbable]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegImperfAnticipAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table k"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -171,7 +183,9 @@
 	    [:Common, :Plural, :Person3, "aduùruk màsugan"],
 	    [:Common, :Singular, :Person2, "aduùruk màsugta"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNonFinite-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table za z zc zd"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :nonFiniteForm :NonFinite,
 	    :pos :Verb}
@@ -181,7 +195,9 @@
 	    [:Infinitive, "kàɗ-hayìyya"],
 	    [:RelativeIndeterminate, "kàɗ-hannaànih / kàɗ-hannaàn"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegRequestAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table m"
+    :common {:conjClass :CompoundIntransitive,
 	    :gender :Common,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
@@ -192,7 +208,9 @@
 	    [:Plural, :Person2, "rùffa-manno?"],
 	    [:Singular, :Person1, "rùffa-maɗḥo?"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompNegImperfPast1StateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table ff"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -207,7 +225,9 @@
 	    [:Common, :Plural, :Person2, "anày-ʕùnɗuk mànanniton"],
 	    [:Common, :Plural, :Person1, "anày-ʕùnɗuk mànannino"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfCondAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table u"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -222,7 +242,9 @@
 	    [:Masc, :Singular, :Person3, "kàɗ-heèh sugek"],
 	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh sugteenik"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegImperfPast1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table f"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -237,7 +259,9 @@
 	    [:Common, :Singular, :Person1, "aduùruk mànanniyo"],
 	    [:Fem, :Singular, :Person3, "aduùruk mànanna"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatAffImperfProb2StateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table pp"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -252,7 +276,9 @@
 	    [:Common, :Plural, :Person1, "miʕinòm takkeh"],
 	    [:Common, :Plural, :Person3, "moʕoònum takkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegRequest-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table m"
+    :common {:conjClass :Suffix,
 	    :gender :Common,
 	    :lexeme :fak,
 	    :polarity :Negative,
@@ -262,7 +288,9 @@
 	    [:Singular, :Person1, "mafako?"],
 	    [:Plural, :Person2, "mafakno?"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffHypothAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table y"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -277,7 +305,9 @@
 	    [:Common, :Singular, :Person2, "aduurè ɗaɗɗe"],
 	    [:Common, :Plural, :Person3, "aduurè ɗaaɗen"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatAffImperfPast1StateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table ff"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -292,7 +322,9 @@
 	    [:Common, :Plural, :Person2, "mùʕuk tenen"],
 	    [:Common, :Singular, :Person2, "mùʕuk ten"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffImperfPresAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table h"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -307,7 +339,9 @@
 	    [:Common, :Singular, :Person1, "kàɗ-haàk an"],
 	    [:Common, :Plural, :Person1, "kàɗ-haynàk nan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfPast1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table c"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -322,7 +356,9 @@
 	    [:Common, :Plural, :Person2, "tuduureenìh mànanniton"],
 	    [:Masc, :Singular, :Person3, "yuduurèh mànanna"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatNegImperfProb2StateAux2-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table pp"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -337,7 +373,9 @@
 	    [:Masc, :Singular, :Person3, "amʕè waam takkeh"],
 	    [:Common, :Plural, :Person1, "amʕè waynam takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegAnticip-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table i"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -351,7 +389,9 @@
 	    [:Common, :Plural, :Person2, "màtaduuran"],
 	    [:Common, :Singular, :Person1, "maàduura"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPurp2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table x"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -366,7 +406,9 @@
 	    [:Common, :Plural, :Person3, "fakè waanànkeh"],
 	    [:Masc, :Singular, :Person3, "fakè waànkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegImperfPresAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table h"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -381,7 +423,9 @@
 	    [:Common, :Plural, :Person2, "taduureenìh màtanin"],
 	    [:Common, :Singular, :Person2, "taduurèh màtan"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPurp2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table x"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -395,7 +439,9 @@
 	    [:Common, :Singular, :Person1, "fakànkeh"],
 	    [:Masc, :Singular, :Person3, "fakànkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPerfAnticipAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table j"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -410,7 +456,9 @@
 	    [:Fem, :Singular, :Person3, "faktèh sugèle"],
 	    [:Common, :Plural, :Person3, "fakeenìh sugèlon"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompNegPerfPresStateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table ee"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -425,7 +473,9 @@
 	    [:Common, :Plural, :Person3, "anày-ʕunɗoonùh màyanin"],
 	    [:Common, :Singular, :Person2, "anày-ʕunɗitòh màtan"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegIntentAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table n"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -440,7 +490,9 @@
 	    [:Common, :Plural, :Person3, "kàɗ-hayoònu màwaan"],
 	    [:Common, :Plural, :Person1, "kàɗ-hàynu màwayna"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPerfPast1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table c"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -455,7 +507,9 @@
 	    [:Common, :Plural, :Person3, "fakeenìh yenen"],
 	    [:Common, :Plural, :Person2, "fakteenìh tenen"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperfPast2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table g"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -470,7 +524,9 @@
 	    [:Common, :Plural, :Person1, "fàkak màsuginnino"],
 	    [:Common, :Plural, :Person2, "fàkak màsuginniton"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegContrafAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table v"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -485,7 +541,9 @@
 	    [:Common, :Singular, :Person2, "aduurè wannitoy"],
 	    [:Fem, :Singular, :Person3, "aduurè wannay"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegIntentAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table n"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -500,7 +558,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-ìntu màwayta"],
 	    [:Common, :Plural, :Person3, "rùffa-iyyoònu màwaan"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffCond2Aux2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table t"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -515,7 +575,9 @@
 	    [:Common, :Singular, :Person2, "faktè koo tekkek"],
 	    [:Common, :Plural, :Person3, "fakèn ken tekkek"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImperfProb2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table p"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -530,7 +592,9 @@
 	    [:Masc, :Singular, :Person3, "rùffa-iyyàm takkeh"],
 	    [:Common, :Plural, :Person1, "rùffa-innàm takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfPast2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table d"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -545,7 +609,9 @@
 	    [:Common, :Singular, :Person2, "tuduurèh màsuginnito"],
 	    [:Common, :Plural, :Person1, "nuduurèh màsuginnino"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompAffImperfState-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table :table bb"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -559,7 +625,9 @@
 	    [:Common, :Singular, :Person1, "anày-ʕunɗiyoh"],
 	    [:Fem, :Singular, :Person3, "anày-ʕunɗah"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImperfPast1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table f"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -574,7 +642,9 @@
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥuk yenen"],
 	    [:Masc, :Singular, :Person3, "rùffa-àɗḥuk yen"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefPartImperf-eedheg"
+    :note "Parker-Hayward1985 p. 255,tab 21"
+    :common {:conjClass :Prefix,
 	    :lexeme :eedheg,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -587,7 +657,9 @@
 	    [:Common, :Singular, :Person2, "taaɗigeh"],
 	    [:Common, :Singular, :Person1, "aaɗigeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfPresAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table e"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -602,7 +674,9 @@
 	    [:Common, :Plural, :Person1, "nuduurèh mànan"],
 	    [:Common, :Plural, :Person3, "yuduureenìh màyanin"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImperfAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table k"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -617,7 +691,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-àɗḥuk màsugtan"],
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥuk màsugan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffIntentAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table n"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -632,7 +708,9 @@
 	    [:Common, :Singular, :Person2, "taduùru wayta"],
 	    [:Common, :Plural, :Person3, "yaduuroònu waan"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPurp1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table w"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -647,7 +725,9 @@
 	    [:Masc, :Singular, :Person3, "fakè wàyu(h)"],
 	    [:Common, :Plural, :Person1, "fakè wànu(h)"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegHypothAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table y"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -662,7 +742,9 @@
 	    [:Common, :Plural, :Person3, "kàɗ-heè màɗaaɗen"],
 	    [:Common, :Singular, :Person1, "kàɗ-heè màɗaaɗe"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfPresAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table e"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -677,7 +759,9 @@
 	    [:Masc, :Singular, :Person3, "kàɗ-heèk yan"],
 	    [:Common, :Plural, :Person1, "kàɗ-haynèk nan"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegCond1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table s"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -692,7 +776,9 @@
 	    [:Masc, :Singular, :Person3, "fakè week"],
 	    [:Common, :Singular, :Person2, "fakè waytek"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPurp2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table x"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -707,7 +793,9 @@
 	    [:Fem, :Singular, :Common, "aduurè waytànkeh"],
 	    [:Common, :Plural, :Person2, "aduurè waytaanànkeh"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table i"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -722,7 +810,9 @@
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥè-lon"],
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥè-lito"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerfCondAux2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table u"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -737,7 +827,9 @@
 	    [:Masc, :Singular, :Person3, "fakèh sugè week"],
 	    [:Common, :Singular, :Person1, "fakèh sugè week"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPerfPast2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table d"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -752,7 +844,9 @@
 	    [:Masc, :Singular, :Person3, "fakèh suge"],
 	    [:Common, :Singular, :Person1, "fakèh suge"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperf-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table b"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -766,7 +860,9 @@
 	    [:Common, :Singular, :Person2, "màfakta"],
 	    [:Common, :Plural, :Person3, "màfakan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffImperfProb1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table o"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -781,7 +877,9 @@
 	    [:Common, :Singular, :Person2, "taduùru(h) takkeh"],
 	    [:Common, :Plural, :Person1, "naduùru(h) takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfProbAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table q"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -796,7 +894,9 @@
 	    [:Common, :Plural, :Person3, "kàɗ-heenìm takkeh"],
 	    [:Common, :Plural, :Person2, "kàɗ-hayteenìm takkeh"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompNegImperfProb2StateAux2-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table pp"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -811,7 +911,9 @@
 	    [:Fem, :Singular, :Person3, "anày-aʕunɗeè waytam takkeh"],
 	    [:Common, :Singular, :Person2, "anày-aʕunɗeè waytam takkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerfProbAux2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table q"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -826,7 +928,9 @@
 	    [:Masc, :Singular, :Person3, "fakè weem takkeh"],
 	    [:Common, :Singular, :Person1, "fakè weem takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImperfProb2Aux2-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table p"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -841,7 +945,9 @@
 	    [:Masc, :Singular, :Person3, "kàɗ-heè waam takkeh"],
 	    [:Fem, :Singular, :Person3, "kàɗ-heè waytam takkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffContraf-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table v"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -855,7 +961,9 @@
 	    [:Common, :Plural, :Person3, "fakinnoonuy"],
 	    [:Common, :Singular, :Person1, "fakinniyoy"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNonFinite-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :nonFiniteForm :NonFinite,
 	    :pos :Verb}
@@ -865,7 +973,9 @@
 	    [:RelativeIndeterminate, "fakinnaànih / fakinnaàn"],
 	    [:VH-Participle, "fàkah"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffImperfProb2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table p"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -880,7 +990,9 @@
 	    [:Common, :Plural, :Person1, "naduurèm takkeh"],
 	    [:Common, :Singular, :Person2, "taduurèm takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegCond1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table s"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -895,7 +1007,9 @@
 	    [:Fem, :Singular, :Person3, "aduurè waytek"],
 	    [:Common, :Singular, :Person2, "aduurè waytek"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompAffImperfPast1Aux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table ff"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -910,7 +1024,9 @@
 	    [:Fem, :Singular, :Person3, "anày-ʕùnɗuk ten"],
 	    [:Common, :Singular, :Person2, "anày-ʕùnɗuk ten"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperfPresAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table h"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -925,7 +1041,9 @@
 	    [:Common, :Plural, :Person1, "faknàh mànan"],
 	    [:Common, :Plural, :Person3, "fakaanàh màyanin"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegContrafAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table v"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -940,7 +1058,9 @@
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥè wannoonuy"],
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wannitoy"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfPast1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table c"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -955,7 +1075,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-intèh ten"],
 	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh yenen"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegCond1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table s"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -970,7 +1092,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-heè wayteenik"],
 	    [:Common, :Singular, :Person1, "kàɗ-heè week"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfPast2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table d"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -985,7 +1109,9 @@
 	    [:Common, :Singular, :Person2, "rùffa-intèh sugte"],
 	    [:Common, :Singular, :Person1, "rùffa-aɗḥèh suge"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffContrafAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table v"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1000,7 +1126,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-aɗḥinninoy"],
 	    [:Fem, :Singular, :Person3, "rùffa-aɗḥinnay"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfProbAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table q"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1015,7 +1143,9 @@
 	    [:Masc, :Singular, :Person3, "rùffa-iyyèm takkeh"],
 	    [:Common, :Plural, :Person3, "rùffa-iyyeenìm takkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegAnticip-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table i"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -1029,7 +1159,9 @@
 	    [:Common, :Singular, :Person1, "màfaka"],
 	    [:Masc, :Singular, :Person3, "màfaka"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatAffImperfPast2StateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table gg"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1044,7 +1176,9 @@
 	    [:Common, :Plural, :Person2, "mùʕuk sugten"],
 	    [:Common, :Singular, :Person2, "mùʕuk sugte"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPurp1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table w"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -1058,7 +1192,9 @@
 	    [:Common, :Singular, :Person1, "fàkuh"],
 	    [:Common, :Plural, :Person2, "fàktoònuh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperf-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table b"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -1072,7 +1208,9 @@
 	    [:Common, :Singular, :Person2, "faktah"],
 	    [:Common, :Plural, :Person3, "fakaanah"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfProb1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table o"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1087,7 +1225,9 @@
 	    [:Common, :Singular, :Person1, "fàku(h) takkeh"],
 	    [:Common, :Plural, :Person2, "fàktoònu(h) takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffImperfProb2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table p"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1102,7 +1242,9 @@
 	    [:Fem, :Singular, :Person3, "kàɗ-haytàm takkeh"],
 	    [:Masc, :Singular, :Person3, "kàɗ-haàm takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegImperfPast2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table g"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1117,7 +1259,9 @@
 	    [:Common, :Singular, :Person2, "aduùruk màsuginnito"],
 	    [:Masc, :Singular, :Person3, "aduùruk màsuginna"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegIntent-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table n"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -1131,7 +1275,9 @@
 	    [:Common, :Plural, :Person2, "fàktoònu màwaytan"],
 	    [:Common, :Plural, :Person1, "fàknu màwayna"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfPresAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table h"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1146,7 +1292,9 @@
 	    [:Common, :Singular, :Person2, "faktàk tan"],
 	    [:Common, :Plural, :Person2, "faktaanàk tanin"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerf-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table a"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -1160,7 +1308,9 @@
 	    [:Common, :Plural, :Person3, "màfakinnon"],
 	    [:Masc, :Singular, :Person3, "màfakinna"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompNegImperfPast2StateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table gg"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1175,7 +1325,9 @@
 	    [:Masc, :Singular, :Person3, "anày-ʕùnɗuk màsuginna"],
 	    [:Common, :Singular, :Person2, "anày-ʕùnɗuk màsuginnito"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffIntentAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table n"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1190,7 +1342,9 @@
 	    [:Common, :Singular, :Person2, "rùffa-ìntu wayta"],
 	    [:Common, :Plural, :Person3, "rùffa-iyyoònu waan"]]
     }
-    {:common {:lexeme :PRO,
+    {:label "afar-PInd"
+    :note "Parker-Hayward1985 pp. 237-238,tab. 8,9,11,12,13"
+    :common {:lexeme :PRO,
 	    :pos :Pronoun,
 	    :proClass :Independent}
     :terms [[:case, :gender, :number, :person, :token]  ;; schema
@@ -1228,7 +1382,9 @@
 	    [:Emphatic, :Common, :Singular, :Person1, "(anù) ìnnih"],
 	    [:Nominative, :Common, :Plural, :Person1, "nanu"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfPresAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table e"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1243,7 +1399,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-inteenìk tanin"],
 	    [:Common, :Singular, :Person1, "rùffa-eɗḥèk an"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImprtv-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table r"
+    :common {:conjClass :Suffix,
 	    :gender :Common,
 	    :lexeme :fak,
 	    :person :Person2,
@@ -1254,7 +1412,9 @@
 	    [:Singular, "fàk"],
 	    [:Plural, "fàka"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPurp1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table w"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1269,7 +1429,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-heè watoònu(h)"],
 	    [:Common, :Plural, :Person1, "kàɗ-heè wànu(h)"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffImperfPast1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table f"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1284,7 +1446,9 @@
 	    [:Common, :Plural, :Person1, "aduùruk nen"],
 	    [:Masc, :Singular, :Person3, "aduùruk yen"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPerfPast2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table d"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1299,7 +1463,9 @@
 	    [:Common, :Plural, :Person2, "tuduureenìh sugten"],
 	    [:Common, :Singular, :Person2, "tuduurèh sugte"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfAnticipAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table k"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1314,7 +1480,9 @@
 	    [:Common, :Plural, :Person2, "fàkak sugètton"],
 	    [:Common, :Plural, :Person1, "fàkak sugènno"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompAffPerfPresStateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table ee"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1329,7 +1497,9 @@
 	    [:Common, :Plural, :Person2, "anày-ʕunɗitoonùk tanin"],
 	    [:Common, :Singular, :Person1, "anày-ʕunɗiyòk an"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatNegPerfPresStateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table ee"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1344,7 +1514,9 @@
 	    [:Common, :Plural, :Person3, "moʕoonùh màyanin"],
 	    [:Common, :Singular, :Person2, "miʕitòh màtan"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatNegImperfPast1StateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table tt"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1359,7 +1531,9 @@
 	    [:Fem, :Singular, :Person3, "mùʕuk mànanna"],
 	    [:Common, :Plural, :Person1, "mùʕuk mànannino"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatAffContrafStateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table vv"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1374,7 +1548,9 @@
 	    [:Masc, :Singular, :Person3, "mùʕuk suginnay"],
 	    [:Common, :Plural, :Person3, "mùʕuk suginnoonuy"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPerfCondAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table u"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1389,7 +1565,9 @@
 	    [:Common, :Plural, :Person2, "fakteenìh sugteenik"],
 	    [:Fem, :Singular, :Person3, "faktèh sugtek"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPerfAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table j"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1404,7 +1582,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-innèh sugènno"],
 	    [:Fem, :Singular, :Person3, "rùffa-intèh sugèle"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPurp2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table x"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1419,7 +1599,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥè wannànkeh"],
 	    [:Common, :Singular, :Person1, "rùffa-àɗḥè waànkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffContrafAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table v"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1434,7 +1616,9 @@
 	    [:Common, :Singular, :Person1, "kàɗ-hanniyoy"],
 	    [:Common, :Plural, :Person2, "kàɗ-hannitoonuy"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPerfPast1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table c"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1449,7 +1633,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-intèh mànanna"],
 	    [:Common, :Singular, :Person2, "rùffa-intèh mànannito"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImprtvAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table r"
+    :common {:conjClass :CompoundIntransitive,
 	    :gender :Common,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
@@ -1461,7 +1647,9 @@
 	    [:Singular, "rùffa-inɗiḥ"],
 	    [:Plural, "rùffa-inɗiḥa"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPurp1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table w"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1476,7 +1664,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-ìntuh"],
 	    [:Common, :Singular, :Person2, "rùffa-ìntuh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffImperfAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table k"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1491,7 +1681,9 @@
 	    [:Fem, :Singular, :Person3, "kàɗ-hàak sugèle"],
 	    [:Common, :Plural, :Person3, "kàɗ-hàak sugèlon"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffCond2Aux2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table t"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1506,7 +1698,9 @@
 	    [:Common, :Plural, :Person2, "taduurèn sin tekkek"],
 	    [:Common, :Singular, :Person1, "aduurè yoo tekkek"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompAffContrafStateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table vv"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1521,7 +1715,9 @@
 	    [:Fem, :Singular, :Person3, "anày-ʕùnɗuk suginnay"],
 	    [:Common, :Singular, :Person2, "anày-ʕùnɗuk suginnitoy"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerf-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table a"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -1535,7 +1731,9 @@
 	    [:Common, :Plural, :Person3, "maàduurinnon"],
 	    [:Common, :Plural, :Person2, "maàduurinniton"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfCondAux2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table u"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1550,7 +1748,9 @@
 	    [:Common, :Plural, :Person3, "yuduureenìh sugè weenik"],
 	    [:Common, :Singular, :Person1, "uduurèh sugè week"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImprtvAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table r"
+    :common {:conjClass :CompoundTransitive,
 	    :gender :Common,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
@@ -1562,7 +1762,9 @@
 	    [:Singular, "kàɗ-màhan"],
 	    [:Plural, "kàɗ-màhana"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPerfProbAux2-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table q"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1577,7 +1779,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-heè wayteenim takkeh"],
 	    [:Common, :Singular, :Person2, "kàɗ-heè waytem takkeh"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatNegImperfPast2StateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table gg"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1592,7 +1796,9 @@
 	    [:Common, :Singular, :Person1, "mùʕuk màsuginniyo"],
 	    [:Masc, :Singular, :Person3, "mùʕuk màsuginna"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatAffPerfPresStateAux1-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table ee"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1607,7 +1813,9 @@
 	    [:Fem, :Singular, :Person3, "meʕèk tan"],
 	    [:Common, :Plural, :Person2, "miʕitoonùk tanin"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPerfAnticipAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table j"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1622,7 +1830,9 @@
 	    [:Masc, :Singular, :Person3, "yuduurèh sugèle"],
 	    [:Common, :Singular, :Person1, "uduurèh sugèyyo"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffHypothAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table y"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1637,7 +1847,9 @@
 	    [:Fem, :Singular, :Person3, "fakè ɗaɗɗe"],
 	    [:Common, :Singular, :Person2, "fakè ɗaɗɗe"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompAffImperfPast2StateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table gg"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1652,7 +1864,9 @@
 	    [:Common, :Plural, :Person1, "anày-ʕùnɗuk sugne"],
 	    [:Common, :Plural, :Person2, "anày-ʕùnɗuk sugten"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperfProb1Aux2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table o"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1667,7 +1881,9 @@
 	    [:Common, :Plural, :Person2, "fakè watoònu(h) takkeh"],
 	    [:Masc, :Singular, :Person3, "fakè wàyu(h) takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPurp1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table w"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1682,7 +1898,9 @@
 	    [:Fem, :Singular, :Person3, "kàɗ-hàytuh"],
 	    [:Common, :Singular, :Person1, "kàɗ-hàyuh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table i"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1697,7 +1915,9 @@
 	    [:Common, :Singular, :Person2, "kàɗ-màhayta"],
 	    [:Fem, :Singular, :Person3, "kàɗ-màhayta"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table a"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1712,7 +1932,9 @@
 	    [:Common, :Plural, :Person1, "kàɗ-hayneh"],
 	    [:Common, :Plural, :Person2, "kàɗ-hayteenih"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperfPast1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table f"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1727,7 +1949,9 @@
 	    [:Common, :Singular, :Person2, "fàkak mànannito"],
 	    [:Common, :Plural, :Person1, "fàkak mànannino"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPerfProbAux2-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table q"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1742,7 +1966,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè waytem takkeh"],
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥè waytem takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPerfAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table j"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1757,7 +1983,9 @@
 	    [:Common, :Plural, :Person1, "kàɗ-haynèh màsugna"],
 	    [:Fem, :Singular, :Person3, "kàɗ-haytèh màsugta"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPerfCondAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table u"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1772,7 +2000,9 @@
 	    [:Common, :Plural, :Person3, "yuduureenìh sugeenik"],
 	    [:Common, :Plural, :Person1, "nuduurèh sugnek"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegHypothAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table y"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1787,7 +2017,9 @@
 	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè màɗaɗɗe"],
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥè màɗanɗe"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegHypothAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table y"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1802,7 +2034,9 @@
 	    [:Common, :Plural, :Person1, "aduurè màɗanɗe"],
 	    [:Masc, :Singular, :Person3, "aduurè màɗaaɗe"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImperfProb2Aux2-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table p"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1817,7 +2051,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-àɗḥè wayteenim takkeh"],
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥè waynam takkeh"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImperfProb1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table o"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1832,7 +2068,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-ìnnu(h) takkeh"],
 	    [:Common, :Plural, :Person2, "rùffa-intoònu(h) takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImperfPresAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table h"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1847,7 +2085,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-haytaanàh màtanin"],
 	    [:Masc, :Singular, :Person3, "kàɗ-haàh màyan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPerfProbAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table q"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1862,7 +2102,9 @@
 	    [:Common, :Plural, :Person3, "yuduureenìm takkeh"],
 	    [:Common, :Singular, :Person1, "uduurèm takkeh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerfPast2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table d"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1877,7 +2119,9 @@
 	    [:Common, :Plural, :Person2, "fakteenìh màsuginniton"],
 	    [:Common, :Plural, :Person1, "faknèh màsuginnino"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffIntentAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table n"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1892,7 +2136,9 @@
 	    [:Common, :Singular, :Person1, "fàku waa"],
 	    [:Common, :Plural, :Person2, "fàktoònu waytan"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPerfCondAux2-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table u"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1907,7 +2153,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh sugè wayteenik"],
 	    [:Common, :Singular, :Person2, "kàɗ-haytèh sugè waytek"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImperfAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table k"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1922,7 +2170,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥuk sugènno"],
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥuk sugèlon"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegJussAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table l"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -1937,7 +2187,9 @@
 	    [:Common, :Plural, :Person2, "fakè watoònay"],
 	    [:Common, :Plural, :Person3, "fakè woònay"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffJussAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table l"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1952,7 +2204,9 @@
 	    [:Common, :Plural, :Person3, "rùffa-iyyoònay"],
 	    [:Common, :Plural, :Person1, "rùffa-ìnnay"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfPast2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table d"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -1967,7 +2221,9 @@
 	    [:Common, :Singular, :Person1, "kàɗ-heèh suge"],
 	    [:Common, :Plural, :Person3, "kàɗ-heenìh sugen"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffCond1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table s"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -1981,7 +2237,9 @@
 	    [:Common, :Plural, :Person3, "fakeenik"],
 	    [:Common, :Plural, :Person1, "faknek"]]
     }
-    {:common {:lexeme :PRO,
+    {:label "afar-PPossDef"
+    :note "Parker-Hayward1985 p. 235 tab 6,tab 7"
+    :common {:lexeme :PRO,
 	    :pos :Pronoun}
     :terms [[:gender, :number, :person, :proClass, :token]  ;; schema
 	    [:Common, :Singular, :Person2, :PossessiveDefinite, "ky"],
@@ -1996,7 +2254,9 @@
 	    [:Fem, :Singular, :Person3, :PossessiveDefinite, "tet"],
 	    [:Common, :Plural, :Person1, :PossessiveDefinite, "ni"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegImperfAnticipAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table k"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2011,7 +2271,9 @@
 	    [:Common, :Singular, :Person2, "fàkak màsugta"],
 	    [:Common, :Plural, :Person2, "fàkak màsugtan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPurp2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table x"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2025,7 +2287,9 @@
 	    [:Common, :Plural, :Person3, "yaduureenìnkeh"],
 	    [:Common, :Plural, :Person2, "taduureenìnkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffImperfPast2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table g"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2040,7 +2304,9 @@
 	    [:Masc, :Singular, :Person3, "kàɗ-hàak suge"],
 	    [:Common, :Singular, :Person1, "kàɗ-hàak suge"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffPurp2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table x"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2055,7 +2321,9 @@
 	    [:Common, :Singular, :Person1, "rùffa-aɗḥènkeh"],
 	    [:Common, :Plural, :Person1, "rùffa-innànkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffAnticip-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table i"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2069,7 +2337,9 @@
 	    [:Common, :Singular, :Person1, "aduurè-liyo"],
 	    [:Common, :Plural, :Person1, "aduurè-lino"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffImprtv-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table r"
+    :common {:conjClass :Prefix,
 	    :gender :Common,
 	    :lexeme :uduur,
 	    :person :Person2,
@@ -2080,7 +2350,9 @@
 	    [:Plural, "uduùra"],
 	    [:Singular, "uduur"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffPartPerf-ab"
+    :note "Parker-Hayward1985 p. 255,tab 21"
+    :common {:conjClass :Suffix,
 	    :lexeme :ab,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -2093,7 +2365,9 @@
 	    [:Common, :Singular, :Person1, "abeh"],
 	    [:Fem, :Singular, :Person3, "abteh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfAnticipAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table j"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2108,7 +2382,9 @@
 	    [:Common, :Singular, :Person1, "uduurèh màsuga"],
 	    [:Common, :Plural, :Person3, "uduureenìh màsugan"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPerfPresAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table e"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2123,7 +2399,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-inteenìh màtanin"],
 	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh màyanin"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImperfProb1Aux2-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table o"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2138,7 +2416,9 @@
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wàytu(h) takkeh"],
 	    [:Common, :Plural, :Person3, "rùffa-àɗḥè wayoònu(h) takkeh"]]
     }
-    {:common {:conjClass :Stative,
+    {:label "afar-VStatNegImperfState-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table bb"
+    :common {:conjClass :Stative,
 	    :lexeme :meq,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -2152,7 +2432,9 @@
 	    [:Common, :Singular, :Person1, "màmiʕiyo"],
 	    [:Common, :Plural, :Person1, "màmiʕino"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerfAnticipAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table j"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2167,7 +2449,9 @@
 	    [:Common, :Plural, :Person2, "fakteenìh màsugtan"],
 	    [:Common, :Plural, :Person3, "fakeenìh màsugan"]]
     }
-    {:common {:conjClass :CompoundStative,
+    {:label "afar-VStatCompNegNonFinite-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table za"
+    :common {:conjClass :CompoundStative,
 	    :lexeme :anay-qunda,
 	    :nonFiniteForm :NonFinite,
 	    :polarity :Negative,
@@ -2176,7 +2460,9 @@
     :terms [[:token]  ;; schema
 	    ["anày-ʕùnɗih"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffHypothAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table y"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2191,7 +2477,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥè ɗanɗe"],
 	    [:Common, :Plural, :Person2, "rùffa-àɗḥè ɗaɗɗen"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfPast2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table g"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2206,7 +2494,9 @@
 	    [:Common, :Plural, :Person3, "fàkak sugen"],
 	    [:Masc, :Singular, :Person3, "fàkak suge"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffPartImperf-ab"
+    :note "Parker-Hayward1985 p. 255,tab 21"
+    :common {:conjClass :Suffix,
 	    :lexeme :ab,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -2219,7 +2509,9 @@
 	    [:Common, :Singular, :Person2, "abtah"],
 	    [:Common, :Plural, :Person1, "abnah"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImperfPast2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table g"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2234,7 +2526,9 @@
 	    [:Common, :Singular, :Person2, "kàɗ-hàak màsuginnito"],
 	    [:Common, :Plural, :Person1, "kàɗ-hàak màsuginnino"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImperfPast1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table f"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2249,7 +2543,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-hàak mànanniton"],
 	    [:Common, :Singular, :Person2, "kàɗ-hàak mànannito"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPerfPast2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table d"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2264,7 +2560,9 @@
 	    [:Common, :Plural, :Person1, "kàɗ-haynèh màsuginnino"],
 	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh màsuginniton"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffImperf-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table b"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2278,7 +2576,9 @@
 	    [:Masc, :Singular, :Person3, "yaduureh"],
 	    [:Common, :Plural, :Person1, "naduureh"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffPerf-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table a"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2292,7 +2592,9 @@
 	    [:Fem, :Singular, :Person3, "fakteh"],
 	    [:Common, :Singular, :Person2, "fakteh"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImprtvAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table r"
+    :common {:conjClass :CompoundIntransitive,
 	    :gender :Common,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
@@ -2304,7 +2606,9 @@
 	    [:Plural, "rùffa-màɗḥina"],
 	    [:Singular, "rùffa-màɗḥin"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table i"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2319,7 +2623,9 @@
 	    [:Common, :Singular, :Person1, "kàɗ-heè-liyo"],
 	    [:Common, :Plural, :Person1, "kàɗ-heè-lino"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegImperfProbab1Aux2-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table o"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2334,7 +2640,9 @@
 	    [:Common, :Plural, :Person2, "kàɗ-heè watoònu(h) takkeh"],
 	    [:Common, :Singular, :Person1, "kàɗ-heè wàyu(h) takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffRequest-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table m"
+    :common {:conjClass :Prefix,
 	    :gender :Common,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
@@ -2344,7 +2652,9 @@
 	    [:Plural, :Person2, "naduuro?"],
 	    [:Singular, :Person1, "aduuro?"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegPerfProbAux2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table q"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2359,7 +2669,9 @@
 	    [:Common, :Singular, :Person1, "aduurè weem takkeh"],
 	    [:Common, :Plural, :Person1, "aduurè waynem takkeh"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPerf-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table a"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2373,7 +2685,9 @@
 	    [:Common, :Singular, :Person1, "uduureh"],
 	    [:Masc, :Singular, :Person3, "yuduureh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffJussAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table l"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2388,7 +2702,9 @@
 	    [:Common, :Plural, :Person1, "kàɗ-hàynay"],
 	    [:Common, :Singular, :Person1, "kàɗ-hàay"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffRequestAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table m"
+    :common {:conjClass :CompoundTransitive,
 	    :gender :Common,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
@@ -2399,7 +2715,9 @@
 	    [:Singular, :Person1, "kàɗ-hayo?"],
 	    [:Plural, :Person2, "kàɗ-hayno?"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffNegPerfPresAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table e"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2414,7 +2732,9 @@
 	    [:Masc, :Singular, :Person3, "fakèh màyan"],
 	    [:Common, :Plural, :Person2, "fakteenìh màtanin"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrAffPerfAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table j"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2429,7 +2749,9 @@
 	    [:Common, :Singular, :Person2, "kàɗ-haytèh sugètto"],
 	    [:Common, :Singular, :Person1, "kàɗ-heèh sugèyyo"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPerfAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table a"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2444,7 +2766,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-màɗḥinniton"],
 	    [:Common, :Singular, :Person2, "rùffa-màɗḥinnito"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffCond1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table s"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2458,7 +2782,9 @@
 	    [:Common, :Plural, :Person1, "nuduurek"],
 	    [:Common, :Plural, :Person2, "tuduureenik"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffImperfPast2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table g"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2473,7 +2799,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-àɗḥuk sugten"],
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥuk sugte"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegPerfPast1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table c"
+    :common {:conjClass :CompoundTransitive,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2488,7 +2816,9 @@
 	    [:Common, :Singular, :Person2, "kàɗ-haytèh mànannito"],
 	    [:Masc, :Singular, :Person3, "kàɗ-heèh mànanna"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffAnticipAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table i"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2503,7 +2833,9 @@
 	    [:Common, :Plural, :Person2, "fakè-liton"],
 	    [:Common, :Plural, :Person3, "fakè-lon"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfProb2Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table p"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2518,7 +2850,9 @@
 	    [:Common, :Singular, :Person1, "fakàm takkeh"],
 	    [:Common, :Plural, :Person3, "fakaanàm takkeh"]]
     }
-    {:common {:conjClass :CompoundTransitive,
+    {:label "afar-VCompTrNegRequestAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table m"
+    :common {:conjClass :CompoundTransitive,
 	    :gender :Common,
 	    :lexeme :kad-hee,
 	    :pdgmType :Compound,
@@ -2529,7 +2863,9 @@
 	    [:Singular, :Person1, "kàɗ-mahayo?"],
 	    [:Plural, :Person2, "kàɗ-mahayno?"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImperfPast1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table f"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2544,7 +2880,9 @@
 	    [:Common, :Plural, :Person1, "rùffa-àɗḥuk mànannino"],
 	    [:Fem, :Singular, :Person3, "rùffa-àɗḥuk mànanna"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffPurp1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table w"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2558,7 +2896,9 @@
 	    [:Common, :Plural, :Person1, "naduùruh"],
 	    [:Common, :Singular, :Person2, "taduùruh"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntAffRequestAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table m"
+    :common {:conjClass :CompoundIntransitive,
 	    :gender :Common,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
@@ -2569,7 +2909,9 @@
 	    [:Plural, :Person2, "rùffa-inno?"],
 	    [:Singular, :Person1, "rùffa-aɗḥo?"]]
     }
-    {:common {:conjClass :Suffix,
+    {:label "afar-VSuffAffImperfPast1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table f"
+    :common {:conjClass :Suffix,
 	    :lexeme :fak,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
@@ -2584,7 +2926,9 @@
 	    [:Common, :Singular, :Person1, "fàkak en"],
 	    [:Common, :Plural, :Person2, "fàkak tenen"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefAffJuss-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table l"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -2598,7 +2942,9 @@
 	    [:Common, :Plural, :Person2, "taduuroònay"],
 	    [:Common, :Plural, :Person1, "naduùray"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegPurp1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table w"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2613,7 +2959,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-àɗḥè watoònu(h)"],
 	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wàytu(h)"]]
     }
-    {:common {:conjClass :CompoundIntransitive,
+    {:label "afar-VCompIntNegImperfPresAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table h"
+    :common {:conjClass :CompoundIntransitive,
 	    :lexeme :ruffa-edh,
 	    :pdgmType :Compound,
 	    :polarity :Negative,
@@ -2628,7 +2976,9 @@
 	    [:Common, :Plural, :Person2, "rùffa-intaanàh màtanin"],
 	    [:Fem, :Singular, :Person3, "rùffa-intàh màtan"]]
     }
-    {:common {:conjClass :Prefix,
+    {:label "afar-VPrefNegImperf-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table b"
+    :common {:conjClass :Prefix,
 	    :lexeme :uduur,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -2642,887 +2992,11 @@
 	    [:Common, :Singular, :Person1, "maàduura"],
 	    [:Common, :Singular, :Person2, "màtaduura"]]
     }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
+    {:label "afar-VSubjMarker"
+    :note "Parker-Hayward1985 p. 252,tab 18"
+    :common {:pdgmSubType :SubjMarker,
 	    :pos :Verb,
-	    :tam :PerfectPast1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "yuduurèh yen"],
-	    [:Common, :Plural, :Person1, "nuduurèh nen"],
-	    [:Common, :Singular, :Person2, "tuduurèh ten"],
-	    [:Common, :Plural, :Person3, "yuduureenìh yenen"],
-	    [:Common, :Plural, :Person2, "tuduureenìh tenen"],
-	    [:Fem, :Singular, :Person3, "tuduurèh ten"],
-	    [:Common, :Singular, :Person1, "uduurèh en"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Imperfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "rùffa-màyyan"],
-	    [:Common, :Singular, :Person2, "rùffa-mànta"],
-	    [:Masc, :Singular, :Person3, "rùffa-màyya"],
-	    [:Common, :Plural, :Person1, "rùffa-mànna"],
-	    [:Fem, :Singular, :Person3, "rùffa-mànta"],
-	    [:Common, :Plural, :Person2, "rùffa-màntan"],
-	    [:Common, :Singular, :Person1, "rùffa-màɗḥa"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "rùffa-inneh"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyeh"],
-	    [:Common, :Plural, :Person2, "rùffa-inteenih"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyeenih"],
-	    [:Common, :Singular, :Person1, "rùffa-eɗḥeh"],
-	    [:Common, :Singular, :Person2, "rùffa-inteh"],
-	    [:Fem, :Singular, :Person3, "rùffa-inteh"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PerfectPast1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "faktèh mànanna"],
-	    [:Common, :Plural, :Person1, "faknèh mànannino"],
-	    [:Common, :Singular, :Person2, "faktèh mànannito"],
-	    [:Common, :Singular, :Person1, "fakèh mànanniyo"],
-	    [:Common, :Plural, :Person3, "fakeenìh mànannon"],
-	    [:Common, :Plural, :Person2, "fakteenìh mànanniton"],
-	    [:Masc, :Singular, :Person3, "fakèh mànanna"]]
-    }
-    {:common {:conjClass :CompoundStative,
-	    :lexeme :anay-qunda,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ContrafactualStative}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "anày-ʕùnɗuk sugè wannitoy"],
-	    [:Masc, :Singular, :Person3, "anày-ʕùnɗuk sugè wannay"],
-	    [:Common, :Plural, :Person2, "anày-ʕùnɗuk sugè wannitoonuy"],
-	    [:Common, :Plural, :Person1, "anày-ʕùnɗuk sugè wanninoy"],
-	    [:Common, :Singular, :Person1, "anày-ʕùnɗuk sugè wanniyoy"],
-	    [:Common, :Plural, :Person3, "anày-ʕùnɗuk sugè wannoonuy"],
-	    [:Fem, :Singular, :Person3, "anày-ʕùnɗuk sugè wannay"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Contrafactual}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "fakè wannoonuy"],
-	    [:Common, :Singular, :Person1, "fakè wanniyoy"],
-	    [:Masc, :Singular, :Person3, "fakè wannay"],
-	    [:Common, :Plural, :Person2, "fakè wannitoonuy"],
-	    [:Common, :Singular, :Person2, "fakè wannitoy"],
-	    [:Fem, :Singular, :Person3, "fakè wannay"],
-	    [:Common, :Plural, :Person1, "fakè wanninoy"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :gender :Common,
-	    :lexeme :uduur,
-	    :person :Person2,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Imperative}
-    :terms [[:number, :token]  ;; schema
-	    [:Plural, "maàduurina"],
-	    [:Singular, "maàduurin"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Conditional2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "rùffa-inten sin tekkek"],
-	    [:Common, :Plural, :Person1, "rùffa-inne nee tekkek"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyen ken tekkek"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyye kaa tekkek"],
-	    [:Fem, :Singular, :Person3, "rùffa-inte tet tekkek"],
-	    [:Common, :Singular, :Person1, "rùffa-eɗḥe yoo tekkek"],
-	    [:Common, :Singular, :Person2, "rùffa-inte koo tekkek"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Jussive}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "aduurè woònay"],
-	    [:Common, :Plural, :Person1, "aduurè wànay"],
-	    [:Common, :Singular, :Person1, "aduurè wàay"],
-	    [:Common, :Singular, :Person2, "aduurè wàytay"],
-	    [:Masc, :Singular, :Person3, "aduurè wàay"],
-	    [:Fem, :Singular, :Person3, "aduurè wàytay"],
-	    [:Common, :Plural, :Person2, "aduurè watoònay"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Conditional2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "kàɗ-hayten sin tekkek"],
-	    [:Common, :Plural, :Person3, "kàɗ-heen ken tekkek"],
-	    [:Common, :Singular, :Person1, "kàɗ-hee yoo tekkek"],
-	    [:Masc, :Singular, :Person3, "kàɗ-hee kaa tekkek"],
-	    [:Fem, :Singular, :Person3, "kàɗ-hayte tet tekkek"],
-	    [:Common, :Singular, :Person2, "kàɗ-hayte koo tekkek"],
-	    [:Common, :Plural, :Person1, "kàɗ-hayne nee tekkek"]]
-    }
-    {:common {:conjClass :CompoundStative,
-	    :lexeme :anay-qunda,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Probable}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "anày-ʕunɗàm takkeh"],
-	    [:Common, :Singular, :Person1, "anày-ʕunɗiyòm takkeh"],
-	    [:Common, :Plural, :Person3, "anày-ʕunɗoonùm takkeh"],
-	    [:Fem, :Singular, :Person3, "anày-ʕunɗàm takkeh"],
-	    [:Common, :Plural, :Person2, "anày-ʕunɗitoonùm takkeh"],
-	    [:Common, :Singular, :Person2, "anày-ʕunɗitòm takkeh"],
-	    [:Common, :Plural, :Person1, "anày-ʕunɗinòm takkeh"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :nonFiniteForm :NonFinite,
-	    :polarity :Negative,
-	    :pos :Verb}
-    :terms [[:tam, :token]  ;; schema
-	    [:RelativeIndeterminate, "rùffa-àɗḥi nnaànih / nnaàn"],
-	    [:I-Form, "rùffa-àɗḥi"],
-	    [:VH-Participle, "rùffa-àɗiḥ"],
-	    [:Infinitive, "rùffa-àɗḥiyya"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PerfectPresent}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "kàɗ-heèh màan"],
-	    [:Common, :Plural, :Person1, "kàɗ-haynèh mànan"],
-	    [:Common, :Plural, :Person3, "kàɗ-heenìh màyanin"],
-	    [:Common, :Singular, :Person2, "kàɗ-haytèh màtan"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heèh màyan"],
-	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh màtanin"],
-	    [:Fem, :Singular, :Person3, "kàɗ-haytèh màtan"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Anticipatory}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "rùffa-màntan"],
-	    [:Masc, :Singular, :Person3, "rùffa-màyya"],
-	    [:Common, :Singular, :Person1, "rùffa-màɗḥa"],
-	    [:Common, :Plural, :Person3, "rùffa-màyyan"],
-	    [:Common, :Plural, :Person1, "rùffa-mànna"],
-	    [:Common, :Singular, :Person2, "rùffa-mànta"],
-	    [:Fem, :Singular, :Person3, "rùffa-mànta"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Conditional2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "aduurè waa yoo tekkek"],
-	    [:Masc, :Singular, :Person3, "aduurè waa kaa tekkek"],
-	    [:Fem, :Singular, :Person3, "aduurè wayta tet tekkek"],
-	    [:Common, :Plural, :Person2, "aduurè waytan sin tekkek"],
-	    [:Common, :Plural, :Person3, "aduurè waan ken tekkek"],
-	    [:Common, :Plural, :Person1, "aduurè wayna nee tekkek"],
-	    [:Common, :Singular, :Person2, "aduurè wayta koo tekkek"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :gender :Common,
-	    :lexeme :fak,
-	    :person :Person2,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Imperative}
-    :terms [[:number, :token]  ;; schema
-	    [:Plural, "màfakina"],
-	    [:Singular, "màfakin"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ImperfectPast2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "rùffa-àɗḥuk màsuginnito"],
-	    [:Common, :Plural, :Person1, "rùffa-àɗḥuk màsuginnino"],
-	    [:Masc, :Singular, :Person3, "rùffa-àɗḥuk màsuginna"],
-	    [:Common, :Plural, :Person3, "rùffa-àɗḥuk màsuginnon"],
-	    [:Common, :Singular, :Person1, "rùffa-àɗḥuk màsuginniyo"],
-	    [:Common, :Plural, :Person2, "rùffa-àɗḥuk màsuginniton"],
-	    [:Fem, :Singular, :Person3, "rùffa-àɗḥuk màsuginna"]]
-    }
-    {:common {:conjClass :CompoundStative,
-	    :lexeme :anay-qunda,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PresentState1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "anày-màʕunɗon"],
-	    [:Common, :Plural, :Person2, "anày-màʕunɗiton"],
-	    [:Common, :Singular, :Person2, "anày-màʕunɗito"],
-	    [:Common, :Plural, :Person1, "anày-màʕunɗino"],
-	    [:Fem, :Singular, :Person3, "anày-màʕunɗa"],
-	    [:Common, :Singular, :Person1, "anày-màʕunɗiyo"],
-	    [:Masc, :Singular, :Person3, "anày-màʕunɗa"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Imperfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "kàɗ-màhayta"],
-	    [:Masc, :Singular, :Person3, "kàɗ-màhaa"],
-	    [:Common, :Plural, :Person2, "kàɗ-màhaytan"],
-	    [:Fem, :Singular, :Person3, "kàɗ-màhayta"],
-	    [:Common, :Singular, :Person1, "kàɗ-màhaa"],
-	    [:Common, :Plural, :Person3, "kàɗ-màhaan"],
-	    [:Common, :Plural, :Person1, "kàɗ-màhayna"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectAnticipatory}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "aduùruk sugètton"],
-	    [:Common, :Singular, :Person1, "aduùruk sugèyyo"],
-	    [:Common, :Plural, :Person3, "aduùruk sugèlon"],
-	    [:Masc, :Singular, :Person3, "aduùruk sugèle"],
-	    [:Common, :Singular, :Person2, "aduùruk sugètto"],
-	    [:Fem, :Singular, :Person3, "aduùruk sugèle"],
-	    [:Common, :Plural, :Person1, "aduùruk sugènno"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :PerfectPresent}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "tuduurèk tan"],
-	    [:Masc, :Singular, :Person3, "yuduurèk yan"],
-	    [:Common, :Plural, :Person2, "tuduureenìk tanin"],
-	    [:Common, :Plural, :Person1, "nuduurèk nan"],
-	    [:Common, :Singular, :Person1, "uduurèk an"],
-	    [:Fem, :Singular, :Person3, "tuduurèk tan"],
-	    [:Common, :Plural, :Person3, "yuduureenìk yanin"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ImperfectAnticipatory}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "kàɗ-hàak màsugan"],
-	    [:Common, :Singular, :Person2, "kàɗ-hàak màsugta"],
-	    [:Common, :Plural, :Person1, "kàɗ-hàak màsugna"],
-	    [:Common, :Plural, :Person2, "kàɗ-hàak màsugtan"],
-	    [:Fem, :Singular, :Person3, "kàɗ-hàak màsugta"],
-	    [:Masc, :Singular, :Person3, "kàɗ-hàak màsuga"],
-	    [:Common, :Singular, :Person1, "kàɗ-hàak màsuga"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :PerfectProbable}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "faktèm takkeh"],
-	    [:Common, :Plural, :Person3, "fakeenìm takkeh"],
-	    [:Common, :Plural, :Person2, "fakteenìm takkeh"],
-	    [:Common, :Plural, :Person1, "faknèm takkeh"],
-	    [:Masc, :Singular, :Person3, "fakèm takkeh"],
-	    [:Fem, :Singular, :Person3, "faktèm takkeh"],
-	    [:Common, :Singular, :Person1, "fakèm takkeh"]]
-    }
-    {:common {:conjClass :Stative,
-	    :lexeme :meq,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Contrafactual}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "àmʕuk sugè wannay"],
-	    [:Common, :Plural, :Person2, "àmʕuk sugè wannitoonuy"],
-	    [:Fem, :Singular, :Person3, "àmʕuk sugè wannay"],
-	    [:Common, :Plural, :Person3, "àmʕuk sugè wannoonuy"],
-	    [:Common, :Singular, :Person2, "àmʕuk sugè wannitoy"],
-	    [:Common, :Plural, :Person1, "àmʕuk sugè wanninoy"],
-	    [:Common, :Singular, :Person1, "àmʕuk sugè wanniyoy"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Conditional1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "rùffa-àɗḥè weenik"],
-	    [:Common, :Singular, :Person2, "rùffa-àɗḥè waytek"],
-	    [:Common, :Singular, :Person1, "rùffa-àɗḥè week"],
-	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè waytek"],
-	    [:Common, :Plural, :Person1, "rùffa-àɗḥè waynek"],
-	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè week"],
-	    [:Common, :Plural, :Person2, "rùffa-àɗḥè wayteenik"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Purposive2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "kàɗ-haanànkeh"],
-	    [:Common, :Singular, :Person2, "kàɗ-haytànkeh"],
-	    [:Fem, :Singular, :Person3, "kàɗ-haytànkeh"],
-	    [:Masc, :Singular, :Person3, "kàɗ-haànkeh"],
-	    [:Common, :Singular, :Person1, "kàɗ-haànkeh"],
-	    [:Common, :Plural, :Person1, "kàɗ-haynànkeh"],
-	    [:Common, :Plural, :Person2, "kàɗ-haytaanànkeh"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectPast2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "aduùruk suge"],
-	    [:Fem, :Singular, :Person3, "aduùruk sugte"],
-	    [:Common, :Singular, :Person2, "aduùruk sugte"],
-	    [:Common, :Plural, :Person2, "aduùruk sugten"],
-	    [:Common, :Plural, :Person3, "aduùruk sugen"],
-	    [:Masc, :Singular, :Person3, "aduùruk suge"],
-	    [:Common, :Plural, :Person1, "aduùruk sugne"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :gender :Common,
-	    :lexeme :fak,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Requestive}
-    :terms [[:number, :person, :token]  ;; schema
-	    [:Plural, :Person2, "fakno?"],
-	    [:Singular, :Person1, "fako?"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Contrafactual}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "aduurinnitoonuy"],
-	    [:Common, :Plural, :Person3, "aduurinnoonuy"],
-	    [:Common, :Singular, :Person2, "aduurinnitoy"],
-	    [:Masc, :Singular, :Person3, "aduurinnay"],
-	    [:Common, :Singular, :Person1, "aduurinniyoy"],
-	    [:Common, :Plural, :Person1, "aduurinninoy"],
-	    [:Fem, :Singular, :Person3, "aduurinnay"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Purposive1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "aduurè wàyu(h)"],
-	    [:Common, :Plural, :Person2, "aduurè watoònu(h)"],
-	    [:Common, :Plural, :Person1, "aduurè wànu(h)"],
-	    [:Common, :Plural, :Person3, "aduurè woònu(h)"],
-	    [:Fem, :Singular, :Person3, "aduurè wàytu(h)"],
-	    [:Masc, :Singular, :Person3, "aduurè wàyu(h)"],
-	    [:Common, :Singular, :Person2, "aduurè wàytu(h)"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PerfectAnticipatory}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "rùffa-intèh màsugta"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyèh màsuga"],
-	    [:Fem, :Singular, :Person3, "rùffa-intèh màsugta"],
-	    [:Common, :Singular, :Person1, "rùffa-eɗḥèh màsuga"],
-	    [:Common, :Plural, :Person1, "rùffa-innèh màsugna"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh màsugan"],
-	    [:Common, :Plural, :Person2, "rùffa-inteenìh màsugtan"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :PerfectPresent}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "fakèk yan"],
-	    [:Common, :Plural, :Person2, "fakteenìk tanin"],
-	    [:Common, :Singular, :Person1, "fakèk an"],
-	    [:Common, :Singular, :Person2, "faktèk tan"],
-	    [:Common, :Plural, :Person1, "faknèk nan"],
-	    [:Fem, :Singular, :Person3, "faktèk tan"],
-	    [:Common, :Plural, :Person3, "fakeenìk yanin"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ImperfectProbable1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "aduurè wayoònu(h) takkeh"],
-	    [:Common, :Singular, :Person2, "aduurè wàytu(h) takkeh"],
-	    [:Masc, :Singular, :Person3, "aduurè wàyu(h) takkeh"],
-	    [:Common, :Singular, :Person1, "aduurè wàyu(h) takkeh"],
-	    [:Common, :Plural, :Person2, "aduurè watoònu(h) takkeh"],
-	    [:Common, :Plural, :Person1, "aduurè wànu(h) takkeh"],
-	    [:Fem, :Singular, :Person3, "aduurè wàytu(h) takkeh"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PerfectPast2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "rùffa-aɗḥèh màsuginniyo"],
-	    [:Common, :Singular, :Person2, "rùffa-intèh màsuginnito"],
-	    [:Common, :Plural, :Person1, "rùffa-innèh màsuginnino"],
-	    [:Fem, :Singular, :Person3, "rùffa-intèh màsuginna"],
-	    [:Common, :Plural, :Person2, "rùffa-inteenìh màsuginniton"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh màsuginnon"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyèh màsuginna"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Purposive2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "kàɗ-heè waànkeh"],
-	    [:Fem, :Singular, :Person3, "kàɗ-heè waytànkeh"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heè waànkeh"],
-	    [:Common, :Plural, :Person3, "kàɗ-heè waanànkeh"],
-	    [:Common, :Plural, :Person2, "kàɗ-heè waytaanànkeh"],
-	    [:Common, :Singular, :Person2, "kàɗ-heè waytànkeh"],
-	    [:Common, :Plural, :Person1, "kàɗ-heè wannànkeh"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Intentive}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "kàɗ-hayoònu waan"],
-	    [:Common, :Plural, :Person2, "kàɗ-haytoònu waytan"],
-	    [:Common, :Plural, :Person1, "kàɗ-hàynu wayna"],
-	    [:Masc, :Singular, :Person3, "kàɗ-hàyu waa"],
-	    [:Common, :Singular, :Person1, "kàɗ-hàyu waa"],
-	    [:Common, :Singular, :Person2, "kàɗ-hàytu wayta"],
-	    [:Fem, :Singular, :Person3, "kàɗ-hàytu wayta"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :nonFiniteForm :NonFinite,
-	    :pos :Verb}
-    :terms [[:tam, :token]  ;; schema
-	    [:I-Form, "aduùri"],
-	    [:RelativeIndeterminate, "aduurinnaànih ~ aduurinnaàn"],
-	    [:Infinitive, "aduurìyya"],
-	    [:VH-Participle, "aduùrih"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectProbable1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "kàɗ-hàynu(h) takkeh"],
-	    [:Common, :Singular, :Person1, "kàɗ-hàyu(h) takkeh"],
-	    [:Masc, :Singular, :Person3, "kàɗ-hàyu(h) takkeh"],
-	    [:Common, :Singular, :Person2, "kàɗ-hàytu(h) takkeh"],
-	    [:Common, :Plural, :Person2, "kàɗ-haytoònu(h) takkeh"],
-	    [:Common, :Plural, :Person3, "kàɗ-hayoònu(h) takkeh"],
-	    [:Fem, :Singular, :Person3, "kàɗ-hàytu(h) takkeh"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Conditional1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "kàɗ-haytek"],
-	    [:Common, :Singular, :Person1, "kàɗ-heek"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heek"],
-	    [:Common, :Plural, :Person1, "kàɗ-haynek"],
-	    [:Common, :Plural, :Person3, "kàɗ-heenik"],
-	    [:Common, :Singular, :Person2, "kàɗ-haytek"],
-	    [:Common, :Plural, :Person2, "kàɗ-hayteenik"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Imperfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "rùffa-innah"],
-	    [:Common, :Singular, :Person1, "rùffa-aɗḥeh"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyah"],
-	    [:Common, :Plural, :Person2, "rùffa-intaanah"],
-	    [:Fem, :Singular, :Person3, "rùffa-intah"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyaanah"],
-	    [:Common, :Singular, :Person2, "rùffa-intah"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ImperfectProbable2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "aduurè waynam takkeh"],
-	    [:Common, :Plural, :Person3, "aduurè waanam takkeh"],
-	    [:Common, :Singular, :Person2, "aduurè waytam takkeh"],
-	    [:Common, :Singular, :Person1, "aduurè waam takkeh"],
-	    [:Fem, :Singular, :Person3, "aduurè waytam takkeh"],
-	    [:Common, :Plural, :Person2, "aduurè wayteenim takkeh"],
-	    [:Masc, :Singular, :Person3, "aduurè waam takkeh"]]
-    }
-    {:common {:conjClass :Stative,
-	    :lexeme :meq,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :PresentState1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "miʕitoh"],
-	    [:Common, :Plural, :Person1, "miʕinoh"],
-	    [:Masc, :Singular, :Person3, "meʕeh"],
-	    [:Common, :Plural, :Person2, "miʕitoonuh"],
-	    [:Common, :Plural, :Person3, "moʕoonuh"],
-	    [:Common, :Singular, :Person1, "miʕiyoh"],
-	    [:Fem, :Singular, :Person3, "meʕeh"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Hypothetical}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "fakè màɗaaɗen"],
-	    [:Fem, :Singular, :Person3, "fakè màɗaɗɗe"],
-	    [:Common, :Singular, :Person1, "fakè màɗaaɗe"],
-	    [:Common, :Plural, :Person2, "fakè màɗaɗɗen"],
-	    [:Common, :Singular, :Person2, "fakè màɗaɗɗe"],
-	    [:Common, :Plural, :Person1, "fakè màɗanɗe"],
-	    [:Masc, :Singular, :Person3, "fakè màɗaaɗe"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Conditional2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "fakè waytan sin tekkek"],
-	    [:Common, :Plural, :Person1, "fakè wayna nee tekkek"],
-	    [:Fem, :Singular, :Person3, "fakè wayta tet tekkek"],
-	    [:Masc, :Singular, :Person3, "fakè waa kaa tekkek"],
-	    [:Common, :Singular, :Person1, "fakè waa yoo tekkek"],
-	    [:Common, :Singular, :Person2, "fakè wayta koo tekkek"],
-	    [:Common, :Plural, :Person3, "fakè waan ken tekkek"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :PerfectConditional}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "rùffa-intèh sugè waytek"],
-	    [:Common, :Plural, :Person2, "rùffa-inteenìh sugè wayteenik"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh sugè weenik"],
-	    [:Common, :Singular, :Person2, "rùffa-intèh sugè waytek"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyèh sugè week"],
-	    [:Common, :Singular, :Person1, "rùffa-eɗḥèh sugè week"],
-	    [:Common, :Plural, :Person1, "rùffa-innèh sugè waynek"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Conditional1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "rùffa-innek"],
-	    [:Common, :Plural, :Person2, "rùffa-inteenik"],
-	    [:Common, :Singular, :Person1, "rùffa-eɗḥek"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyek"],
-	    [:Fem, :Singular, :Person3, "rùffa-intek"],
-	    [:Common, :Singular, :Person2, "rùffa-intek"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyeenik"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :eedheg,
-	    :pos :Verb,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "neeɗegeh"],
-	    [:Common, :Singular, :Person1, "eeɗegeh"],
-	    [:Common, :Plural, :Person3, "yeeɗegeenih"],
-	    [:Masc, :Singular, :Person3, "yeeɗegeh"],
-	    [:Common, :Plural, :Person2, "teeɗegeenih"],
-	    [:Fem, :Singular, :Person3, "teeɗegeh"],
-	    [:Common, :Singular, :Person2, "teeɗegeh"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Conditional2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè waa kaa tekkek"],
-	    [:Common, :Plural, :Person1, "rùffa-àɗḥè wayna nee tekkek"],
-	    [:Common, :Singular, :Person1, "rùffa-àɗḥè waa yoo tekkek"],
-	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wayta koo tekkek"],
-	    [:Common, :Plural, :Person3, "rùffa-àɗḥè waan ken tekkek"],
-	    [:Common, :Plural, :Person2, "rùffa-àɗḥè waytan sin tekkek"],
-	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè wayta tet tekkek"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Imperfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "kàɗ-haynah"],
-	    [:Masc, :Singular, :Person3, "kàɗ-haah"],
-	    [:Common, :Plural, :Person3, "kàɗ-haanah"],
-	    [:Fem, :Singular, :Person3, "kàɗ-haytah"],
-	    [:Common, :Singular, :Person2, "kàɗ-haytah"],
-	    [:Common, :Plural, :Person2, "kàɗ-haytaanah"],
-	    [:Common, :Singular, :Person1, "kàɗ-haah"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person2, "kàɗ-màhannito"],
-	    [:Masc, :Singular, :Person3, "kàɗ-màhanna"],
-	    [:Fem, :Singular, :Person3, "kàɗ-màhanna"],
-	    [:Common, :Plural, :Person2, "kàɗ-màhanniton"],
-	    [:Common, :Plural, :Person1, "kàɗ-màhannino"],
-	    [:Common, :Singular, :Person1, "kàɗ-màhanniyo"],
-	    [:Common, :Plural, :Person3, "kàɗ-màhannon"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectPresent}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "naduurèk nan"],
-	    [:Masc, :Singular, :Person3, "yaduurèk yan"],
-	    [:Common, :Singular, :Person1, "aduurèk an"],
-	    [:Fem, :Singular, :Person3, "taduurèk tan"],
-	    [:Common, :Singular, :Person2, "taduurèk tan"],
-	    [:Common, :Plural, :Person2, "taduureenìk tanin"],
-	    [:Common, :Plural, :Person3, "yaduureenìk yanin"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :gender :Common,
-	    :lexeme :uduur,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Requestive}
-    :terms [[:number, :person, :token]  ;; schema
-	    [:Singular, :Person1, "maaduuro?"],
-	    [:Plural, :Person2, "manaduuro?"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Jussive}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "rùffa-àɗḥè wàay"],
-	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè wàay"],
-	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè wàytay"],
-	    [:Common, :Plural, :Person3, "rùffa-àɗḥè woònay"],
-	    [:Common, :Plural, :Person2, "rùffa-àɗḥè watoònay"],
-	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wàytay"],
-	    [:Common, :Plural, :Person1, "rùffa-àɗḥè wànay"]]
-    }
-    {:common {:conjClass :CompoundIntransitive,
-	    :lexeme :ruffa-edh,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectPresent}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "rùffa-aɗḥèk an"],
-	    [:Common, :Plural, :Person2, "rùffa-intaanàk tanin"],
-	    [:Fem, :Singular, :Person3, "rùffa-intàk tan"],
-	    [:Masc, :Singular, :Person3, "rùffa-iyyàk yan"],
-	    [:Common, :Plural, :Person3, "rùffa-iyyaanàk yanin"],
-	    [:Common, :Singular, :Person2, "rùffa-intàk tan"],
-	    [:Common, :Plural, :Person1, "rùffa-innàk nan"]]
-    }
-    {:common {:conjClass :Prefix,
-	    :lexeme :uduur,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Intentive}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "naduùru màwayna"],
-	    [:Common, :Singular, :Person1, "aduùru màwaa"],
-	    [:Common, :Plural, :Person3, "yaduuroònu màwaan"],
-	    [:Common, :Singular, :Person2, "taduùru màwayta"],
-	    [:Masc, :Singular, :Person3, "yaduùru màwaa"],
-	    [:Fem, :Singular, :Person3, "taduùru màwayta"],
-	    [:Common, :Plural, :Person2, "taduuroònu màwaytan"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :ImperfectPast1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "kàɗ-hàak nen"],
-	    [:Fem, :Singular, :Person3, "kàɗ-hàak ten"],
-	    [:Common, :Plural, :Person3, "kàɗ-hàak yenen"],
-	    [:Common, :Singular, :Person1, "kàɗ-hàak en"],
-	    [:Masc, :Singular, :Person3, "kàɗ-hàak yen"],
-	    [:Common, :Singular, :Person2, "kàɗ-hàak ten"],
-	    [:Common, :Plural, :Person2, "kàɗ-hàak tenen"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Contrafactual}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "kàɗ-heè wanniyoy"],
-	    [:Common, :Singular, :Person2, "kàɗ-heè wannitoy"],
-	    [:Common, :Plural, :Person3, "kàɗ-heè wannoonuy"],
-	    [:Fem, :Singular, :Person3, "kàɗ-heè wannay"],
-	    [:Common, :Plural, :Person1, "kàɗ-heè wanninoy"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heè wannay"],
-	    [:Common, :Plural, :Person2, "kàɗ-heè wannitoonuy"]]
-    }
-    {:common {:conjClass :Suffix,
-	    :lexeme :fak,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :ImperfectProbable2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "fakè waam takkeh"],
-	    [:Common, :Plural, :Person2, "fakè wayteenim takkeh"],
-	    [:Common, :Plural, :Person3, "fakè waanam takkeh"],
-	    [:Fem, :Singular, :Person3, "fakè waytam takkeh"],
-	    [:Common, :Plural, :Person1, "fakè waynam takkeh"],
-	    [:Common, :Singular, :Person1, "fakè waam takkeh"],
-	    [:Common, :Singular, :Person2, "fakè waytam takkeh"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Jussive}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "kàɗ-heè wànay"],
-	    [:Common, :Singular, :Person2, "kàɗ-heè wàytay"],
-	    [:Common, :Plural, :Person2, "kàɗ-heè watoònay"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heè wàay"],
-	    [:Fem, :Singular, :Person3, "kàɗ-heè wàytay"],
-	    [:Common, :Plural, :Person3, "kàɗ-heè woònay"],
-	    [:Common, :Singular, :Person1, "kàɗ-heè wàay"]]
-    }
-    {:common {:conjClass :CompoundTransitive,
-	    :lexeme :kad-hee,
-	    :pdgmType :Compound,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :PerfectPast1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "kàɗ-heèh en"],
-	    [:Common, :Plural, :Person3, "kàɗ-heenìh yenen"],
-	    [:Masc, :Singular, :Person3, "kàɗ-heèh yen"],
-	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh tenen"],
-	    [:Common, :Singular, :Person2, "kàɗ-haytèh ten"],
-	    [:Fem, :Singular, :Person3, "kàɗ-haytèh ten"],
-	    [:Common, :Plural, :Person1, "kàɗ-haynèh nen"]]
-    }
-    {:common {:conjClass :Stative,
-	    :lexeme :meq,
-	    :nonFiniteForm :NonFinite,
-	    :pos :Verb,
-	    :tam :VH-Participle}
-    :terms [[:token]  ;; schema
-	    ["miʕih"]]
-    }}
-:muterms #{
-    {:common {:pdgmSubType :SubjMarker,
-	    :pos :Verb,
-	    :morpheme :AFFIX-V,
+	    :lexeme :AFFIX,
 	    :formType :Affix}
     :terms [[:conjClass, :gender, :number, :person, :token]  ;; schema
 	    [:CompoundIntransitive, :Common, :Plural, :Person2, "-t-n"],
@@ -3560,4 +3034,1004 @@
 	    [:Prefix, :Fem, :Singular, :Person3, "t-"],
 	    [:Suffix, :Common, :Singular, :Person2, "-t"],
 	    [:Prefix, :Common, :Singular, :Person2, "t-"]]
+    }
+    {:label "afar-VPrefAffPerfPast1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table c"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PerfectPast1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "yuduurèh yen"],
+	    [:Common, :Plural, :Person1, "nuduurèh nen"],
+	    [:Common, :Singular, :Person2, "tuduurèh ten"],
+	    [:Common, :Plural, :Person3, "yuduureenìh yenen"],
+	    [:Common, :Plural, :Person2, "tuduureenìh tenen"],
+	    [:Fem, :Singular, :Person3, "tuduurèh ten"],
+	    [:Common, :Singular, :Person1, "uduurèh en"]]
+    }
+    {:label "afar-VCompIntNegImperfAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table b"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Imperfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "rùffa-màyyan"],
+	    [:Common, :Singular, :Person2, "rùffa-mànta"],
+	    [:Masc, :Singular, :Person3, "rùffa-màyya"],
+	    [:Common, :Plural, :Person1, "rùffa-mànna"],
+	    [:Fem, :Singular, :Person3, "rùffa-mànta"],
+	    [:Common, :Plural, :Person2, "rùffa-màntan"],
+	    [:Common, :Singular, :Person1, "rùffa-màɗḥa"]]
+    }
+    {:label "afar-VCompIntAffPerfAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table a"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Perfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "rùffa-inneh"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyeh"],
+	    [:Common, :Plural, :Person2, "rùffa-inteenih"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyeenih"],
+	    [:Common, :Singular, :Person1, "rùffa-eɗḥeh"],
+	    [:Common, :Singular, :Person2, "rùffa-inteh"],
+	    [:Fem, :Singular, :Person3, "rùffa-inteh"]]
+    }
+    {:label "afar-VSuffNegPerfPast1Aux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table c"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PerfectPast1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Fem, :Singular, :Person3, "faktèh mànanna"],
+	    [:Common, :Plural, :Person1, "faknèh mànannino"],
+	    [:Common, :Singular, :Person2, "faktèh mànannito"],
+	    [:Common, :Singular, :Person1, "fakèh mànanniyo"],
+	    [:Common, :Plural, :Person3, "fakeenìh mànannon"],
+	    [:Common, :Plural, :Person2, "fakteenìh mànanniton"],
+	    [:Masc, :Singular, :Person3, "fakèh mànanna"]]
+    }
+    {:label "afar-VStatCompNegContrafStateAux2-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table vv"
+    :common {:conjClass :CompoundStative,
+	    :lexeme :anay-qunda,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ContrafactualStative}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "anày-ʕùnɗuk sugè wannitoy"],
+	    [:Masc, :Singular, :Person3, "anày-ʕùnɗuk sugè wannay"],
+	    [:Common, :Plural, :Person2, "anày-ʕùnɗuk sugè wannitoonuy"],
+	    [:Common, :Plural, :Person1, "anày-ʕùnɗuk sugè wanninoy"],
+	    [:Common, :Singular, :Person1, "anày-ʕùnɗuk sugè wanniyoy"],
+	    [:Common, :Plural, :Person3, "anày-ʕùnɗuk sugè wannoonuy"],
+	    [:Fem, :Singular, :Person3, "anày-ʕùnɗuk sugè wannay"]]
+    }
+    {:label "afar-VSuffNegContrafAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table v"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Contrafactual}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "fakè wannoonuy"],
+	    [:Common, :Singular, :Person1, "fakè wanniyoy"],
+	    [:Masc, :Singular, :Person3, "fakè wannay"],
+	    [:Common, :Plural, :Person2, "fakè wannitoonuy"],
+	    [:Common, :Singular, :Person2, "fakè wannitoy"],
+	    [:Fem, :Singular, :Person3, "fakè wannay"],
+	    [:Common, :Plural, :Person1, "fakè wanninoy"]]
+    }
+    {:label "afar-VPrefNegImprtv-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table r"
+    :common {:conjClass :Prefix,
+	    :gender :Common,
+	    :lexeme :uduur,
+	    :person :Person2,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Imperative}
+    :terms [[:number, :token]  ;; schema
+	    [:Plural, "maàduurina"],
+	    [:Singular, "maàduurin"]]
+    }
+    {:label "afar-VCompIntAffCond2Aux2-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table t"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Conditional2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "rùffa-inten sin tekkek"],
+	    [:Common, :Plural, :Person1, "rùffa-inne nee tekkek"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyen ken tekkek"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyye kaa tekkek"],
+	    [:Fem, :Singular, :Person3, "rùffa-inte tet tekkek"],
+	    [:Common, :Singular, :Person1, "rùffa-eɗḥe yoo tekkek"],
+	    [:Common, :Singular, :Person2, "rùffa-inte koo tekkek"]]
+    }
+    {:label "afar-VPrefNegJussAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table l"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Jussive}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "aduurè woònay"],
+	    [:Common, :Plural, :Person1, "aduurè wànay"],
+	    [:Common, :Singular, :Person1, "aduurè wàay"],
+	    [:Common, :Singular, :Person2, "aduurè wàytay"],
+	    [:Masc, :Singular, :Person3, "aduurè wàay"],
+	    [:Fem, :Singular, :Person3, "aduurè wàytay"],
+	    [:Common, :Plural, :Person2, "aduurè watoònay"]]
+    }
+    {:label "afar-VCompTrAffCond2Aux2-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table t"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Conditional2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "kàɗ-hayten sin tekkek"],
+	    [:Common, :Plural, :Person3, "kàɗ-heen ken tekkek"],
+	    [:Common, :Singular, :Person1, "kàɗ-hee yoo tekkek"],
+	    [:Masc, :Singular, :Person3, "kàɗ-hee kaa tekkek"],
+	    [:Fem, :Singular, :Person3, "kàɗ-hayte tet tekkek"],
+	    [:Common, :Singular, :Person2, "kàɗ-hayte koo tekkek"],
+	    [:Common, :Plural, :Person1, "kàɗ-hayne nee tekkek"]]
+    }
+    {:label "afar-VStatCompAffImperfProb2StateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table pp"
+    :common {:conjClass :CompoundStative,
+	    :lexeme :anay-qunda,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Probable}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "anày-ʕunɗàm takkeh"],
+	    [:Common, :Singular, :Person1, "anày-ʕunɗiyòm takkeh"],
+	    [:Common, :Plural, :Person3, "anày-ʕunɗoonùm takkeh"],
+	    [:Fem, :Singular, :Person3, "anày-ʕunɗàm takkeh"],
+	    [:Common, :Plural, :Person2, "anày-ʕunɗitoonùm takkeh"],
+	    [:Common, :Singular, :Person2, "anày-ʕunɗitòm takkeh"],
+	    [:Common, :Plural, :Person1, "anày-ʕunɗinòm takkeh"]]
+    }
+    {:label "afar-VCompIntNegNonFinite-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table za"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :nonFiniteForm :NonFinite,
+	    :polarity :Negative,
+	    :pos :Verb}
+    :terms [[:tam, :token]  ;; schema
+	    [:RelativeIndeterminate, "rùffa-àɗḥi nnaànih / nnaàn"],
+	    [:I-Form, "rùffa-àɗḥi"],
+	    [:VH-Participle, "rùffa-àɗiḥ"],
+	    [:Infinitive, "rùffa-àɗḥiyya"]]
+    }
+    {:label "afar-VCompTrNegPerfPresAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table e"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PerfectPresent}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "kàɗ-heèh màan"],
+	    [:Common, :Plural, :Person1, "kàɗ-haynèh mànan"],
+	    [:Common, :Plural, :Person3, "kàɗ-heenìh màyanin"],
+	    [:Common, :Singular, :Person2, "kàɗ-haytèh màtan"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heèh màyan"],
+	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh màtanin"],
+	    [:Fem, :Singular, :Person3, "kàɗ-haytèh màtan"]]
+    }
+    {:label "afar-VCompIntNegAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table i"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Anticipatory}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "rùffa-màntan"],
+	    [:Masc, :Singular, :Person3, "rùffa-màyya"],
+	    [:Common, :Singular, :Person1, "rùffa-màɗḥa"],
+	    [:Common, :Plural, :Person3, "rùffa-màyyan"],
+	    [:Common, :Plural, :Person1, "rùffa-mànna"],
+	    [:Common, :Singular, :Person2, "rùffa-mànta"],
+	    [:Fem, :Singular, :Person3, "rùffa-mànta"]]
+    }
+    {:label "afar-VPrefNegCond2Aux3-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table t"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Conditional2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "aduurè waa yoo tekkek"],
+	    [:Masc, :Singular, :Person3, "aduurè waa kaa tekkek"],
+	    [:Fem, :Singular, :Person3, "aduurè wayta tet tekkek"],
+	    [:Common, :Plural, :Person2, "aduurè waytan sin tekkek"],
+	    [:Common, :Plural, :Person3, "aduurè waan ken tekkek"],
+	    [:Common, :Plural, :Person1, "aduurè wayna nee tekkek"],
+	    [:Common, :Singular, :Person2, "aduurè wayta koo tekkek"]]
+    }
+    {:label "afar-VSuffNegImprtv-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table r"
+    :common {:conjClass :Suffix,
+	    :gender :Common,
+	    :lexeme :fak,
+	    :person :Person2,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Imperative}
+    :terms [[:number, :token]  ;; schema
+	    [:Plural, "màfakina"],
+	    [:Singular, "màfakin"]]
+    }
+    {:label "afar-VCompIntNegImperfPast2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table g"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ImperfectPast2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "rùffa-àɗḥuk màsuginnito"],
+	    [:Common, :Plural, :Person1, "rùffa-àɗḥuk màsuginnino"],
+	    [:Masc, :Singular, :Person3, "rùffa-àɗḥuk màsuginna"],
+	    [:Common, :Plural, :Person3, "rùffa-àɗḥuk màsuginnon"],
+	    [:Common, :Singular, :Person1, "rùffa-àɗḥuk màsuginniyo"],
+	    [:Common, :Plural, :Person2, "rùffa-àɗḥuk màsuginniton"],
+	    [:Fem, :Singular, :Person3, "rùffa-àɗḥuk màsuginna"]]
+    }
+    {:label "afar-VStatCompNegImperfStateAux1-anay-qunda"
+    :note "Parker-Hayward1985 pp. 269 - 270:table bb"
+    :common {:conjClass :CompoundStative,
+	    :lexeme :anay-qunda,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PresentState1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "anày-màʕunɗon"],
+	    [:Common, :Plural, :Person2, "anày-màʕunɗiton"],
+	    [:Common, :Singular, :Person2, "anày-màʕunɗito"],
+	    [:Common, :Plural, :Person1, "anày-màʕunɗino"],
+	    [:Fem, :Singular, :Person3, "anày-màʕunɗa"],
+	    [:Common, :Singular, :Person1, "anày-màʕunɗiyo"],
+	    [:Masc, :Singular, :Person3, "anày-màʕunɗa"]]
+    }
+    {:label "afar-VCompTrNegImperfAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table b"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Imperfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "kàɗ-màhayta"],
+	    [:Masc, :Singular, :Person3, "kàɗ-màhaa"],
+	    [:Common, :Plural, :Person2, "kàɗ-màhaytan"],
+	    [:Fem, :Singular, :Person3, "kàɗ-màhayta"],
+	    [:Common, :Singular, :Person1, "kàɗ-màhaa"],
+	    [:Common, :Plural, :Person3, "kàɗ-màhaan"],
+	    [:Common, :Plural, :Person1, "kàɗ-màhayna"]]
+    }
+    {:label "afar-VPrefAffImperfAnticipAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table k"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectAnticipatory}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "aduùruk sugètton"],
+	    [:Common, :Singular, :Person1, "aduùruk sugèyyo"],
+	    [:Common, :Plural, :Person3, "aduùruk sugèlon"],
+	    [:Masc, :Singular, :Person3, "aduùruk sugèle"],
+	    [:Common, :Singular, :Person2, "aduùruk sugètto"],
+	    [:Fem, :Singular, :Person3, "aduùruk sugèle"],
+	    [:Common, :Plural, :Person1, "aduùruk sugènno"]]
+    }
+    {:label "afar-VPrefAffPerfPresAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table e"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PerfectPresent}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "tuduurèk tan"],
+	    [:Masc, :Singular, :Person3, "yuduurèk yan"],
+	    [:Common, :Plural, :Person2, "tuduureenìk tanin"],
+	    [:Common, :Plural, :Person1, "nuduurèk nan"],
+	    [:Common, :Singular, :Person1, "uduurèk an"],
+	    [:Fem, :Singular, :Person3, "tuduurèk tan"],
+	    [:Common, :Plural, :Person3, "yuduureenìk yanin"]]
+    }
+    {:label "afar-VCompTrNegImperfAnticipAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table k"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ImperfectAnticipatory}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "kàɗ-hàak màsugan"],
+	    [:Common, :Singular, :Person2, "kàɗ-hàak màsugta"],
+	    [:Common, :Plural, :Person1, "kàɗ-hàak màsugna"],
+	    [:Common, :Plural, :Person2, "kàɗ-hàak màsugtan"],
+	    [:Fem, :Singular, :Person3, "kàɗ-hàak màsugta"],
+	    [:Masc, :Singular, :Person3, "kàɗ-hàak màsuga"],
+	    [:Common, :Singular, :Person1, "kàɗ-hàak màsuga"]]
+    }
+    {:label "afar-VSuffAffPerfProbAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table q"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PerfectProbable}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "faktèm takkeh"],
+	    [:Common, :Plural, :Person3, "fakeenìm takkeh"],
+	    [:Common, :Plural, :Person2, "fakteenìm takkeh"],
+	    [:Common, :Plural, :Person1, "faknèm takkeh"],
+	    [:Masc, :Singular, :Person3, "fakèm takkeh"],
+	    [:Fem, :Singular, :Person3, "faktèm takkeh"],
+	    [:Common, :Singular, :Person1, "fakèm takkeh"]]
+    }
+    {:label "afar-VStatNegContrafStateAux2-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table vv"
+    :common {:conjClass :Stative,
+	    :lexeme :meq,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Contrafactual}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "àmʕuk sugè wannay"],
+	    [:Common, :Plural, :Person2, "àmʕuk sugè wannitoonuy"],
+	    [:Fem, :Singular, :Person3, "àmʕuk sugè wannay"],
+	    [:Common, :Plural, :Person3, "àmʕuk sugè wannoonuy"],
+	    [:Common, :Singular, :Person2, "àmʕuk sugè wannitoy"],
+	    [:Common, :Plural, :Person1, "àmʕuk sugè wanninoy"],
+	    [:Common, :Singular, :Person1, "àmʕuk sugè wanniyoy"]]
+    }
+    {:label "afar-VCompIntNegCond1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table s"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Conditional1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "rùffa-àɗḥè weenik"],
+	    [:Common, :Singular, :Person2, "rùffa-àɗḥè waytek"],
+	    [:Common, :Singular, :Person1, "rùffa-àɗḥè week"],
+	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè waytek"],
+	    [:Common, :Plural, :Person1, "rùffa-àɗḥè waynek"],
+	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè week"],
+	    [:Common, :Plural, :Person2, "rùffa-àɗḥè wayteenik"]]
+    }
+    {:label "afar-VCompTrAffPurp2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table x"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Purposive2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "kàɗ-haanànkeh"],
+	    [:Common, :Singular, :Person2, "kàɗ-haytànkeh"],
+	    [:Fem, :Singular, :Person3, "kàɗ-haytànkeh"],
+	    [:Masc, :Singular, :Person3, "kàɗ-haànkeh"],
+	    [:Common, :Singular, :Person1, "kàɗ-haànkeh"],
+	    [:Common, :Plural, :Person1, "kàɗ-haynànkeh"],
+	    [:Common, :Plural, :Person2, "kàɗ-haytaanànkeh"]]
+    }
+    {:label "afar-VPrefAffImperfPast2Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table g"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectPast2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "aduùruk suge"],
+	    [:Fem, :Singular, :Person3, "aduùruk sugte"],
+	    [:Common, :Singular, :Person2, "aduùruk sugte"],
+	    [:Common, :Plural, :Person2, "aduùruk sugten"],
+	    [:Common, :Plural, :Person3, "aduùruk sugen"],
+	    [:Masc, :Singular, :Person3, "aduùruk suge"],
+	    [:Common, :Plural, :Person1, "aduùruk sugne"]]
+    }
+    {:label "afar-VSuffAffRequest-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table m"
+    :common {:conjClass :Suffix,
+	    :gender :Common,
+	    :lexeme :fak,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Requestive}
+    :terms [[:number, :person, :token]  ;; schema
+	    [:Plural, :Person2, "fakno?"],
+	    [:Singular, :Person1, "fako?"]]
+    }
+    {:label "afar-VPrefAffContraf-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table v"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Contrafactual}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "aduurinnitoonuy"],
+	    [:Common, :Plural, :Person3, "aduurinnoonuy"],
+	    [:Common, :Singular, :Person2, "aduurinnitoy"],
+	    [:Masc, :Singular, :Person3, "aduurinnay"],
+	    [:Common, :Singular, :Person1, "aduurinniyoy"],
+	    [:Common, :Plural, :Person1, "aduurinninoy"],
+	    [:Fem, :Singular, :Person3, "aduurinnay"]]
+    }
+    {:label "afar-VPrefNegPurp1Aux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table w"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Purposive1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "aduurè wàyu(h)"],
+	    [:Common, :Plural, :Person2, "aduurè watoònu(h)"],
+	    [:Common, :Plural, :Person1, "aduurè wànu(h)"],
+	    [:Common, :Plural, :Person3, "aduurè woònu(h)"],
+	    [:Fem, :Singular, :Person3, "aduurè wàytu(h)"],
+	    [:Masc, :Singular, :Person3, "aduurè wàyu(h)"],
+	    [:Common, :Singular, :Person2, "aduurè wàytu(h)"]]
+    }
+    {:label "afar-VCompIntNegPerfAnticipAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table j"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PerfectAnticipatory}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "rùffa-intèh màsugta"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyèh màsuga"],
+	    [:Fem, :Singular, :Person3, "rùffa-intèh màsugta"],
+	    [:Common, :Singular, :Person1, "rùffa-eɗḥèh màsuga"],
+	    [:Common, :Plural, :Person1, "rùffa-innèh màsugna"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh màsugan"],
+	    [:Common, :Plural, :Person2, "rùffa-inteenìh màsugtan"]]
+    }
+    {:label "afar-VSuffAffPerfPresAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table e"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PerfectPresent}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "fakèk yan"],
+	    [:Common, :Plural, :Person2, "fakteenìk tanin"],
+	    [:Common, :Singular, :Person1, "fakèk an"],
+	    [:Common, :Singular, :Person2, "faktèk tan"],
+	    [:Common, :Plural, :Person1, "faknèk nan"],
+	    [:Fem, :Singular, :Person3, "faktèk tan"],
+	    [:Common, :Plural, :Person3, "fakeenìk yanin"]]
+    }
+    {:label "afar-VPrefNegImperfProb1Aux2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table o"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ImperfectProbable1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "aduurè wayoònu(h) takkeh"],
+	    [:Common, :Singular, :Person2, "aduurè wàytu(h) takkeh"],
+	    [:Masc, :Singular, :Person3, "aduurè wàyu(h) takkeh"],
+	    [:Common, :Singular, :Person1, "aduurè wàyu(h) takkeh"],
+	    [:Common, :Plural, :Person2, "aduurè watoònu(h) takkeh"],
+	    [:Common, :Plural, :Person1, "aduurè wànu(h) takkeh"],
+	    [:Fem, :Singular, :Person3, "aduurè wàytu(h) takkeh"]]
+    }
+    {:label "afar-VCompIntNegPerfPast2Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table d"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PerfectPast2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "rùffa-aɗḥèh màsuginniyo"],
+	    [:Common, :Singular, :Person2, "rùffa-intèh màsuginnito"],
+	    [:Common, :Plural, :Person1, "rùffa-innèh màsuginnino"],
+	    [:Fem, :Singular, :Person3, "rùffa-intèh màsuginna"],
+	    [:Common, :Plural, :Person2, "rùffa-inteenìh màsuginniton"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh màsuginnon"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyèh màsuginna"]]
+    }
+    {:label "afar-VCompTrNegPurp2Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table x"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Purposive2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "kàɗ-heè waànkeh"],
+	    [:Fem, :Singular, :Person3, "kàɗ-heè waytànkeh"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heè waànkeh"],
+	    [:Common, :Plural, :Person3, "kàɗ-heè waanànkeh"],
+	    [:Common, :Plural, :Person2, "kàɗ-heè waytaanànkeh"],
+	    [:Common, :Singular, :Person2, "kàɗ-heè waytànkeh"],
+	    [:Common, :Plural, :Person1, "kàɗ-heè wannànkeh"]]
+    }
+    {:label "afar-VCompTrAffIntentAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table n"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Intentive}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "kàɗ-hayoònu waan"],
+	    [:Common, :Plural, :Person2, "kàɗ-haytoònu waytan"],
+	    [:Common, :Plural, :Person1, "kàɗ-hàynu wayna"],
+	    [:Masc, :Singular, :Person3, "kàɗ-hàyu waa"],
+	    [:Common, :Singular, :Person1, "kàɗ-hàyu waa"],
+	    [:Common, :Singular, :Person2, "kàɗ-hàytu wayta"],
+	    [:Fem, :Singular, :Person3, "kàɗ-hàytu wayta"]]
+    }
+    {:label "afar-VPrefNonFinite-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :nonFiniteForm :NonFinite,
+	    :pos :Verb}
+    :terms [[:tam, :token]  ;; schema
+	    [:I-Form, "aduùri"],
+	    [:RelativeIndeterminate, "aduurinnaànih ~ aduurinnaàn"],
+	    [:Infinitive, "aduurìyya"],
+	    [:VH-Participle, "aduùrih"]]
+    }
+    {:label "afar-VCompTrAffImperfProb1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table o"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectProbable1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "kàɗ-hàynu(h) takkeh"],
+	    [:Common, :Singular, :Person1, "kàɗ-hàyu(h) takkeh"],
+	    [:Masc, :Singular, :Person3, "kàɗ-hàyu(h) takkeh"],
+	    [:Common, :Singular, :Person2, "kàɗ-hàytu(h) takkeh"],
+	    [:Common, :Plural, :Person2, "kàɗ-haytoònu(h) takkeh"],
+	    [:Common, :Plural, :Person3, "kàɗ-hayoònu(h) takkeh"],
+	    [:Fem, :Singular, :Person3, "kàɗ-hàytu(h) takkeh"]]
+    }
+    {:label "afar-VCompTrAffCond1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table s"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Conditional1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Fem, :Singular, :Person3, "kàɗ-haytek"],
+	    [:Common, :Singular, :Person1, "kàɗ-heek"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heek"],
+	    [:Common, :Plural, :Person1, "kàɗ-haynek"],
+	    [:Common, :Plural, :Person3, "kàɗ-heenik"],
+	    [:Common, :Singular, :Person2, "kàɗ-haytek"],
+	    [:Common, :Plural, :Person2, "kàɗ-hayteenik"]]
+    }
+    {:label "afar-VCompIntAffImperfAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table b"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Imperfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "rùffa-innah"],
+	    [:Common, :Singular, :Person1, "rùffa-aɗḥeh"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyah"],
+	    [:Common, :Plural, :Person2, "rùffa-intaanah"],
+	    [:Fem, :Singular, :Person3, "rùffa-intah"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyaanah"],
+	    [:Common, :Singular, :Person2, "rùffa-intah"]]
+    }
+    {:label "afar-VPrefNegImperfProb2Aux2-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table p"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ImperfectProbable2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "aduurè waynam takkeh"],
+	    [:Common, :Plural, :Person3, "aduurè waanam takkeh"],
+	    [:Common, :Singular, :Person2, "aduurè waytam takkeh"],
+	    [:Common, :Singular, :Person1, "aduurè waam takkeh"],
+	    [:Fem, :Singular, :Person3, "aduurè waytam takkeh"],
+	    [:Common, :Plural, :Person2, "aduurè wayteenim takkeh"],
+	    [:Masc, :Singular, :Person3, "aduurè waam takkeh"]]
+    }
+    {:label "afar-VStatAffImperfState-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table bb"
+    :common {:conjClass :Stative,
+	    :lexeme :meq,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PresentState1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "miʕitoh"],
+	    [:Common, :Plural, :Person1, "miʕinoh"],
+	    [:Masc, :Singular, :Person3, "meʕeh"],
+	    [:Common, :Plural, :Person2, "miʕitoonuh"],
+	    [:Common, :Plural, :Person3, "moʕoonuh"],
+	    [:Common, :Singular, :Person1, "miʕiyoh"],
+	    [:Fem, :Singular, :Person3, "meʕeh"]]
+    }
+    {:label "afar-VSuffNegHypothAux1-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table y"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Hypothetical}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person3, "fakè màɗaaɗen"],
+	    [:Fem, :Singular, :Person3, "fakè màɗaɗɗe"],
+	    [:Common, :Singular, :Person1, "fakè màɗaaɗe"],
+	    [:Common, :Plural, :Person2, "fakè màɗaɗɗen"],
+	    [:Common, :Singular, :Person2, "fakè màɗaɗɗe"],
+	    [:Common, :Plural, :Person1, "fakè màɗanɗe"],
+	    [:Masc, :Singular, :Person3, "fakè màɗaaɗe"]]
+    }
+    {:label "afar-VSuffNegCond2Aux3-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table t"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Conditional2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "fakè waytan sin tekkek"],
+	    [:Common, :Plural, :Person1, "fakè wayna nee tekkek"],
+	    [:Fem, :Singular, :Person3, "fakè wayta tet tekkek"],
+	    [:Masc, :Singular, :Person3, "fakè waa kaa tekkek"],
+	    [:Common, :Singular, :Person1, "fakè waa yoo tekkek"],
+	    [:Common, :Singular, :Person2, "fakè wayta koo tekkek"],
+	    [:Common, :Plural, :Person3, "fakè waan ken tekkek"]]
+    }
+    {:label "afar-VCompIntNegPerfCondAux2-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table u"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :PerfectConditional}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Fem, :Singular, :Person3, "rùffa-intèh sugè waytek"],
+	    [:Common, :Plural, :Person2, "rùffa-inteenìh sugè wayteenik"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyeenìh sugè weenik"],
+	    [:Common, :Singular, :Person2, "rùffa-intèh sugè waytek"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyèh sugè week"],
+	    [:Common, :Singular, :Person1, "rùffa-eɗḥèh sugè week"],
+	    [:Common, :Plural, :Person1, "rùffa-innèh sugè waynek"]]
+    }
+    {:label "afar-VCompIntAffCond1Aux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table s"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Conditional1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "rùffa-innek"],
+	    [:Common, :Plural, :Person2, "rùffa-inteenik"],
+	    [:Common, :Singular, :Person1, "rùffa-eɗḥek"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyek"],
+	    [:Fem, :Singular, :Person3, "rùffa-intek"],
+	    [:Common, :Singular, :Person2, "rùffa-intek"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyeenik"]]
+    }
+    {:label "afar-VPrefPartPerf-eedheg"
+    :note "Parker-Hayward1985 p. 255,tab 21"
+    :common {:conjClass :Prefix,
+	    :lexeme :eedheg,
+	    :pos :Verb,
+	    :tam :Perfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "neeɗegeh"],
+	    [:Common, :Singular, :Person1, "eeɗegeh"],
+	    [:Common, :Plural, :Person3, "yeeɗegeenih"],
+	    [:Masc, :Singular, :Person3, "yeeɗegeh"],
+	    [:Common, :Plural, :Person2, "teeɗegeenih"],
+	    [:Fem, :Singular, :Person3, "teeɗegeh"],
+	    [:Common, :Singular, :Person2, "teeɗegeh"]]
+    }
+    {:label "afar-VCompIntNegCond2Aux3-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table t"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Conditional2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè waa kaa tekkek"],
+	    [:Common, :Plural, :Person1, "rùffa-àɗḥè wayna nee tekkek"],
+	    [:Common, :Singular, :Person1, "rùffa-àɗḥè waa yoo tekkek"],
+	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wayta koo tekkek"],
+	    [:Common, :Plural, :Person3, "rùffa-àɗḥè waan ken tekkek"],
+	    [:Common, :Plural, :Person2, "rùffa-àɗḥè waytan sin tekkek"],
+	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè wayta tet tekkek"]]
+    }
+    {:label "afar-VCompTrAffImperfAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table b"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Imperfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "kàɗ-haynah"],
+	    [:Masc, :Singular, :Person3, "kàɗ-haah"],
+	    [:Common, :Plural, :Person3, "kàɗ-haanah"],
+	    [:Fem, :Singular, :Person3, "kàɗ-haytah"],
+	    [:Common, :Singular, :Person2, "kàɗ-haytah"],
+	    [:Common, :Plural, :Person2, "kàɗ-haytaanah"],
+	    [:Common, :Singular, :Person1, "kàɗ-haah"]]
+    }
+    {:label "afar-VCompTrNegPerfAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table a"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Perfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person2, "kàɗ-màhannito"],
+	    [:Masc, :Singular, :Person3, "kàɗ-màhanna"],
+	    [:Fem, :Singular, :Person3, "kàɗ-màhanna"],
+	    [:Common, :Plural, :Person2, "kàɗ-màhanniton"],
+	    [:Common, :Plural, :Person1, "kàɗ-màhannino"],
+	    [:Common, :Singular, :Person1, "kàɗ-màhanniyo"],
+	    [:Common, :Plural, :Person3, "kàɗ-màhannon"]]
+    }
+    {:label "afar-VPrefAffImperfPresAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table h"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectPresent}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "naduurèk nan"],
+	    [:Masc, :Singular, :Person3, "yaduurèk yan"],
+	    [:Common, :Singular, :Person1, "aduurèk an"],
+	    [:Fem, :Singular, :Person3, "taduurèk tan"],
+	    [:Common, :Singular, :Person2, "taduurèk tan"],
+	    [:Common, :Plural, :Person2, "taduureenìk tanin"],
+	    [:Common, :Plural, :Person3, "yaduureenìk yanin"]]
+    }
+    {:label "afar-VPrefNegRequest-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table m"
+    :common {:conjClass :Prefix,
+	    :gender :Common,
+	    :lexeme :uduur,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Requestive}
+    :terms [[:number, :person, :token]  ;; schema
+	    [:Singular, :Person1, "maaduuro?"],
+	    [:Plural, :Person2, "manaduuro?"]]
+    }
+    {:label "afar-VCompIntNegJussAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table l"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Jussive}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "rùffa-àɗḥè wàay"],
+	    [:Masc, :Singular, :Person3, "rùffa-àɗḥè wàay"],
+	    [:Fem, :Singular, :Person3, "rùffa-àɗḥè wàytay"],
+	    [:Common, :Plural, :Person3, "rùffa-àɗḥè woònay"],
+	    [:Common, :Plural, :Person2, "rùffa-àɗḥè watoònay"],
+	    [:Common, :Singular, :Person2, "rùffa-àɗḥè wàytay"],
+	    [:Common, :Plural, :Person1, "rùffa-àɗḥè wànay"]]
+    }
+    {:label "afar-VCompIntAffImperfPresAux1-ruffa-edh"
+    :note "Parker-Hayward1985 pp. 270 - 274:table h"
+    :common {:conjClass :CompoundIntransitive,
+	    :lexeme :ruffa-edh,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectPresent}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "rùffa-aɗḥèk an"],
+	    [:Common, :Plural, :Person2, "rùffa-intaanàk tanin"],
+	    [:Fem, :Singular, :Person3, "rùffa-intàk tan"],
+	    [:Masc, :Singular, :Person3, "rùffa-iyyàk yan"],
+	    [:Common, :Plural, :Person3, "rùffa-iyyaanàk yanin"],
+	    [:Common, :Singular, :Person2, "rùffa-intàk tan"],
+	    [:Common, :Plural, :Person1, "rùffa-innàk nan"]]
+    }
+    {:label "afar-VPrefNegIntentAux1-uduur"
+    :note "Parker-Hayward1985 pp. 259 - 263;table n"
+    :common {:conjClass :Prefix,
+	    :lexeme :uduur,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Intentive}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "naduùru màwayna"],
+	    [:Common, :Singular, :Person1, "aduùru màwaa"],
+	    [:Common, :Plural, :Person3, "yaduuroònu màwaan"],
+	    [:Common, :Singular, :Person2, "taduùru màwayta"],
+	    [:Masc, :Singular, :Person3, "yaduùru màwaa"],
+	    [:Fem, :Singular, :Person3, "taduùru màwayta"],
+	    [:Common, :Plural, :Person2, "taduuroònu màwaytan"]]
+    }
+    {:label "afar-VCompTrAffImperfPast1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table f"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :ImperfectPast1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "kàɗ-hàak nen"],
+	    [:Fem, :Singular, :Person3, "kàɗ-hàak ten"],
+	    [:Common, :Plural, :Person3, "kàɗ-hàak yenen"],
+	    [:Common, :Singular, :Person1, "kàɗ-hàak en"],
+	    [:Masc, :Singular, :Person3, "kàɗ-hàak yen"],
+	    [:Common, :Singular, :Person2, "kàɗ-hàak ten"],
+	    [:Common, :Plural, :Person2, "kàɗ-hàak tenen"]]
+    }
+    {:label "afar-VCompTrNegContrafAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table v"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Contrafactual}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "kàɗ-heè wanniyoy"],
+	    [:Common, :Singular, :Person2, "kàɗ-heè wannitoy"],
+	    [:Common, :Plural, :Person3, "kàɗ-heè wannoonuy"],
+	    [:Fem, :Singular, :Person3, "kàɗ-heè wannay"],
+	    [:Common, :Plural, :Person1, "kàɗ-heè wanninoy"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heè wannay"],
+	    [:Common, :Plural, :Person2, "kàɗ-heè wannitoonuy"]]
+    }
+    {:label "afar-VSuffNegImperfProb2Aux2-fak"
+    :note "Parker-Hayward1985 pp. 259 - 263;table p"
+    :common {:conjClass :Suffix,
+	    :lexeme :fak,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :ImperfectProbable2}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "fakè waam takkeh"],
+	    [:Common, :Plural, :Person2, "fakè wayteenim takkeh"],
+	    [:Common, :Plural, :Person3, "fakè waanam takkeh"],
+	    [:Fem, :Singular, :Person3, "fakè waytam takkeh"],
+	    [:Common, :Plural, :Person1, "fakè waynam takkeh"],
+	    [:Common, :Singular, :Person1, "fakè waam takkeh"],
+	    [:Common, :Singular, :Person2, "fakè waytam takkeh"]]
+    }
+    {:label "afar-VCompTrNegJussAux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table l"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Jussive}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "kàɗ-heè wànay"],
+	    [:Common, :Singular, :Person2, "kàɗ-heè wàytay"],
+	    [:Common, :Plural, :Person2, "kàɗ-heè watoònay"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heè wàay"],
+	    [:Fem, :Singular, :Person3, "kàɗ-heè wàytay"],
+	    [:Common, :Plural, :Person3, "kàɗ-heè woònay"],
+	    [:Common, :Singular, :Person1, "kàɗ-heè wàay"]]
+    }
+    {:label "afar-VCompTrAffPerfPast1Aux1-kad-hee"
+    :note "Parker-Hayward1985 pp. 274 - 279:table c"
+    :common {:conjClass :CompoundTransitive,
+	    :lexeme :kad-hee,
+	    :pdgmType :Compound,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :PerfectPast1}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "kàɗ-heèh en"],
+	    [:Common, :Plural, :Person3, "kàɗ-heenìh yenen"],
+	    [:Masc, :Singular, :Person3, "kàɗ-heèh yen"],
+	    [:Common, :Plural, :Person2, "kàɗ-hayteenìh tenen"],
+	    [:Common, :Singular, :Person2, "kàɗ-haytèh ten"],
+	    [:Fem, :Singular, :Person3, "kàɗ-haytèh ten"],
+	    [:Common, :Plural, :Person1, "kàɗ-haynèh nen"]]
+    }
+    {:label "afar-VStatNonFinite-meq"
+    :note "Parker-Hayward1985 pp. 268 - 269;table za"
+    :common {:conjClass :Stative,
+	    :lexeme :meq,
+	    :nonFiniteForm :NonFinite,
+	    :pos :Verb,
+	    :tam :VH-Participle}
+    :terms [[:token]  ;; schema
+	    ["miʕih"]]
     }}
+:muterms #{}
