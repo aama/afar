@@ -10,8 +10,7 @@
           :formClass [:Compound :StemForm],
           :tam-nfv [:I_Form :Infinitive :VH_Participle :RelativeIndeterminate],
           :tam-stat [:ContrafactualStative :PastState1 :PastState2 :PresentState1 :PresentState2 :Probable],
-          :pdgmType [:NonFinite :Finite :NA]
-          :pdgmSubType [:SubjMarker],
+          :pdgmType [:NonFinite :Finite :NA :SubjMarker],
           :polarity [:Affirmative :Negative],
           :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
           :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :StativeIrregular :Suffix],
@@ -4246,7 +4245,7 @@
     }
     {:label "afar-VSubjMarker"
     :note "Parker-Hayward1985 p. 252,tab 18"
-    :pdgmType :Finite
+    :pdgmType :SubjMarker
     :common {:pdgmSubType :SubjMarker,
              :pos :Verb,
              :morpheme :AFFIX,
