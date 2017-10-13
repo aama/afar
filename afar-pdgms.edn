@@ -5,24 +5,19 @@
 :datasource "Parker-Hayward1985"
 :geodemoURL "http://www.ethnologue.com/language/aar"
 :geodemoTXT "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely related to Saho."
-:schemata{:gender [:Common :Fem :Masc],
-          :tam-sim [:Anticipatory :Conditional1 :Imperative :Imperfect :Jussive :Perfect :Purposive1 :Purposive2 :Requestive],
-          :formClass [:Compound :StemForm],
-          :tam-nfv [:I_Form :Infinitive :VH_Participle :RelativeIndeterminate],
-          :tam-stat [:ContrafactualStative :PastState1 :PastState2 :PresentState1 :PresentState2 :Probable],
-          :pdgmType [:NonFinite :Finite :NA :SubjMarker],
-          :polarity [:Affirmative :Negative],
-          :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
-          :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :StativeIrregular :Suffix],
-          :pos [:Pronoun :Verb],
-          :person [:Person1 :Person2 :Person3 :PersonNon_1],
-          :tam-pph [:Conditional2 :Contrafactual :Hypothetical :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Intentive :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable],
-          :morphClass [:NonFinite],
-          :formType [:Affix],
-          :proClass [:Independent :PossessiveDefinite :Reflexive],
-          :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :VH_Participle],
-          :number [:Plural :Singular],
-          :mainStem [:EForm_invar :Imperative :Imperfect :Imperfect_m :ImperfectParticiple :Jussive :Ma_requestive :Participle_k_invar :Perfect :Perfect_m :PerfectParticiple :Requestive :Stem :U_Form :mà_imperfect :mà_stem :mà_stem_in_imperative]}
+ :schemata {:case [:Absolutive  :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
+            :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :Suffix],
+            :formClass [:Compound :StemForm],
+            :formType [:Affix],
+            :gender [:Common :Fem :Masc],
+            :mainStem [:EForm_invar :Imperative :Imperfect :ImperfectParticiple :Imperfect_m :Jussive :Ma_requestive :Participle_k_invar :Perfect :PerfectParticiple :Perfect_m :Requestive :Stem :U_Form :mà_imperfect :mà_stem :mà_stem_in_imperative],
+            :number [:Plural :Singular],
+            :person [:Common :Person1 :Person2 :Person3 :PersonNon_1],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :proClass [:Independent :PossessiveDefinite :Reflexive],
+            :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :VH_Participle :Requestive_p1Only]
+            :pdgmType [:Finite :StemForm :SubjMarker :FiniteCompound :NomForms :PRO]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam :mainStem :morphClass],
           :inflClass [:conjClass],
@@ -41,7 +36,7 @@
 :lxterms [
     {:label "afar-VCompIntAffAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -59,7 +54,7 @@
     }
     {:label "afar-VCompIntAffCond1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -77,7 +72,7 @@
     }
     {:label "afar-VCompIntAffCond2Aux2-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -95,7 +90,7 @@
     }
     {:label "afar-VCompIntAffContrafAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -113,7 +108,7 @@
     }
     {:label "afar-VCompIntAffHypothAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -131,7 +126,7 @@
     }
     {:label "afar-VCompIntAffImperfAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -149,7 +144,7 @@
     }
     {:label "afar-VCompIntAffImperfAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table b"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -167,7 +162,7 @@
     }
     {:label "afar-VCompIntAffImperfPast1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -185,7 +180,7 @@
     }
     {:label "afar-VCompIntAffImperfPast2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -203,7 +198,7 @@
     }
     {:label "afar-VCompIntAffImperfPresAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -221,7 +216,7 @@
     }
     {:label "afar-VCompIntAffImperfProb1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -239,7 +234,7 @@
     }
     {:label "afar-VCompIntAffImperfProb2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -257,7 +252,7 @@
     }
     {:label "afar-VCompIntAffImprtvAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table r"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :gender :Common,
              :lexeme :ruffa-edh,
@@ -272,7 +267,7 @@
     }
     {:label "afar-VCompIntAffIntentAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -290,7 +285,7 @@
     }
     {:label "afar-VCompIntAffJussAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -308,7 +303,7 @@
     }
     {:label "afar-VCompIntAffPerfAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -326,7 +321,7 @@
     }
     {:label "afar-VCompIntAffPerfAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table a"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -344,7 +339,7 @@
     }
     {:label "afar-VCompIntAffPerfCondAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -362,7 +357,7 @@
     }
     {:label "afar-VCompIntAffPerfPast1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -380,7 +375,7 @@
     }
     {:label "afar-VCompIntAffPerfPast2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -398,7 +393,7 @@
     }
     {:label "afar-VCompIntAffPerfPresAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -416,7 +411,7 @@
     }
     {:label "afar-VCompIntAffPerfProbAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -434,7 +429,7 @@
     }
     {:label "afar-VCompIntAffPurp1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -452,7 +447,7 @@
     }
     {:label "afar-VCompIntAffPurp2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -470,7 +465,7 @@
     }
     {:label "afar-VCompIntAffRequestAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table m"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :gender :Common,
              :lexeme :ruffa-edh,
@@ -484,7 +479,7 @@
     }
     {:label "afar-VCompIntNegAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -502,7 +497,7 @@
     }
     {:label "afar-VCompIntNegCond1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -520,7 +515,7 @@
     }
     {:label "afar-VCompIntNegCond2Aux3-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -538,7 +533,7 @@
     }
     {:label "afar-VCompIntNegContrafAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -556,7 +551,7 @@
     }
     {:label "afar-VCompIntNegHypothAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -574,7 +569,7 @@
     }
     {:label "afar-VCompIntNegImperfAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -592,7 +587,7 @@
     }
     {:label "afar-VCompIntNegImperfAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table b"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -610,7 +605,7 @@
     }
     {:label "afar-VCompIntNegImperfPast1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -628,7 +623,7 @@
     }
     {:label "afar-VCompIntNegImperfPast2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -646,7 +641,7 @@
     }
     {:label "afar-VCompIntNegImperfPresAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -664,7 +659,7 @@
     }
     {:label "afar-VCompIntNegImperfProb1Aux2-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -682,7 +677,7 @@
     }
     {:label "afar-VCompIntNegImperfProb2Aux2-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -700,7 +695,7 @@
     }
     {:label "afar-VCompIntNegImprtvAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table r"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :gender :Common,
              :lexeme :ruffa-edh,
@@ -715,7 +710,7 @@
     }
     {:label "afar-VCompIntNegIntentAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -733,7 +728,7 @@
     }
     {:label "afar-VCompIntNegJussAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -751,10 +746,9 @@
     }
     {:label "afar-VCompIntNegNonFinite-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table za"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
-             :morphClass :NonFinite,
              :polarity :Negative,
              :pos :Verb}
     :terms [[:tam :token],
@@ -765,7 +759,7 @@
     }
     {:label "afar-VCompIntNegPerfAnticipAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -783,7 +777,7 @@
     }
     {:label "afar-VCompIntNegPerfAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table a"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -801,7 +795,7 @@
     }
     {:label "afar-VCompIntNegPerfCondAux2-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -819,7 +813,7 @@
     }
     {:label "afar-VCompIntNegPerfPast1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -837,7 +831,7 @@
     }
     {:label "afar-VCompIntNegPerfPast2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -855,7 +849,7 @@
     }
     {:label "afar-VCompIntNegPerfPresAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -873,7 +867,7 @@
     }
     {:label "afar-VCompIntNegPerfProbAux2-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -891,7 +885,7 @@
     }
     {:label "afar-VCompIntNegPurp1Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -909,7 +903,7 @@
     }
     {:label "afar-VCompIntNegPurp2Aux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :formClass :Compound,
@@ -927,7 +921,7 @@
     }
     {:label "afar-VCompIntNegRequestAux1-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table m"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundIntransitive,
              :gender :Common,
              :lexeme :ruffa-edh,
@@ -941,7 +935,7 @@
     }
     {:label "afar-VCompTrAffAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -959,7 +953,7 @@
     }
     {:label "afar-VCompTrAffCond1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -977,7 +971,7 @@
     }
     {:label "afar-VCompTrAffCond2Aux2-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -995,7 +989,7 @@
     }
     {:label "afar-VCompTrAffContrafAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1013,7 +1007,7 @@
     }
     {:label "afar-VCompTrAffHypothAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1031,7 +1025,7 @@
     }
     {:label "afar-VCompTrAffImperfAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1049,7 +1043,7 @@
     }
     {:label "afar-VCompTrAffImperfAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table b"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1067,7 +1061,7 @@
     }
     {:label "afar-VCompTrAffImperfPast1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1085,7 +1079,7 @@
     }
     {:label "afar-VCompTrAffImperfPast2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1103,7 +1097,7 @@
     }
     {:label "afar-VCompTrAffImperfPresAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1121,7 +1115,7 @@
     }
     {:label "afar-VCompTrAffImperfProb1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1139,7 +1133,7 @@
     }
     {:label "afar-VCompTrAffImperfProb2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1157,7 +1151,7 @@
     }
     {:label "afar-VCompTrAffImprtvAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table r"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :gender :Common,
              :lexeme :kad-hee,
@@ -1172,7 +1166,7 @@
     }
     {:label "afar-VCompTrAffIntentAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1190,7 +1184,7 @@
     }
     {:label "afar-VCompTrAffJussAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1208,7 +1202,7 @@
     }
     {:label "afar-VCompTrAffPerfAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1226,7 +1220,7 @@
     }
     {:label "afar-VCompTrAffPerfAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table a"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1244,7 +1238,7 @@
     }
     {:label "afar-VCompTrAffPerfCondAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1262,7 +1256,7 @@
     }
     {:label "afar-VCompTrAffPerfPast1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1280,7 +1274,7 @@
     }
     {:label "afar-VCompTrAffPerfPast2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1298,7 +1292,7 @@
     }
     {:label "afar-VCompTrAffPerfPresAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1316,7 +1310,7 @@
     }
     {:label "afar-VCompTrAffPerfProbAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1334,7 +1328,7 @@
     }
     {:label "afar-VCompTrAffPurp1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1352,7 +1346,7 @@
     }
     {:label "afar-VCompTrAffPurp2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1370,7 +1364,7 @@
     }
     {:label "afar-VCompTrAffRequestAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table m"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :gender :Common,
              :lexeme :kad-hee,
@@ -1384,7 +1378,7 @@
     }
     {:label "afar-VCompTrNegAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1402,7 +1396,7 @@
     }
     {:label "afar-VCompTrNegCond1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1420,7 +1414,7 @@
     }
     {:label "afar-VCompTrNegCond2Aux3-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1438,7 +1432,7 @@
     }
     {:label "afar-VCompTrNegContrafAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1456,7 +1450,7 @@
     }
     {:label "afar-VCompTrNegHypothAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1474,7 +1468,7 @@
     }
     {:label "afar-VCompTrNegImperfAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1492,7 +1486,7 @@
     }
     {:label "afar-VCompTrNegImperfAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table b"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1510,7 +1504,7 @@
     }
     {:label "afar-VCompTrNegImperfPast1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1528,7 +1522,7 @@
     }
     {:label "afar-VCompTrNegImperfPast2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1546,7 +1540,7 @@
     }
     {:label "afar-VCompTrNegImperfPresAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1564,7 +1558,7 @@
     }
     {:label "afar-VCompTrNegImperfProb2Aux2-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1582,7 +1576,7 @@
     }
     {:label "afar-VCompTrNegImperfProbab1Aux2-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1600,7 +1594,7 @@
     }
     {:label "afar-VCompTrNegImprtvAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table r"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :gender :Common,
              :lexeme :kad-hee,
@@ -1615,7 +1609,7 @@
     }
     {:label "afar-VCompTrNegIntentAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1633,7 +1627,7 @@
     }
     {:label "afar-VCompTrNegJussAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1651,7 +1645,7 @@
     }
     {:label "afar-VCompTrNegPerfAnticipAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1669,7 +1663,7 @@
     }
     {:label "afar-VCompTrNegPerfAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table a"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1687,7 +1681,7 @@
     }
     {:label "afar-VCompTrNegPerfCondAux2-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1705,7 +1699,7 @@
     }
     {:label "afar-VCompTrNegPerfPast1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1723,7 +1717,7 @@
     }
     {:label "afar-VCompTrNegPerfPast2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1741,7 +1735,7 @@
     }
     {:label "afar-VCompTrNegPerfPresAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1759,7 +1753,7 @@
     }
     {:label "afar-VCompTrNegPerfProbAux2-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1777,7 +1771,7 @@
     }
     {:label "afar-VCompTrNegPurp1Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1795,7 +1789,7 @@
     }
     {:label "afar-VCompTrNegPurp2Aux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :formClass :Compound,
@@ -1813,7 +1807,7 @@
     }
     {:label "afar-VCompTrNegRequestAux1-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table m"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundTransitive,
              :gender :Common,
              :lexeme :kad-hee,
@@ -1827,10 +1821,9 @@
     }
     {:label "afar-VCompTrNonFinite-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table za z zc zd"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :CompoundTransitive,
              :lexeme :kad-hee,
-             :morphClass :NonFinite,
              :pos :Verb}
     :terms [[:tam :token],
             [:I_Form "kàɗ-hàyi"],
@@ -1840,7 +1833,7 @@
     }
     {:label "afar-VPrefAffAnticip-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :formClass :Compound,
              :lexeme :uduur,
@@ -1875,7 +1868,7 @@
     }
     {:label "afar-VPrefAffCond2Aux2-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -1910,7 +1903,7 @@
     }
     {:label "afar-VPrefAffHypothAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -1945,7 +1938,7 @@
     }
     {:label "afar-VPrefAffImperfAnticipAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -1963,7 +1956,7 @@
     }
     {:label "afar-VPrefAffImperfPast1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -1981,7 +1974,7 @@
     }
     {:label "afar-VPrefAffImperfPast2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -1999,7 +1992,7 @@
     }
     {:label "afar-VPrefAffImperfPresAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2017,7 +2010,7 @@
     }
     {:label "afar-VPrefAffImperfProb1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2035,7 +2028,7 @@
     }
     {:label "afar-VPrefAffImperfProb2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2067,7 +2060,7 @@
     }
     {:label "afar-VPrefAffIntentAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2119,7 +2112,7 @@
     }
     {:label "afar-VPrefAffPerfAnticipAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2137,7 +2130,7 @@
     }
     {:label "afar-VPrefAffPerfCondAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2155,7 +2148,7 @@
     }
     {:label "afar-VPrefAffPerfPast1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2173,7 +2166,7 @@
     }
     {:label "afar-VPrefAffPerfPast2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2191,7 +2184,7 @@
     }
     {:label "afar-VPrefAffPerfPresAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2209,7 +2202,7 @@
     }
     {:label "afar-VPrefAffPerfProbAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2291,7 +2284,7 @@
     }
     {:label "afar-VPrefNegCond1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2309,7 +2302,7 @@
     }
     {:label "afar-VPrefNegCond2Aux3-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2327,7 +2320,7 @@
     }
     {:label "afar-VPrefNegContrafAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2345,7 +2338,7 @@
     }
     {:label "afar-VPrefNegHypothAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2380,7 +2373,7 @@
     }
     {:label "afar-VPrefNegImperfAnticipAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2398,7 +2391,7 @@
     }
     {:label "afar-VPrefNegImperfPast1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2416,7 +2409,7 @@
     }
     {:label "afar-VPrefNegImperfPast2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2434,7 +2427,7 @@
     }
     {:label "afar-VPrefNegImperfPresAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2452,7 +2445,7 @@
     }
     {:label "afar-VPrefNegImperfProb1Aux2-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2470,7 +2463,7 @@
     }
     {:label "afar-VPrefNegImperfProb2Aux2-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2502,7 +2495,7 @@
     }
     {:label "afar-VPrefNegIntentAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2520,7 +2513,7 @@
     }
     {:label "afar-VPrefNegJussAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2555,7 +2548,7 @@
     }
     {:label "afar-VPrefNegPerfAnticipAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2573,7 +2566,7 @@
     }
     {:label "afar-VPrefNegPerfCondAux2-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2591,7 +2584,7 @@
     }
     {:label "afar-VPrefNegPerfPast1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2609,7 +2602,7 @@
     }
     {:label "afar-VPrefNegPerfPast2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2627,7 +2620,7 @@
     }
     {:label "afar-VPrefNegPerfPresAux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2645,7 +2638,7 @@
     }
     {:label "afar-VPrefNegPerfProbAux2-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2663,7 +2656,7 @@
     }
     {:label "afar-VPrefNegPurp1Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2681,7 +2674,7 @@
     }
     {:label "afar-VPrefNegPurp2Aux1-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Prefix,
              :lexeme :uduur,
              :formClass :Compound,
@@ -2712,10 +2705,9 @@
     }
     {:label "afar-VPrefNonFinite-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :Prefix,
              :lexeme :uduur,
-             :morphClass :NonFinite,
              :pos :Verb}
     :terms [[:tam :token],
             [:I_Form "aduùri"],
@@ -2757,7 +2749,7 @@
     }
     {:label "afar-VStatAffContrafStateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table vv"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -2775,7 +2767,7 @@
     }
     {:label "afar-VStatAffImperfPast1StateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table ff"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -2793,7 +2785,7 @@
     }
     {:label "afar-VStatAffImperfPast2StateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table gg"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -2811,7 +2803,7 @@
     }
     {:label "afar-VStatAffImperfProb2StateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table pp"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -2846,7 +2838,7 @@
     }
     {:label "afar-VStatAffPerfPresStateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table ee"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -2864,7 +2856,7 @@
     }
     {:label "afar-VStatCompAffContrafStateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table vv"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2882,7 +2874,7 @@
     }
     {:label "afar-VStatCompAffImperfPast1Aux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table ff"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2900,7 +2892,7 @@
     }
     {:label "afar-VStatCompAffImperfPast2StateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table gg"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2918,7 +2910,7 @@
     }
     {:label "afar-VStatCompAffImperfProb2StateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table pp"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2953,7 +2945,7 @@
     }
     {:label "afar-VStatCompAffPerfPresStateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table ee"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2971,7 +2963,7 @@
     }
     {:label "afar-VStatCompNegContrafStateAux2-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table vv"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -2989,7 +2981,7 @@
     }
     {:label "afar-VStatCompNegImperfPast1StateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table ff"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -3007,7 +2999,7 @@
     }
     {:label "afar-VStatCompNegImperfPast2StateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table gg"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -3025,7 +3017,7 @@
     }
     {:label "afar-VStatCompNegImperfProb2StateAux2-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table pp"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -3043,7 +3035,7 @@
     }
     {:label "afar-VStatCompNegImperfStateAux1-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table bb"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :formClass :Compound,
@@ -3061,10 +3053,9 @@
     }
     {:label "afar-VStatCompNegNonFinite-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table za"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :CompoundStative,
              :lexeme :anay-qunda,
-             :morphClass :NonFinite,
              :polarity :Negative,
              :pos :Verb,
              :tam :VH_Participle}
@@ -3091,7 +3082,7 @@
     }
     {:label "afar-VStatNegContrafStateAux2-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table vv"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -3109,7 +3100,7 @@
     }
     {:label "afar-VStatNegImperfPast1StateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table tt"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -3127,7 +3118,7 @@
     }
     {:label "afar-VStatNegImperfPast2StateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table gg"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -3145,7 +3136,7 @@
     }
     {:label "afar-VStatNegImperfProb2StateAux2-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table pp"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -3180,7 +3171,7 @@
     }
     {:label "afar-VStatNegPerfPresStateAux1-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table ee"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Stative,
              :lexeme :meq,
              :formClass :Compound,
@@ -3198,10 +3189,9 @@
     }
     {:label "afar-VStatNonFinite-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table za"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :Stative,
              :lexeme :meq,
-             :morphClass :NonFinite,
              :pos :Verb,
              :tam :VH_Participle}
     :terms [[:token],
@@ -3209,7 +3199,7 @@
     }
     {:label "afar-VSuffAffAnticipAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table i"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3244,7 +3234,7 @@
     }
     {:label "afar-VSuffAffCond2Aux2-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3279,7 +3269,7 @@
     }
     {:label "afar-VSuffAffHypothAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3314,7 +3304,7 @@
     }
     {:label "afar-VSuffAffImperfAnticipAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3332,7 +3322,7 @@
     }
     {:label "afar-VSuffAffImperfPast1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3350,7 +3340,7 @@
     }
     {:label "afar-VSuffAffImperfPast2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3368,7 +3358,7 @@
     }
     {:label "afar-VSuffAffImperfPresAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3386,7 +3376,7 @@
     }
     {:label "afar-VSuffAffImperfProb1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3404,7 +3394,7 @@
     }
     {:label "afar-VSuffAffImperfProb2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3436,7 +3426,7 @@
     }
     {:label "afar-VSuffAffIntentAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3488,7 +3478,7 @@
     }
     {:label "afar-VSuffAffPerfAnticipAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3506,7 +3496,7 @@
     }
     {:label "afar-VSuffAffPerfCondAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3524,7 +3514,7 @@
     }
     {:label "afar-VSuffAffPerfPast1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3542,7 +3532,7 @@
     }
     {:label "afar-VSuffAffPerfPast2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3560,7 +3550,7 @@
     }
     {:label "afar-VSuffAffPerfPresAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3578,7 +3568,7 @@
     }
     {:label "afar-VSuffAffPerfProbAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3660,7 +3650,7 @@
     }
     {:label "afar-VSuffNegCond1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table s"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3678,7 +3668,7 @@
     }
     {:label "afar-VSuffNegCond2Aux3-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table t"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3696,7 +3686,7 @@
     }
     {:label "afar-VSuffNegContrafAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table v"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3714,7 +3704,7 @@
     }
     {:label "afar-VSuffNegHypothAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table y"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3749,7 +3739,7 @@
     }
     {:label "afar-VSuffNegImperfAnticipAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table k"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3767,7 +3757,7 @@
     }
     {:label "afar-VSuffNegImperfPast1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table f"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3785,7 +3775,7 @@
     }
     {:label "afar-VSuffNegImperfPast2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table g"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3803,7 +3793,7 @@
     }
     {:label "afar-VSuffNegImperfPresAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table h"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3821,7 +3811,7 @@
     }
     {:label "afar-VSuffNegImperfProb1Aux2-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table o"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3839,7 +3829,7 @@
     }
     {:label "afar-VSuffNegImperfProb2Aux2-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table p"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3871,7 +3861,7 @@
     }
     {:label "afar-VSuffNegIntent-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table n"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :formClass :Compound,
              :lexeme :fak,
@@ -3889,7 +3879,7 @@
     }
     {:label "afar-VSuffNegJussAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table l"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3924,7 +3914,7 @@
     }
     {:label "afar-VSuffNegPerfAnticipAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table j"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3942,7 +3932,7 @@
     }
     {:label "afar-VSuffNegPerfCondAux2-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table u"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3960,7 +3950,7 @@
     }
     {:label "afar-VSuffNegPerfPast1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table c"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3978,7 +3968,7 @@
     }
     {:label "afar-VSuffNegPerfPast2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table d"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -3996,7 +3986,7 @@
     }
     {:label "afar-VSuffNegPerfPresAux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table e"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -4014,7 +4004,7 @@
     }
     {:label "afar-VSuffNegPerfProbAux2-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table q"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -4032,7 +4022,7 @@
     }
     {:label "afar-VSuffNegPurp1Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table w"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -4050,7 +4040,7 @@
     }
     {:label "afar-VSuffNegPurp2Aux1-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;table x"
-    :pdgmType :Finite
+    :pdgmType :FiniteCompound
     :common {:conjClass :Suffix,
              :lexeme :fak,
              :formClass :Compound,
@@ -4081,10 +4071,9 @@
     }
     {:label "afar-VSuffNonFinite-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
-    :pdgmType :NonFinite
+    :pdgmType :NomForms
     :common {:conjClass :Suffix,
              :lexeme :fak,
-             :morphClass :NonFinite,
              :pos :Verb}
     :terms [[:tam :token],
             [:I_Form "fàki"],
@@ -4126,7 +4115,7 @@
     }
     {:label "afar-VTAMStemStructure"
     :note "Parker-Hayward1985 p. 257,tab 22. This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open."
-    :pdgmType :Finite
+    :pdgmType :StemForm
     :common {:lexeme :fak,
              :formClass :StemForm,
              :pos :Verb}
@@ -4186,9 +4175,8 @@
 :muterms [
     {:label "afar-PInd"
     :note "Parker-Hayward1985 pp. 237-238,tab. 8,9,11,12,13"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Independent}
     :terms [[:case :number :person :gender :token],
             [:Absolutive :Singular :Person1 :Common "yo(o)"],
@@ -4227,9 +4215,8 @@
     }
     {:label "afar-PPossDef"
     :note "Parker-Hayward1985 p. 235 tab 6,tab 7"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun}
+    :pdgmType :PRO
+    :common {:pos :Pronoun}
     :terms [[:proClass :number :person :gender :token],
             [:PossessiveDefinite :Singular :Person1 :Common "yi"],
             [:PossessiveDefinite :Singular :Person2 :Common "ky"],
@@ -4246,9 +4233,7 @@
     {:label "afar-VSubjMarker"
     :note "Parker-Hayward1985 p. 252,tab 18"
     :pdgmType :SubjMarker
-    :common {:pdgmSubType :SubjMarker,
-             :pos :Verb,
-             :morpheme :AFFIX,
+    :common {:pos :Verb,
              :formType :Affix}
     :terms [[:conjClass :number :person :gender :token],
             [:CompoundIntransitive :Singular :Person1 :Common "Ø"],
