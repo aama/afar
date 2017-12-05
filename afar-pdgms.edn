@@ -10,14 +10,15 @@
             :formClass [:Compound :StemForm],
             :formType [:Affix],
             :gender [:Common :Fem :Masc],
-            :mainStem [:EForm_invar :Imperative :Imperfect :ImperfectParticiple :Imperfect_m :Jussive :Ma_requestive :Participle_k_invar :Perfect :PerfectParticiple :Perfect_m :Requestive :Stem :U_Form :mà_imperfect :mà_stem :mà_stem_in_imperative],
+            :mainStem [:EForm_invar :Imperative :Imperfect :ImperfectParticiple :Imperfect_m :Jussive :Ma_requestive :Mà_imperfect :Mà_stem :Mà_stem_in_imperative :Participle_k_invar :Perfect :PerfectParticiple :Perfect_m :Requestive :Stem :U_Form],
             :number [:Plural :Singular],
             :person [:Common :Person1 :Person2 :Person3 :PersonNon_1],
             :polarity [:Affirmative :Negative],
             :pos [:Pronoun :Verb],
             :proClass [:Independent :PossessiveDefinite :Reflexive],
-            :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :VH_Participle :Requestive_p1Only]
-            :pdgmType [:Finite :StemForm :SubjMarker :FiniteCompound :NomForms :PRO]}
+            :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :Requestive_p1Only :VH_Participle],
+            :vmorphClass [:StemForm :SubjMarker :NomFormsCmpStNeg :NomFormsCmpTr :NomFormsCmpTrNNeg :NomFormsPref :NomFormsStat :NomFormsSuff]
+            :pdgmType [:Finite :FiniteCompound :PRO :VOther]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam :mainStem :morphClass],
           :inflClass [:conjClass],
@@ -746,8 +747,9 @@
     }
     {:label "afar-VCompIntNegNonFinite-ruffa-edh"
     :note "Parker-Hayward1985 pp. 270 - 274:table za"
-    :pdgmType :NomForms
-    :common {:conjClass :CompoundIntransitive,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsCmpTrNNeg
+             :conjClass :CompoundIntransitive,
              :lexeme :ruffa-edh,
              :polarity :Negative,
              :pos :Verb}
@@ -1821,8 +1823,9 @@
     }
     {:label "afar-VCompTrNonFinite-kad-hee"
     :note "Parker-Hayward1985 pp. 274 - 279:table za z zc zd"
-    :pdgmType :NomForms
-    :common {:conjClass :CompoundTransitive,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsCmpTr
+             :conjClass :CompoundTransitive,
              :lexeme :kad-hee,
              :pos :Verb}
     :terms [[:tam :token],
@@ -2705,8 +2708,9 @@
     }
     {:label "afar-VPrefNonFinite-uduur"
     :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
-    :pdgmType :NomForms
-    :common {:conjClass :Prefix,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsPref
+             :conjClass :Prefix,
              :lexeme :uduur,
              :pos :Verb}
     :terms [[:tam :token],
@@ -3053,8 +3057,9 @@
     }
     {:label "afar-VStatCompNegNonFinite-anay-qunda"
     :note "Parker-Hayward1985 pp. 269 - 270:table za"
-    :pdgmType :NomForms
-    :common {:conjClass :CompoundStative,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsCmpStNeg
+             :conjClass :CompoundStative,
              :lexeme :anay-qunda,
              :polarity :Negative,
              :pos :Verb,
@@ -3189,8 +3194,9 @@
     }
     {:label "afar-VStatNonFinite-meq"
     :note "Parker-Hayward1985 pp. 268 - 269;table za"
-    :pdgmType :NomForms
-    :common {:conjClass :Stative,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsStat
+             :conjClass :Stative,
              :lexeme :meq,
              :pos :Verb,
              :tam :VH_Participle}
@@ -4071,8 +4077,9 @@
     }
     {:label "afar-VSuffNonFinite-fak"
     :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
-    :pdgmType :NomForms
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :NomFormsSuff
+             :conjClass :Suffix,
              :lexeme :fak,
              :pos :Verb}
     :terms [[:tam :token],
@@ -4115,8 +4122,9 @@
     }
     {:label "afar-VTAMStemStructure"
     :note "Parker-Hayward1985 p. 257,tab 22. This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open."
-    :pdgmType :StemForm
-    :common {:lexeme :fak,
+    :pdgmType :VOther
+    :common {:vmorphClass :StemForm
+             :lexeme :fak,
              :formClass :StemForm,
              :pos :Verb}
     :terms [[:mainStem :polarity :tam :token-note-auxGloss :token],
@@ -4166,10 +4174,10 @@
             [:U_Form :Affirmative :Intentive "wa-, \"he is intending / about to open\"" "fàk-u wa-a"],
             [:U_Form :Affirmative :Purposive1 "-h_invar, \"that he open\"" "fàk-u-h"],
             [:U_Form :Negative :Intentive "mà-wa[imperf], \"_NULL\"" "fàk-u mà-wa-a"],
-            [:mà_imperfect :Negative :Anticipatory "Common, \"_NULL\"" "mà-fak-a"],
-            [:mà_imperfect :Negative :Imperfect "Common, \"_NULL\"" "mà-fak-a"],
-            [:mà_stem :Negative :Perfect "-inn-[subordinate], \"_NULL\"" "mà-fak-inn-a"],
-            [:mà_stem_in_imperative :Negative :Imperative "Common, \"_NULL\"" "mà-fak-in"]]
+            [:Mà_imperfect :Negative :Anticipatory "Common, \"_NULL\"" "mà-fak-a"],
+            [:Mà_imperfect :Negative :Imperfect "Common, \"_NULL\"" "mà-fak-a"],
+            [:Mà_stem :Negative :Perfect "-inn-[subordinate], \"_NULL\"" "mà-fak-inn-a"],
+            [:Mà_stem_in_imperative :Negative :Imperative "Common, \"_NULL\"" "mà-fak-in"]]
     }
 ]
 :muterms [
@@ -4232,8 +4240,9 @@
     }
     {:label "afar-VSubjMarker"
     :note "Parker-Hayward1985 p. 252,tab 18"
-    :pdgmType :SubjMarker
-    :common {:pos :Verb,
+    :pdgmType :VOther
+    :common {:vmorphClass :SubjMarker
+             :pos :Verb,
              :formType :Affix}
     :terms [[:conjClass :number :person :gender :token],
             [:CompoundIntransitive :Singular :Person1 :Common "Ø"],
