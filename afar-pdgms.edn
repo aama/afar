@@ -1734,7 +1734,7 @@
                  }
                 {:label "afar-VCompTrNegPerfPresAux1-kad-hee"
                  :note "Parker-Hayward1985 pp. 274 - 279:table e"
-                 :common {:vmorphClass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound  
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
                           :formClass :Compound,
