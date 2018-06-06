@@ -5,20 +5,21 @@
  :datasource "Parker-Hayward1985"
  :geodemoURL "http://www.ethnologue.com/language/aar"
  :geodemoTXT "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely related to Saho."
-:schemata {:case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
-           :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :Suffix],
-           :formClass [:Compound :StemForm],
-           :formType [:Affix],
-           :gender [:Common :Fem :Masc],
-           :mainStem [:EForm_invar :Imperative :Imperfect :ImperfectParticiple :Imperfect_m :Jussive :Ma_requestive :Mà_imperfect :Mà_stem :Mà_stem_in_imperative :Participle_k_invar :Perfect :PerfectParticiple :Perfect_m :Requestive :Stem :U_Form],
-           :number [:Plural :Singular],
-           :person [:Common :Person1 :Person2 :Person3 :PersonNon_1],
-           :polarity [:Affirmative :Negative],
-           :pos [:Pronoun :Verb],
-           :proClass [:Independent :PossessiveDefinite :Reflexive],
-           :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :Requestive_p1Only :VH_Participle],
-           :vmorphClass [:Finite  :FiniteCompound :NomFormsCmpStNeg :NomFormsCmpTr :NomFormsCmpTrNNeg :NomFormsPref :NomFormsStat :NomFormsSuff :StemForm :SubjMarker]
-           }
+:schemata {:lexeme [:ab  :anay-qunda :eedheg :fak :kad-hee :meq :ruffa-edh :uduur],
+ :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
+ :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :Suffix],
+ :formClass [:Compound :StemForm],
+ :formType [:Affix],
+ :gender [:Common :Fem :Masc],
+ :mainStem [:EForm_invar :Imperative :Imperfect :ImperfectParticiple :Imperfect_m :Jussive :Ma_requestive :Mà_imperfect :Mà_stem :Mà_stem_in_imperative :Participle_k_invar :Perfect :PerfectParticiple :Perfect_m :Requestive :Stem :U_Form],
+ :number [:Plural :Singular],
+ :person [:Common :Person1 :Person2 :Person3 :PersonNon_1],
+ :polarity [:Affirmative :Negative],
+ :pos [:Pronoun :Verb],
+ :proClass [:Independent :PossessiveDefinite :Reflexive],
+ :tam [:Anticipatory :Conditional1 :Conditional2 :Contrafactual :ContrafactualStative :Hypothetical :I_Form :Imperative :Imperfect :ImperfectAnticipatory :ImperfectPast1 :ImperfectPast2 :ImperfectPresent :ImperfectProbable1 :ImperfectProbable2 :Infinitive :Intentive :Jussive :PastState1 :PastState2 :Perfect :PerfectAnticipatory :PerfectConditional :PerfectPast1 :PerfectPast2 :PerfectPresent :PerfectProbable :PresentState1 :PresentState2 :Probable :Purposive1 :Purposive2 :RelativeIndeterminate :Requestive :Requestive_p1Only :VH_Participle],
+ :vmorphClass [:Finite :FiniteCompound :NomFormsCmpStNeg :NomFormsCmpTr :NomFormsCmpTrNNeg :NomFormsPref :NomFormsStat :NomFormsSuff :StemForm :SubjMarker]
+ }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam :mainStem :morphClass],
           :inflClass [:conjClass],
@@ -4172,7 +4173,7 @@
                  }
                 {:label "afar-PInd"
                  :note "Parker-Hayward1985 pp. 237-238,tab. 8,9,11,12,13"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
                          [:Absolutive :Singular :Person1 :Common "yo(o)"],
