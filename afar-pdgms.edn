@@ -5,8 +5,7 @@
  :datasource "Parker-Hayward1985"
  :geodemoURL "http://www.ethnologue.com/language/aar"
  :geodemoTXT "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely related to Saho."
-:schemata {:lexeme [:ab  :anay-qunda :eedheg :fak :kad-hee :meq :ruffa-edh :uduur],
- :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
+:schemata { :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
  :conjClass [:CompoundIntransitive :CompoundStative :CompoundTransitive :Prefix :Stative :Suffix],
  :formClass [:Compound :StemForm],
  :formType [:Affix],
@@ -24,15 +23,17 @@
           :synsemClass [:case :derivedStem :polarity :pos :proClass :tam :mainStem :morphClass],
           :inflClass [:conjClass],
           :otherClass []}
- :lexemes{:eedheg {:conjClass :Prefix, :gloss "know", :lemma "eeɗeg-", :pos :Verb},
-          :fak {:conjClass :Suffix, :gloss "open", :lemma "fak-", :pos :Verb},
-          :le {:conjClass :StativeIrregular, :gloss "have", :lemma "le-", :pos :Verb},
-          :uduur {:conjClass :Prefix, :gloss "return", :lemma "uduur-", :pos :Verb},
-          :kad-hee {:conjClass :CompoundTransitive, :gloss "bow", :lemma "kàɗ-hee", :pos :Verb},
-          :ruffa-edh {:conjClass :CompoundIntransitive, :gloss "become happy", :lemma "ruffa-eɗḥ-", :pos :Verb},
-          :meq {:conjClass :Stative, :gloss "be good", :lemma "meʕ-", :pos :Verb},
-          :anay-qunda {:conjClass :CompoundStative, :gloss "be softly spoken", :lemma "anày-ʕunɗa-", :pos :Verb},
-          :ab {:conjClass :Suffix, :gloss "do", :lemma "ab-", :pos :Verb}}
+ :lexemes {
+:ab   {:pos :Verb, :lemma "ab-", :gloss "do", :conjClass :Suffix},
+:anay-qunda   {:pos :Verb, :lemma "anày-ʕunɗa-", :gloss "be softly spoken", :conjClass :CompoundStative},
+:eedheg   {:pos :Verb, :lemma "eeɗeg-", :gloss "know", :conjClass :Prefix},
+:fak   {:pos :Verb, :lemma "fak-", :gloss "open", :conjClass :Suffix},
+:kad-hee   {:pos :Verb, :lemma "kàɗ-hee", :gloss "bow", :conjClass :CompoundTransitive},
+:le   {:pos :Verb, :lemma "le-", :gloss "have", :conjClass :StativeIrregular},
+:meq   {:pos :Verb, :lemma "meʕ-", :gloss "be good", :conjClass :Stative},
+:ruffa-edh   {:pos :Verb, :lemma "ruffa-eɗḥ-", :gloss "become happy", :conjClass :CompoundIntransitive},
+:uduur   {:pos :Verb, :lemma "uduur-", :gloss "return", :conjClass :Prefix},
+}
  :termclusters [
                 {:label "afar-VCompIntAffAnticipAux1-ruffa-edh"
                  :note "Parker-Hayward1985 pp. 270 - 274:table i"
