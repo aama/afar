@@ -2,7 +2,7 @@
  :lang :afar
  :subfamily "Lowland East Cushitic Saho-Afar"
  :sgpref "afr"
- :datasource "Parker-Hayward1985"
+ :datasource "Parker-Hayward1985; abbrev. in :note with Page and Table number as 'PHpnnn-nnn-t' -- e.g.  'PHp274-279-s' = 'Parker-Hayward1985 pp.274-279; table s'"
  :geodemoURL "http://www.ethnologue.com/language/aar"
  :geodemoTXT "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely related to Saho."
 :schemata { :case [:Absolutive :Emphatic :Emphatic_m :Nominative :Possessive_m :Reflexive],
@@ -36,7 +36,7 @@
 }
  :termclusters [
                 {:label "afar-VCompIntAffAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table i"
+                 :note "PHp270-274-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -54,7 +54,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè-lon"]]
                  }
                 {:label "afar-VCompIntAffCond1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table s"
+                 :note "PHp270-274-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -72,7 +72,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenik"]]
                  }
                 {:label "afar-VCompIntAffCond2Aux2-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table t"
+                 :note "PHp270-274-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -90,7 +90,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyen ken tekkek"]]
                  }
                 {:label "afar-VCompIntAffContrafAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table v"
+                 :note "PHp270-274-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -108,7 +108,7 @@
                          [:Plural :Person3 :Common "rùffa-aɗḥinnoonuy"]]
                  }
                 {:label "afar-VCompIntAffHypothAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table y"
+                 :note "PHp270-274-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -126,7 +126,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè ɗaaɗen"]]
                  }
                 {:label "afar-VCompIntAffImperfAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table k"
+                 :note "PHp270-274-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -144,7 +144,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk sugèlon"]]
                  }
                 {:label "afar-VCompIntAffImperfAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table b"
+                 :note "PHp270-274-b"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -162,7 +162,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyaanah"]]
                  }
                 {:label "afar-VCompIntAffImperfPast1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table f"
+                 :note "PHp270-274-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -180,7 +180,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk yenen"]]
                  }
                 {:label "afar-VCompIntAffImperfPast2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table g"
+                 :note "PHp270-274-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -198,7 +198,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk sugen"]]
                  }
                 {:label "afar-VCompIntAffImperfPresAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table h"
+                 :note "PHp270-274-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -216,7 +216,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyaanàk yanin"]]
                  }
                 {:label "afar-VCompIntAffImperfProb1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table o"
+                 :note "PHp270-274-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -234,7 +234,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyoònu(h) takkeh"]]
                  }
                 {:label "afar-VCompIntAffImperfProb2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table p"
+                 :note "PHp270-274-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -252,7 +252,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyaanàm takkeh"]]
                  }
                 {:label "afar-VCompIntAffImprtvAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table r"
+                 :note "PHp270-274-r"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :gender :Common,
@@ -267,7 +267,7 @@
                          [:Plural "rùffa-inɗiḥa"]]
                  }
                 {:label "afar-VCompIntAffIntentAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table n"
+                 :note "PHp270-274-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -285,7 +285,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyoònu waan"]]
                  }
                 {:label "afar-VCompIntAffJussAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table l"
+                 :note "PHp270-274-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -303,7 +303,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyoònay"]]
                  }
                 {:label "afar-VCompIntAffPerfAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table j"
+                 :note "PHp270-274-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -321,7 +321,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh sugèlon"]]
                  }
                 {:label "afar-VCompIntAffPerfAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table a"
+                 :note "PHp270-274-a"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -339,7 +339,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenih"]]
                  }
                 {:label "afar-VCompIntAffPerfCondAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table u"
+                 :note "PHp270-274-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -357,7 +357,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh sugeenik"]]
                  }
                 {:label "afar-VCompIntAffPerfPast1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table c"
+                 :note "PHp270-274-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -375,7 +375,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh yenen"]]
                  }
                 {:label "afar-VCompIntAffPerfPast2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table d"
+                 :note "PHp270-274-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -393,7 +393,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh sugen"]]
                  }
                 {:label "afar-VCompIntAffPerfPresAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table e"
+                 :note "PHp270-274-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -411,7 +411,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìk yanin"]]
                  }
                 {:label "afar-VCompIntAffPerfProbAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table q"
+                 :note "PHp270-274-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -429,7 +429,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìm takkeh"]]
                  }
                 {:label "afar-VCompIntAffPurp1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table w"
+                 :note "PHp270-274-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -447,7 +447,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyoònuh"]]
                  }
                 {:label "afar-VCompIntAffPurp2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table x"
+                 :note "PHp270-274-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -465,7 +465,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyaanànkeh"]]
                  }
                 {:label "afar-VCompIntAffRequestAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table m"
+                 :note "PHp270-274-m"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :gender :Common,
@@ -479,7 +479,7 @@
                          [:Plural :Person2 "rùffa-inno?"]]
                  }
                 {:label "afar-VCompIntNegAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table i"
+                 :note "PHp270-274-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -497,7 +497,7 @@
                          [:Plural :Person3 :Common "rùffa-màyyan"]]
                  }
                 {:label "afar-VCompIntNegCond1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table s"
+                 :note "PHp270-274-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -515,7 +515,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè weenik"]]
                  }
                 {:label "afar-VCompIntNegCond2Aux3-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table t"
+                 :note "PHp270-274-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -533,7 +533,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè waan ken tekkek"]]
                  }
                 {:label "afar-VCompIntNegContrafAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table v"
+                 :note "PHp270-274-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -551,7 +551,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè wannoonuy"]]
                  }
                 {:label "afar-VCompIntNegHypothAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table y"
+                 :note "PHp270-274-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -569,7 +569,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè màɗaaɗen"]]
                  }
                 {:label "afar-VCompIntNegImperfAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table k"
+                 :note "PHp270-274-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -587,7 +587,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk màsugan"]]
                  }
                 {:label "afar-VCompIntNegImperfAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table b"
+                 :note "PHp270-274-b"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -605,7 +605,7 @@
                          [:Plural :Person3 :Common "rùffa-màyyan"]]
                  }
                 {:label "afar-VCompIntNegImperfPast1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table f"
+                 :note "PHp270-274-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -623,7 +623,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk mànannon"]]
                  }
                 {:label "afar-VCompIntNegImperfPast2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table g"
+                 :note "PHp270-274-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -641,7 +641,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥuk màsuginnon"]]
                  }
                 {:label "afar-VCompIntNegImperfPresAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table h"
+                 :note "PHp270-274-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -659,7 +659,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyaanàh màyanin"]]
                  }
                 {:label "afar-VCompIntNegImperfProb1Aux2-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table o"
+                 :note "PHp270-274-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -677,7 +677,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè wayoònu(h) takkeh"]]
                  }
                 {:label "afar-VCompIntNegImperfProb2Aux2-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table p"
+                 :note "PHp270-274-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -695,7 +695,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè waanam takkeh"]]
                  }
                 {:label "afar-VCompIntNegImprtvAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table r"
+                 :note "PHp270-274-r"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :gender :Common,
@@ -710,7 +710,7 @@
                          [:Plural "rùffa-màɗḥina"]]
                  }
                 {:label "afar-VCompIntNegIntentAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table n"
+                 :note "PHp270-274-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -728,7 +728,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyoònu màwaan"]]
                  }
                 {:label "afar-VCompIntNegJussAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table l"
+                 :note "PHp270-274-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -746,7 +746,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè woònay"]]
                  }
                 {:label "afar-VCompIntNegNonFinite-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table za"
+                 :note "PHp270-274-za"
                  :common {:vmorphClass :NomFormsCmpTrNNeg
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -759,7 +759,7 @@
                          [:VH_Participle "rùffa-àɗiḥ"]]
                  }
                 {:label "afar-VCompIntNegPerfAnticipAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table j"
+                 :note "PHp270-274-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -777,7 +777,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh màsugan"]]
                  }
                 {:label "afar-VCompIntNegPerfAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table a"
+                 :note "PHp270-274-a"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -795,7 +795,7 @@
                          [:Plural :Person3 :Common "rùffa-màɗḥinnon"]]
                  }
                 {:label "afar-VCompIntNegPerfCondAux2-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table u"
+                 :note "PHp270-274-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -813,7 +813,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh sugè weenik"]]
                  }
                 {:label "afar-VCompIntNegPerfPast1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table c"
+                 :note "PHp270-274-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -831,7 +831,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh mànannon"]]
                  }
                 {:label "afar-VCompIntNegPerfPast2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table d"
+                 :note "PHp270-274-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -849,7 +849,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh màsuginnon"]]
                  }
                 {:label "afar-VCompIntNegPerfPresAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table e"
+                 :note "PHp270-274-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -867,7 +867,7 @@
                          [:Plural :Person3 :Common "rùffa-iyyeenìh màyanin"]]
                  }
                 {:label "afar-VCompIntNegPerfProbAux2-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table q"
+                 :note "PHp270-274-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -885,7 +885,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè weenim takkeh"]]
                  }
                 {:label "afar-VCompIntNegPurp1Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table w"
+                 :note "PHp270-274-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -903,7 +903,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè woònu(h)"]]
                  }
                 {:label "afar-VCompIntNegPurp2Aux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table x"
+                 :note "PHp270-274-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :lexeme :ruffa-edh,
@@ -921,7 +921,7 @@
                          [:Plural :Person3 :Common "rùffa-àɗḥè waanànkeh"]]
                  }
                 {:label "afar-VCompIntNegRequestAux1-ruffa-edh"
-                 :note "Parker-Hayward1985 pp. 270 - 274:table m"
+                 :note "PHp270-274-m"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundIntransitive,
                           :gender :Common,
@@ -935,7 +935,7 @@
                          [:Plural :Person2 "rùffa-manno?"]]
                  }
                 {:label "afar-VCompTrAffAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table i"
+                 :note "PHp274-279-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -953,7 +953,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè-lon"]]
                  }
                 {:label "afar-VCompTrAffCond1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table s"
+                 :note "PHp274-279-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -971,7 +971,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenik"]]
                  }
                 {:label "afar-VCompTrAffCond2Aux2-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table t"
+                 :note "PHp274-279-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -989,7 +989,7 @@
                          [:Plural :Person3 :Common "kàɗ-heen ken tekkek"]]
                  }
                 {:label "afar-VCompTrAffContrafAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table v"
+                 :note "PHp274-279-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1007,7 +1007,7 @@
                          [:Plural :Person3 :Common "kàɗ-hannoonuy"]]
                  }
                 {:label "afar-VCompTrAffHypothAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table y"
+                 :note "PHp274-279-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1025,7 +1025,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè ɗaaɗen"]]
                  }
                 {:label "afar-VCompTrAffImperfAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table k"
+                 :note "PHp274-279-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1043,7 +1043,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak sugèlon"]]
                  }
                 {:label "afar-VCompTrAffImperfAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table b"
+                 :note "PHp274-279-b"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1061,7 +1061,7 @@
                          [:Plural :Person3 :Common "kàɗ-haanah"]]
                  }
                 {:label "afar-VCompTrAffImperfPast1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table f"
+                 :note "PHp274-279-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1079,7 +1079,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak yenen"]]
                  }
                 {:label "afar-VCompTrAffImperfPast2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table g"
+                 :note "PHp274-279-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1097,7 +1097,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak sugen"]]
                  }
                 {:label "afar-VCompTrAffImperfPresAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table h"
+                 :note "PHp274-279-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1115,7 +1115,7 @@
                          [:Plural :Person3 :Common "kàɗ-haanàk yanin"]]
                  }
                 {:label "afar-VCompTrAffImperfProb1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table o"
+                 :note "PHp274-279-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1133,7 +1133,7 @@
                          [:Plural :Person3 :Common "kàɗ-hayoònu(h) takkeh"]]
                  }
                 {:label "afar-VCompTrAffImperfProb2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table p"
+                 :note "PHp274-279-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1151,7 +1151,7 @@
                          [:Plural :Person3 :Common "kàɗ-haanàm takkeh"]]
                  }
                 {:label "afar-VCompTrAffImprtvAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table r"
+                 :note "PHp274-279-r"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :gender :Common,
@@ -1166,7 +1166,7 @@
                          [:Plural "kàɗ-haya"]]
                  }
                 {:label "afar-VCompTrAffIntentAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table n"
+                 :note "PHp274-279-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1184,7 +1184,7 @@
                          [:Plural :Person3 :Common "kàɗ-hayoònu waan"]]
                  }
                 {:label "afar-VCompTrAffJussAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table l"
+                 :note "PHp274-279-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1202,7 +1202,7 @@
                          [:Plural :Person3 :Common "kàɗ-hoònay"]]
                  }
                 {:label "afar-VCompTrAffPerfAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table j"
+                 :note "PHp274-279-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1220,7 +1220,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh sugèlon"]]
                  }
                 {:label "afar-VCompTrAffPerfAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table a"
+                 :note "PHp274-279-a"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1238,7 +1238,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenih"]]
                  }
                 {:label "afar-VCompTrAffPerfCondAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table u"
+                 :note "PHp274-279-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1256,7 +1256,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh sugeenik"]]
                  }
                 {:label "afar-VCompTrAffPerfPast1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table c"
+                 :note "PHp274-279-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1274,7 +1274,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh yenen"]]
                  }
                 {:label "afar-VCompTrAffPerfPast2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table d"
+                 :note "PHp274-279-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1292,7 +1292,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh sugen"]]
                  }
                 {:label "afar-VCompTrAffPerfPresAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table e"
+                 :note "PHp274-279-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1310,7 +1310,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìk yanin"]]
                  }
                 {:label "afar-VCompTrAffPerfProbAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table q"
+                 :note "PHp274-279-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1328,7 +1328,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìm takkeh"]]
                  }
                 {:label "afar-VCompTrAffPurp1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table w"
+                 :note "PHp274-279-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1346,7 +1346,7 @@
                          [:Plural :Person3 :Common "kàɗ-hayoònuh"]]
                  }
                 {:label "afar-VCompTrAffPurp2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table x"
+                 :note "PHp274-279-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1364,7 +1364,7 @@
                          [:Plural :Person3 :Common "kàɗ-haanànkeh"]]
                  }
                 {:label "afar-VCompTrAffRequestAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table m"
+                 :note "PHp274-279-m"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :gender :Common,
@@ -1378,7 +1378,7 @@
                          [:Plural :Person2 "kàɗ-hayno?"]]
                  }
                 {:label "afar-VCompTrNegAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table i"
+                 :note "PHp274-279-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1396,7 +1396,7 @@
                          [:Plural :Person3 :Common "kàɗ-màhaan"]]
                  }
                 {:label "afar-VCompTrNegCond1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table s"
+                 :note "PHp274-279-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1414,7 +1414,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè weenik"]]
                  }
                 {:label "afar-VCompTrNegCond2Aux3-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table t"
+                 :note "PHp274-279-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1432,7 +1432,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè waan ken tekkek"]]
                  }
                 {:label "afar-VCompTrNegContrafAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table v"
+                 :note "PHp274-279-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1450,7 +1450,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè wannoonuy"]]
                  }
                 {:label "afar-VCompTrNegHypothAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table y"
+                 :note "PHp274-279-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1468,7 +1468,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè màɗaaɗen"]]
                  }
                 {:label "afar-VCompTrNegImperfAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table k"
+                 :note "PHp274-279-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1486,7 +1486,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak màsugan"]]
                  }
                 {:label "afar-VCompTrNegImperfAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table b"
+                 :note "PHp274-279-b"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1504,7 +1504,7 @@
                          [:Plural :Person3 :Common "kàɗ-màhaan"]]
                  }
                 {:label "afar-VCompTrNegImperfPast1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table f"
+                 :note "PHp274-279-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1522,7 +1522,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak mànannon"]]
                  }
                 {:label "afar-VCompTrNegImperfPast2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table g"
+                 :note "PHp274-279-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1540,7 +1540,7 @@
                          [:Plural :Person3 :Common "kàɗ-hàak màsuginnon"]]
                  }
                 {:label "afar-VCompTrNegImperfPresAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table h"
+                 :note "PHp274-279-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1558,7 +1558,7 @@
                          [:Plural :Person3 :Common "kàɗ-haanàh màyanin"]]
                  }
                 {:label "afar-VCompTrNegImperfProb2Aux2-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table p"
+                 :note "PHp274-279-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1576,7 +1576,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè waanam takkeh"]]
                  }
                 {:label "afar-VCompTrNegImperfProbab1Aux2-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table o"
+                 :note "PHp274-279-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1594,7 +1594,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè wayoònu(h) takkeh"]]
                  }
                 {:label "afar-VCompTrNegImprtvAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table r"
+                 :note "PHp274-279-r"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :gender :Common,
@@ -1609,7 +1609,7 @@
                          [:Plural "kàɗ-màhana"]]
                  }
                 {:label "afar-VCompTrNegIntentAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table n"
+                 :note "PHp274-279-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1627,7 +1627,7 @@
                          [:Plural :Person3 :Common "kàɗ-hayoònu màwaan"]]
                  }
                 {:label "afar-VCompTrNegJussAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table l"
+                 :note "PHp274-279-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1645,7 +1645,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè woònay"]]
                  }
                 {:label "afar-VCompTrNegPerfAnticipAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table j"
+                 :note "PHp274-279-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1663,7 +1663,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh màsugan"]]
                  }
                 {:label "afar-VCompTrNegPerfAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table a"
+                 :note "PHp274-279-a"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1681,7 +1681,7 @@
                          [:Plural :Person3 :Common "kàɗ-màhannon"]]
                  }
                 {:label "afar-VCompTrNegPerfCondAux2-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table u"
+                 :note "PHp274-279-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1699,7 +1699,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh sugè weenik"]]
                  }
                 {:label "afar-VCompTrNegPerfPast1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table c"
+                 :note "PHp274-279-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1717,7 +1717,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh mànannon"]]
                  }
                 {:label "afar-VCompTrNegPerfPast2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table d"
+                 :note "PHp274-279-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1735,7 +1735,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh màsuginnon"]]
                  }
                 {:label "afar-VCompTrNegPerfPresAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table e"
+                 :note "PHp274-279-e"
                  :common {:vmorphClass :FiniteCompound  
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1753,7 +1753,7 @@
                          [:Plural :Person3 :Common "kàɗ-heenìh màyanin"]]
                  }
                 {:label "afar-VCompTrNegPerfProbAux2-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table q"
+                 :note "PHp274-279-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1771,7 +1771,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè weenim takkeh"]]
                  }
                 {:label "afar-VCompTrNegPurp1Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table w"
+                 :note "PHp274-279-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1789,7 +1789,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè woònu(h)"]]
                  }
                 {:label "afar-VCompTrNegPurp2Aux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table x"
+                 :note "PHp274-279-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1807,7 +1807,7 @@
                          [:Plural :Person3 :Common "kàɗ-heè waanànkeh"]]
                  }
                 {:label "afar-VCompTrNegRequestAux1-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table m"
+                 :note "PHp274-279-m"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundTransitive,
                           :gender :Common,
@@ -1821,7 +1821,7 @@
                          [:Plural :Person2 "kàɗ-mahayno?"]]
                  }
                 {:label "afar-VCompTrNonFinite-kad-hee"
-                 :note "Parker-Hayward1985 pp. 274 - 279:table za z zc zd"
+                 :note "PHp274-279-zaz-zc-zd"
                  :common {:vmorphClass :NomFormsCmpTr
                           :conjClass :CompoundTransitive,
                           :lexeme :kad-hee,
@@ -1833,7 +1833,7 @@
                          [:VH_Participle "kàɗ-hàah"]]
                  }
                 {:label "afar-VPrefAffAnticip-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table i"
+                 :note "PHp259-263-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :formClass :Compound,
@@ -1851,7 +1851,7 @@
                          [:Plural :Person3 :Common "aduurè-lon"]]
                  }
                 {:label "afar-VPrefAffCond1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table s"
+                 :note "PHp259-263-s"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1868,7 +1868,7 @@
                          [:Plural :Person3 :Common "yuduureenik"]]
                  }
                 {:label "afar-VPrefAffCond2Aux2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table t"
+                 :note "PHp259-263-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1886,7 +1886,7 @@
                          [:Plural :Person3 :Common "yaduurèn ken tekkek"]]
                  }
                 {:label "afar-VPrefAffContraf-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table v"
+                 :note "PHp259-263-v"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1903,7 +1903,7 @@
                          [:Plural :Person3 :Common "aduurinnoonuy"]]
                  }
                 {:label "afar-VPrefAffHypothAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table y"
+                 :note "PHp259-263-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1921,7 +1921,7 @@
                          [:Plural :Person3 :Common "aduurè ɗaaɗen"]]
                  }
                 {:label "afar-VPrefAffImperf-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table b"
+                 :note "PHp259-263-b"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1938,7 +1938,7 @@
                          [:Plural :Person3 :Common "yaduureenih"]]
                  }
                 {:label "afar-VPrefAffImperfAnticipAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table k"
+                 :note "PHp259-263-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1956,7 +1956,7 @@
                          [:Plural :Person3 :Common "aduùruk sugèlon"]]
                  }
                 {:label "afar-VPrefAffImperfPast1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table f"
+                 :note "PHp259-263-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1974,7 +1974,7 @@
                          [:Plural :Person3 :Common "aduùruk yenen"]]
                  }
                 {:label "afar-VPrefAffImperfPast2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table g"
+                 :note "PHp259-263-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -1992,7 +1992,7 @@
                          [:Plural :Person3 :Common "aduùruk sugen"]]
                  }
                 {:label "afar-VPrefAffImperfPresAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table h"
+                 :note "PHp259-263-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2010,7 +2010,7 @@
                          [:Plural :Person3 :Common "yaduureenìk yanin"]]
                  }
                 {:label "afar-VPrefAffImperfProb1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table o"
+                 :note "PHp259-263-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2028,7 +2028,7 @@
                          [:Plural :Person3 :Common "yaduuroònu(h) takkeh"]]
                  }
                 {:label "afar-VPrefAffImperfProb2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table p"
+                 :note "PHp259-263-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2046,7 +2046,7 @@
                          [:Plural :Person3 :Common "yaduureenìm takkeh"]]
                  }
                 {:label "afar-VPrefAffImprtv-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table r"
+                 :note "PHp259-263-r"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :gender :Common,
@@ -2060,7 +2060,7 @@
                          [:Plural "uduùra"]]
                  }
                 {:label "afar-VPrefAffIntentAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table n"
+                 :note "PHp259-263-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2078,7 +2078,7 @@
                          [:Plural :Person3 :Common "yaduuroònu waan"]]
                  }
                 {:label "afar-VPrefAffJuss-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table l"
+                 :note "PHp259-263-l"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2095,7 +2095,7 @@
                          [:Plural :Person3 :Common "yaduuroònay"]]
                  }
                 {:label "afar-VPrefAffPerf-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table a"
+                 :note "PHp259-263-a"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2112,7 +2112,7 @@
                          [:Plural :Person3 :Common "yuduureenih"]]
                  }
                 {:label "afar-VPrefAffPerfAnticipAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table j"
+                 :note "PHp259-263-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2130,7 +2130,7 @@
                          [:Plural :Person3 :Common "uduureenìh sugèlon"]]
                  }
                 {:label "afar-VPrefAffPerfCondAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table u"
+                 :note "PHp259-263-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2148,7 +2148,7 @@
                          [:Plural :Person3 :Common "yuduureenìh sugeenik"]]
                  }
                 {:label "afar-VPrefAffPerfPast1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table c"
+                 :note "PHp259-263-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2166,7 +2166,7 @@
                          [:Plural :Person3 :Common "yuduureenìh yenen"]]
                  }
                 {:label "afar-VPrefAffPerfPast2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table d"
+                 :note "PHp259-263-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2184,7 +2184,7 @@
                          [:Plural :Person3 :Common "yuduureenìh sugen"]]
                  }
                 {:label "afar-VPrefAffPerfPresAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table e"
+                 :note "PHp259-263-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2202,7 +2202,7 @@
                          [:Plural :Person3 :Common "yuduureenìk yanin"]]
                  }
                 {:label "afar-VPrefAffPerfProbAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table q"
+                 :note "PHp259-263-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2220,7 +2220,7 @@
                          [:Plural :Person3 :Common "yuduureenìm takkeh"]]
                  }
                 {:label "afar-VPrefAffPurp1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table w"
+                 :note "PHp259-263-w"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2237,7 +2237,7 @@
                          [:Plural :Person3 :Common "yaduuroònuh"]]
                  }
                 {:label "afar-VPrefAffPurp2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table x"
+                 :note "PHp259-263-x"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2254,7 +2254,7 @@
                          [:Plural :Person3 :Common "yaduureenìnkeh"]]
                  }
                 {:label "afar-VPrefAffRequest-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table m"
+                 :note "PHp259-263-m"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :gender :Common,
@@ -2267,7 +2267,7 @@
                          [:Plural :Person2 "naduuro?"]]
                  }
                 {:label "afar-VPrefNegAnticip-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table i"
+                 :note "PHp259-263-i"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2284,7 +2284,7 @@
                          [:Plural :Person3 :Common "màyaduuran"]]
                  }
                 {:label "afar-VPrefNegCond1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table s"
+                 :note "PHp259-263-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2302,7 +2302,7 @@
                          [:Plural :Person3 :Common "aduurè weenik"]]
                  }
                 {:label "afar-VPrefNegCond2Aux3-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table t"
+                 :note "PHp259-263-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2320,7 +2320,7 @@
                          [:Plural :Person3 :Common "aduurè waan ken tekkek"]]
                  }
                 {:label "afar-VPrefNegContrafAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table v"
+                 :note "PHp259-263-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2338,7 +2338,7 @@
                          [:Plural :Person3 :Common "aduurè wannoonuy"]]
                  }
                 {:label "afar-VPrefNegHypothAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table y"
+                 :note "PHp259-263-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2356,7 +2356,7 @@
                          [:Plural :Person3 :Common "aduurè màɗaaɗen"]]
                  }
                 {:label "afar-VPrefNegImperf-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table b"
+                 :note "PHp259-263-b"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2373,7 +2373,7 @@
                          [:Plural :Person3 :Common "màyaduuran"]]
                  }
                 {:label "afar-VPrefNegImperfAnticipAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table k"
+                 :note "PHp259-263-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2391,7 +2391,7 @@
                          [:Plural :Person3 :Common "aduùruk màsugan"]]
                  }
                 {:label "afar-VPrefNegImperfPast1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table f"
+                 :note "PHp259-263-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2409,7 +2409,7 @@
                          [:Plural :Person3 :Common "aduùruk mànannon"]]
                  }
                 {:label "afar-VPrefNegImperfPast2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table g"
+                 :note "PHp259-263-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2427,7 +2427,7 @@
                          [:Plural :Person3 :Common "aduùruk màsuginnon"]]
                  }
                 {:label "afar-VPrefNegImperfPresAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table h"
+                 :note "PHp259-263-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2445,7 +2445,7 @@
                          [:Plural :Person3 :Common "yaduureenìh màyanin"]]
                  }
                 {:label "afar-VPrefNegImperfProb1Aux2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table o"
+                 :note "PHp259-263-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2463,7 +2463,7 @@
                          [:Plural :Person3 :Common "aduurè wayoònu(h) takkeh"]]
                  }
                 {:label "afar-VPrefNegImperfProb2Aux2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table p"
+                 :note "PHp259-263-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2481,7 +2481,7 @@
                          [:Plural :Person3 :Common "aduurè waanam takkeh"]]
                  }
                 {:label "afar-VPrefNegImprtv-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table r"
+                 :note "PHp259-263-r"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :gender :Common,
@@ -2495,7 +2495,7 @@
                          [:Plural "maàduurina"]]
                  }
                 {:label "afar-VPrefNegIntentAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table n"
+                 :note "PHp259-263-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2513,7 +2513,7 @@
                          [:Plural :Person3 :Common "yaduuroònu màwaan"]]
                  }
                 {:label "afar-VPrefNegJussAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table l"
+                 :note "PHp259-263-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2531,7 +2531,7 @@
                          [:Plural :Person3 :Common "aduurè woònay"]]
                  }
                 {:label "afar-VPrefNegPerf-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table a"
+                 :note "PHp259-263-a"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2548,7 +2548,7 @@
                          [:Plural :Person3 :Common "maàduurinnon"]]
                  }
                 {:label "afar-VPrefNegPerfAnticipAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table j"
+                 :note "PHp259-263-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2566,7 +2566,7 @@
                          [:Plural :Person3 :Common "uduureenìh màsugan"]]
                  }
                 {:label "afar-VPrefNegPerfCondAux2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table u"
+                 :note "PHp259-263-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2584,7 +2584,7 @@
                          [:Plural :Person3 :Common "yuduureenìh sugè weenik"]]
                  }
                 {:label "afar-VPrefNegPerfPast1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table c"
+                 :note "PHp259-263-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2602,7 +2602,7 @@
                          [:Plural :Person3 :Common "yuduureenìh mànannon"]]
                  }
                 {:label "afar-VPrefNegPerfPast2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table d"
+                 :note "PHp259-263-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2620,7 +2620,7 @@
                          [:Plural :Person3 :Common "yuduureenìh màsuginnon"]]
                  }
                 {:label "afar-VPrefNegPerfPresAux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table e"
+                 :note "PHp259-263-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2638,7 +2638,7 @@
                          [:Plural :Person3 :Common "yuduureenìh màyanin"]]
                  }
                 {:label "afar-VPrefNegPerfProbAux2-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table q"
+                 :note "PHp259-263-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2656,7 +2656,7 @@
                          [:Plural :Person3 :Common "aduurè weenim takkeh"]]
                  }
                 {:label "afar-VPrefNegPurp1Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table w"
+                 :note "PHp259-263-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2674,7 +2674,7 @@
                          [:Plural :Person3 :Common "aduurè woònu(h)"]]
                  }
                 {:label "afar-VPrefNegPurp2Aux1-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table x"
+                 :note "PHp259-263-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2692,7 +2692,7 @@
                          [:Plural :Person3 :Common "aduurè waanànkeh"]]
                  }
                 {:label "afar-VPrefNegRequest-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table m"
+                 :note "PHp259-263-m"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :gender :Common,
@@ -2705,7 +2705,7 @@
                          [:Plural :Person2 "manaduuro?"]]
                  }
                 {:label "afar-VPrefNonFinite-uduur"
-                 :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
+                 :note "PHp259-263-za,zb,zc,zd"
                  :common {:vmorphClass :NomFormsPref
                           :conjClass :Prefix,
                           :lexeme :uduur,
@@ -2717,7 +2717,7 @@
                          [:VH_Participle "aduùrih"]]
                  }
                 {:label "afar-VPrefPartImperf-eedheg"
-                 :note "Parker-Hayward1985 p. 255,tab 21"
+                 :note "PHp255-21"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :eedheg,
@@ -2733,7 +2733,7 @@
                          [:Plural :Person3 :Common "ayaɗigeenih"]]
                  }
                 {:label "afar-VPrefPartPerf-eedheg"
-                 :note "Parker-Hayward1985 p. 255,tab 21"
+                 :note "PHp255-21"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :eedheg,
@@ -2749,7 +2749,7 @@
                          [:Plural :Person3 :Common "yeeɗegeenih"]]
                  }
                 {:label "afar-VStatAffContrafStateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table vv"
+                 :note "PHp268-269-vv"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2767,7 +2767,7 @@
                          [:Plural :Person3 :Common "mùʕuk suginnoonuy"]]
                  }
                 {:label "afar-VStatAffImperfPast1StateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table ff"
+                 :note "PHp268-269-ff"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2785,7 +2785,7 @@
                          [:Plural :Person3 :Common "mùʕuk yenen"]]
                  }
                 {:label "afar-VStatAffImperfPast2StateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table gg"
+                 :note "PHp268-269-gg"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2803,7 +2803,7 @@
                          [:Plural :Person3 :Common "mùʕuk sugen"]]
                  }
                 {:label "afar-VStatAffImperfProb2StateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table pp"
+                 :note "PHp268-269-pp"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2821,7 +2821,7 @@
                          [:Plural :Person3 :Common "moʕoònum takkeh"]]
                  }
                 {:label "afar-VStatAffImperfState-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table bb"
+                 :note "PHp268-269-bb"
                  :common {:vmorphClass :Finite
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2838,7 +2838,7 @@
                          [:Plural :Person3 :Common "moʕoonuh"]]
                  }
                 {:label "afar-VStatAffPerfPresStateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table ee"
+                 :note "PHp268-269-ee"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -2856,7 +2856,7 @@
                          [:Plural :Person3 :Common "moʕoonùk yanin"]]
                  }
                 {:label "afar-VStatCompAffContrafStateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table vv"
+                 :note "PHp269-270-vv"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2874,7 +2874,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk suginnoonuy"]]
                  }
                 {:label "afar-VStatCompAffImperfPast1Aux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table ff"
+                 :note "PHp269-270-ff"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2892,7 +2892,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk yenen"]]
                  }
                 {:label "afar-VStatCompAffImperfPast2StateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table gg"
+                 :note "PHp269-270-gg"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2910,7 +2910,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk sugen"]]
                  }
                 {:label "afar-VStatCompAffImperfProb2StateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table pp"
+                 :note "PHp269-270-pp"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2928,7 +2928,7 @@
                          [:Plural :Person3 :Common "anày-ʕunɗoonùm takkeh"]]
                  }
                 {:label "afar-VStatCompAffImperfState-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table :table bb"
+                 :note "PHp269-270-bb"
                  :common {:vmorphClass :Finite
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2945,7 +2945,7 @@
                          [:Plural :Person3 :Common "anày-ʕunɗoonuh"]]
                  }
                 {:label "afar-VStatCompAffPerfPresStateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table ee"
+                 :note "PHp269-270-ee"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2963,7 +2963,7 @@
                          [:Plural :Person3 :Common "anày-ʕunɗoonùk yanin"]]
                  }
                 {:label "afar-VStatCompNegContrafStateAux2-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table vv"
+                 :note "PHp269-270-vv"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2981,7 +2981,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk sugè wannoonuy"]]
                  }
                 {:label "afar-VStatCompNegImperfPast1StateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table ff"
+                 :note "PHp269-270-ff"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -2999,7 +2999,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk mànannon"]]
                  }
                 {:label "afar-VStatCompNegImperfPast2StateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table gg"
+                 :note "PHp269-270-gg"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -3017,7 +3017,7 @@
                          [:Plural :Person3 :Common "anày-ʕùnɗuk màsuginnon"]]
                  }
                 {:label "afar-VStatCompNegImperfProb2StateAux2-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table pp"
+                 :note "PHp269-270-pp"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -3035,7 +3035,7 @@
                          [:Plural :Person3 :Common "anày-aʕunɗeè waanam takkeh"]]
                  }
                 {:label "afar-VStatCompNegImperfStateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table bb"
+                 :note "PHp269-270-bb"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -3053,7 +3053,7 @@
                          [:Plural :Person3 :Common "anày-màʕunɗon"]]
                  }
                 {:label "afar-VStatCompNegNonFinite-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table za"
+                 :note "PHp269-270-za"
                  :common {:vmorphClass :NomFormsCmpStNeg
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -3064,7 +3064,7 @@
                          ["anày-ʕùnɗih"]]
                  }
                 {:label "afar-VStatCompNegPerfPresStateAux1-anay-qunda"
-                 :note "Parker-Hayward1985 pp. 269 - 270:table ee"
+                 :note "PHp269-270-ee"
                  :common {:vmorphClass :Finite
                           :conjClass :CompoundStative,
                           :lexeme :anay-qunda,
@@ -3082,7 +3082,7 @@
                          [:Plural :Person3 :Common "anày-ʕunɗoonùh màyanin"]]
                  }
                 {:label "afar-VStatNegContrafStateAux2-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table vv"
+                 :note "PHp268-269-vv"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3100,7 +3100,7 @@
                          [:Plural :Person3 :Common "àmʕuk sugè wannoonuy"]]
                  }
                 {:label "afar-VStatNegImperfPast1StateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table tt"
+                 :note "PHp268-269-tt"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3118,7 +3118,7 @@
                          [:Plural :Person3 :Common "mùʕuk mànannon"]]
                  }
                 {:label "afar-VStatNegImperfPast2StateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table gg"
+                 :note "PHp268-269-gg"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3136,7 +3136,7 @@
                          [:Plural :Person3 :Common "mùʕuk màsuginnon"]]
                  }
                 {:label "afar-VStatNegImperfProb2StateAux2-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table pp"
+                 :note "PHp268-269-pp"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3154,7 +3154,7 @@
                          [:Plural :Person3 :Common "amʕè waanam takkeh"]]
                  }
                 {:label "afar-VStatNegImperfState-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table bb"
+                 :note "PHp268-269-bb"
                  :common {:vmorphClass :Finite
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3171,7 +3171,7 @@
                          [:Plural :Person3 :Common "màmoʕon"]]
                  }
                 {:label "afar-VStatNegPerfPresStateAux1-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table ee"
+                 :note "PHp268-269-ee"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3189,7 +3189,7 @@
                          [:Plural :Person3 :Common "moʕoonùh màyanin"]]
                  }
                 {:label "afar-VStatNonFinite-meq"
-                 :note "Parker-Hayward1985 pp. 268 - 269;table za"
+                 :note "PHp268-269-za"
                  :common {:vmorphClass :NomFormsStat
                           :conjClass :Stative,
                           :lexeme :meq,
@@ -3199,7 +3199,7 @@
                          ["miʕih"]]
                  }
                 {:label "afar-VSuffAffAnticipAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table i"
+                 :note "PHp259-263-i"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3217,7 +3217,7 @@
                          [:Plural :Person3 :Common "fakè-lon"]]
                  }
                 {:label "afar-VSuffAffCond1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table s"
+                 :note "PHp259-263-s"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3234,7 +3234,7 @@
                          [:Plural :Person3 :Common "fakeenik"]]
                  }
                 {:label "afar-VSuffAffCond2Aux2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table t"
+                 :note "PHp259-263-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3252,7 +3252,7 @@
                          [:Plural :Person3 :Common "fakèn ken tekkek"]]
                  }
                 {:label "afar-VSuffAffContraf-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table v"
+                 :note "PHp259-263-v"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3269,7 +3269,7 @@
                          [:Plural :Person3 :Common "fakinnoonuy"]]
                  }
                 {:label "afar-VSuffAffHypothAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table y"
+                 :note "PHp259-263-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3287,7 +3287,7 @@
                          [:Plural :Person3 :Common "fakè ɗaaɗen"]]
                  }
                 {:label "afar-VSuffAffImperf-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table b"
+                 :note "PHp259-263-b"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3304,7 +3304,7 @@
                          [:Plural :Person3 :Common "fakaanah"]]
                  }
                 {:label "afar-VSuffAffImperfAnticipAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table k"
+                 :note "PHp259-263-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3322,7 +3322,7 @@
                          [:Plural :Person3 :Common "fàkak sugèlon"]]
                  }
                 {:label "afar-VSuffAffImperfPast1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table f"
+                 :note "PHp259-263-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3340,7 +3340,7 @@
                          [:Plural :Person3 :Common "fàkak yenen"]]
                  }
                 {:label "afar-VSuffAffImperfPast2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table g"
+                 :note "PHp259-263-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3358,7 +3358,7 @@
                          [:Plural :Person3 :Common "fàkak sugen"]]
                  }
                 {:label "afar-VSuffAffImperfPresAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table h"
+                 :note "PHp259-263-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3376,7 +3376,7 @@
                          [:Plural :Person3 :Common "fakaanàk yanin"]]
                  }
                 {:label "afar-VSuffAffImperfProb1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table o"
+                 :note "PHp259-263-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3394,7 +3394,7 @@
                          [:Plural :Person3 :Common "fàkoònu(h) takkeh"]]
                  }
                 {:label "afar-VSuffAffImperfProb2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table p"
+                 :note "PHp259-263-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3412,7 +3412,7 @@
                          [:Plural :Person3 :Common "fakaanàm takkeh"]]
                  }
                 {:label "afar-VSuffAffImprtv-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table r"
+                 :note "PHp259-263-r"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :gender :Common,
@@ -3426,7 +3426,7 @@
                          [:Plural "fàka"]]
                  }
                 {:label "afar-VSuffAffIntentAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table n"
+                 :note "PHp259-263-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3444,7 +3444,7 @@
                          [:Plural :Person3 :Common "fàkoònu waan"]]
                  }
                 {:label "afar-VSuffAffJuss-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table l"
+                 :note "PHp259-263-l"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3461,7 +3461,7 @@
                          [:Plural :Person3 :Common "fàkoònay"]]
                  }
                 {:label "afar-VSuffAffPerf-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table a"
+                 :note "PHp259-263-a"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3478,7 +3478,7 @@
                          [:Plural :Person3 :Common "fakeenih"]]
                  }
                 {:label "afar-VSuffAffPerfAnticipAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table j"
+                 :note "PHp259-263-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3496,7 +3496,7 @@
                          [:Plural :Person3 :Common "fakeenìh sugèlon"]]
                  }
                 {:label "afar-VSuffAffPerfCondAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table u"
+                 :note "PHp259-263-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3514,7 +3514,7 @@
                          [:Plural :Person3 :Common "fakeenìh sugeenik"]]
                  }
                 {:label "afar-VSuffAffPerfPast1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table c"
+                 :note "PHp259-263-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3532,7 +3532,7 @@
                          [:Plural :Person3 :Common "fakeenìh yenen"]]
                  }
                 {:label "afar-VSuffAffPerfPast2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table d"
+                 :note "PHp259-263-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3550,7 +3550,7 @@
                          [:Plural :Person3 :Common "fakeenìh sugen"]]
                  }
                 {:label "afar-VSuffAffPerfPresAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table e"
+                 :note "PHp259-263-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3568,7 +3568,7 @@
                          [:Plural :Person3 :Common "fakeenìk yanin"]]
                  }
                 {:label "afar-VSuffAffPerfProbAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table q"
+                 :note "PHp259-263-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3586,7 +3586,7 @@
                          [:Plural :Person3 :Common "fakeenìm takkeh"]]
                  }
                 {:label "afar-VSuffAffPurp1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table w"
+                 :note "PHp259-263-w"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3603,7 +3603,7 @@
                          [:Plural :Person3 :Common "fàkoònuh"]]
                  }
                 {:label "afar-VSuffAffPurp2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table x"
+                 :note "PHp259-263-x"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3620,7 +3620,7 @@
                          [:Plural :Person3 :Common "fakaanànkeh"]]
                  }
                 {:label "afar-VSuffAffRequest-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table m"
+                 :note "PHp259-263-m"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :gender :Common,
@@ -3633,7 +3633,7 @@
                          [:Plural :Person2 "fakno?"]]
                  }
                 {:label "afar-VSuffNegAnticip-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table i"
+                 :note "PHp259-263-i"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3650,7 +3650,7 @@
                          [:Plural :Person3 :Common "màfakan"]]
                  }
                 {:label "afar-VSuffNegCond1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table s"
+                 :note "PHp259-263-s"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3668,7 +3668,7 @@
                          [:Plural :Person3 :Common "fakè weenik"]]
                  }
                 {:label "afar-VSuffNegCond2Aux3-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table t"
+                 :note "PHp259-263-t"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3686,7 +3686,7 @@
                          [:Plural :Person3 :Common "fakè waan ken tekkek"]]
                  }
                 {:label "afar-VSuffNegContrafAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table v"
+                 :note "PHp259-263-v"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3704,7 +3704,7 @@
                          [:Plural :Person3 :Common "fakè wannoonuy"]]
                  }
                 {:label "afar-VSuffNegHypothAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table y"
+                 :note "PHp259-263-y"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3722,7 +3722,7 @@
                          [:Plural :Person3 :Common "fakè màɗaaɗen"]]
                  }
                 {:label "afar-VSuffNegImperf-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table b"
+                 :note "PHp259-263-b"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3739,7 +3739,7 @@
                          [:Plural :Person3 :Common "màfakan"]]
                  }
                 {:label "afar-VSuffNegImperfAnticipAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table k"
+                 :note "PHp259-263-k"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3757,7 +3757,7 @@
                          [:Plural :Person3 :Common "fàkak màsugan"]]
                  }
                 {:label "afar-VSuffNegImperfPast1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table f"
+                 :note "PHp259-263-f"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3775,7 +3775,7 @@
                          [:Plural :Person3 :Common "fàkak mànannon"]]
                  }
                 {:label "afar-VSuffNegImperfPast2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table g"
+                 :note "PHp259-263-g"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3793,7 +3793,7 @@
                          [:Plural :Person3 :Common "fàkak màsuginnon"]]
                  }
                 {:label "afar-VSuffNegImperfPresAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table h"
+                 :note "PHp259-263-h"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3811,7 +3811,7 @@
                          [:Plural :Person3 :Common "fakaanàh màyanin"]]
                  }
                 {:label "afar-VSuffNegImperfProb1Aux2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table o"
+                 :note "PHp259-263-o"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3829,7 +3829,7 @@
                          [:Plural :Person3 :Common "fakè wayoònu(h) takkeh"]]
                  }
                 {:label "afar-VSuffNegImperfProb2Aux2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table p"
+                 :note "PHp259-263-p"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3847,7 +3847,7 @@
                          [:Plural :Person3 :Common "fakè waanam takkeh"]]
                  }
                 {:label "afar-VSuffNegImprtv-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table r"
+                 :note "PHp259-263-r"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :gender :Common,
@@ -3861,7 +3861,7 @@
                          [:Plural "màfakina"]]
                  }
                 {:label "afar-VSuffNegIntent-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table n"
+                 :note "PHp259-263-n"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :formClass :Compound,
@@ -3879,7 +3879,7 @@
                          [:Plural :Person3 :Common "fàkoònu màwaan"]]
                  }
                 {:label "afar-VSuffNegJussAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table l"
+                 :note "PHp259-263-l"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3897,7 +3897,7 @@
                          [:Plural :Person3 :Common "fakè woònay"]]
                  }
                 {:label "afar-VSuffNegPerf-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table a"
+                 :note "PHp259-263-a"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3914,7 +3914,7 @@
                          [:Plural :Person3 :Common "màfakinnon"]]
                  }
                 {:label "afar-VSuffNegPerfAnticipAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table j"
+                 :note "PHp259-263-j"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3932,7 +3932,7 @@
                          [:Plural :Person3 :Common "fakeenìh màsugan"]]
                  }
                 {:label "afar-VSuffNegPerfCondAux2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table u"
+                 :note "PHp259-263-u"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3950,7 +3950,7 @@
                          [:Plural :Person3 :Common "fakeenìh sugè weenik"]]
                  }
                 {:label "afar-VSuffNegPerfPast1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table c"
+                 :note "PHp259-263-c"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3968,7 +3968,7 @@
                          [:Plural :Person3 :Common "fakeenìh mànannon"]]
                  }
                 {:label "afar-VSuffNegPerfPast2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table d"
+                 :note "PHp259-263-d"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -3986,7 +3986,7 @@
                          [:Plural :Person3 :Common "fakeenìh màsuginnon"]]
                  }
                 {:label "afar-VSuffNegPerfPresAux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table e"
+                 :note "PHp259-263-e"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -4004,7 +4004,7 @@
                          [:Plural :Person3 :Common "fakeenìh màyanin"]]
                  }
                 {:label "afar-VSuffNegPerfProbAux2-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table q"
+                 :note "PHp259-263-q"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -4022,7 +4022,7 @@
                          [:Plural :Person3 :Common "fakè weenim takkeh"]]
                  }
                 {:label "afar-VSuffNegPurp1Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table w"
+                 :note "PHp259-263-w"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -4040,7 +4040,7 @@
                          [:Plural :Person3 :Common "fakè woònu(h)"]]
                  }
                 {:label "afar-VSuffNegPurp2Aux1-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table x"
+                 :note "PHp259-263-x"
                  :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -4058,7 +4058,7 @@
                          [:Plural :Person3 :Common "fakè waanànkeh"]]
                  }
                 {:label "afar-VSuffNegRequest-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;table m"
+                 :note "PHp259-263-m"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :gender :Common,
@@ -4071,7 +4071,7 @@
                          [:Plural :Person2 "mafakno?"]]
                  }
                 {:label "afar-VSuffNonFinite-fak"
-                 :note "Parker-Hayward1985 pp. 259 - 263;tables za,zb,zc,zd"
+                 :note "PHp259-263-za,zb,zc,zd"
                  :common {:vmorphClass :NomFormsSuff
                           :conjClass :Suffix,
                           :lexeme :fak,
@@ -4083,7 +4083,7 @@
                          [:VH_Participle "fàkah"]]
                  }
                 {:label "afar-VSuffPartImperf-ab"
-                 :note "Parker-Hayward1985 p. 255,tab 21"
+                 :note "PHp255-21"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :ab,
@@ -4099,7 +4099,7 @@
                          [:Plural :Person3 :Common "abaanah"]]
                  }
                 {:label "afar-VSuffPartPerf-ab"
-                 :note "Parker-Hayward1985 p. 255,tab 21"
+                 :note "PHp255-21"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :ab,
@@ -4115,7 +4115,7 @@
                          [:Plural :Person3 :Common "abeenih"]]
                  }
                 {:label "afar-VTAMStemStructure"
-                 :note "Parker-Hayward1985 p. 257,tab 22. This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open."
+                 :note "PHp257-22 :: This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open."
                  :common {:vmorphClass :StemForm
                           :lexeme :fak,
                           :formClass :StemForm,
@@ -4173,7 +4173,7 @@
                          [:Mà_stem_in_imperative :Negative :Imperative "Common, \"_NULL\"" "mà-fak-in"]]
                  }
                 {:label "afar-PInd"
-                 :note "Parker-Hayward1985 pp. 237-238,tab. 8,9,11,12,13"
+                 :note "PHp237-238-8-9-11-12-13"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
@@ -4212,7 +4212,7 @@
                          [:Reflexive :Plural :PersonNon_1 :Common "isìnni"]]
                  }
                 {:label "afar-PPossDef"
-                 :note "Parker-Hayward1985 p. 235 tab 6,tab 7"
+                 :note "PHp235-6-7"
                  :common {:pos :Pronoun}
                  :terms [[:proClass :number :person :gender :token],
                          [:PossessiveDefinite :Singular :Person1 :Common "yi"],
@@ -4228,7 +4228,7 @@
                          [:Reflexive :Plural :PersonNon_1 :Common "isinni ~ sinni"]]
                  }
                 {:label "afar-VSubjMarker"
-                 :note "Parker-Hayward1985 p. 252,tab 18"
+                 :note "PHp252-18"
                  :common {:vmorphClass :SubjMarker
                           :pos :Verb,
                           :formType :Affix}
