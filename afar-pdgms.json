@@ -3,7 +3,7 @@
   "subfamily": "cushitic east lowland saho-afar",
   "lgpref": "afr",
   "datasource": "Parker, E. M., and Richard J. Hayward. 1985. 'A Concise Outline of Phonology and Morphology. Appendix A in E. M. Parker &  Richard J. Hayward, An Afar-English-French Dictionary. London: School of Oriental and African Studies, University of London. pp. 214-297. abbrev. in :note with Page and Table number as 'PHpnnn-nnn-t' -- e.g.  'PH85p274-279-s' = 'Parker-Hayward1985 pp.274-279; table s'",
-  "dadaso8urceJNotes": "",
+  "datasourceNotes": "",
   "transcription": { 
     "Consonants": {
       "general": "cf. transcription table",
@@ -13,7 +13,8 @@
         ]},
     "Vowels": {
       "inventory": "i e a o u; ii ee aa oo uu",
-    "Tone": "'a' low; 'à'high"}},  "geodemoURL": "http://www.ethnologue.com/language/aar",
+    "Tone": "'a' low; 'à'high"}}, 
+  "geodemoURL": "http://www.ethnologue.com/language/aar",
   "geodemoTXT": "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely relateSaho.",
   "schemata": {
   "conjClass": [
