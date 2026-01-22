@@ -2,28 +2,24 @@
   "lang": "afar",
   "subfamily": "cushitic east lowland saho-afar",
   "lgpref": "afr",
-  "datasource": "Parker, E. M., and Richard J. Hayward. 1985. 'A Concise Outline of Phonology and Morphology. Appendix A in E. M. Parker &  Richard J. Hayward, An Afar-English-French Dictionary. London: School of Oriental and African Studies, University of London. pp. 214-297. abbrev. in :note with Page and Table number as 'PHpnnn-nnn-t' -- e.g.  'PH85p274-279-s' = 'Parker-Hayward1985 pp.274-279; table s'",
+  "datasource": "Parker, E. M., and Richard J. Hayward. 1985. 'A Concise Outline of Phonology and Morphology. Appendix A in E. M. Parker &  Richard J. Hayward, An Afar-English-French Dictionary. London: School of Oriental and African Studies, University of London. pp. 214-297 [abbrev. in :note with Page and Table number as 'PHpnnn-nnn-t' -- e.g.  'PH85p274-279-s' = 'Parker-Hayward1985 pp.274-279; table s']",
   "datasourceNotes": "",
   "transcription": { 
-    "Consonants": {
-      "general": "cf. transcription table",
-      "note": [
-        "'x' = 'ɗ' [substituted throughout in this file]",
-        "'' = '' "
-        ]},
-    "Vowels": {
-      "inventory": "i e a o u; ii ee aa oo uu",
-    "Tone": "'a' low; 'à'high"}}, 
+    "Consonants": "cf. transcription table",
+    "Vowels": "i e a o u; ii ee aa oo uu",
+    "Prosody": "pitch: 'a' low; 'à' high"
+  },
+  "transcription-note": "'x' = 'ɗ' [substituted throughout in this file]",
   "geodemoURL": "http://www.ethnologue.com/language/aar",
-  "geodemoTXT": "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely relateSaho.",
+  "geodemoTXT": "Varieties and subdialects of Afar are spoken by more than a million individuals in Ethiopia, Djibouti, and Eritrea. It is very closely related to Saho.",
   "schemata": {
   "conjClass": [
-    "Class1",
-    "Class2",
-    "Class3",
-    "Class3cmp",
-    "Class4int",
-    "Class4trns"
+    "CompoundInt",
+    "CompoundTrns",
+    "Prefix",
+    "Stative",
+    "StativeCmp",
+    "Suffix"
   ],
   "gender": [
     "Common",
@@ -47,7 +43,6 @@
     "ImperfectParticiple",
     "Imperfect_m",
     "Jussive",
-    "Ma_requestive",
     "Mà_imperfect",
     "Mà_stem",
     "Mà_stem_in_imperative",
@@ -63,6 +58,12 @@
     "SubjMarker",
     "TamStemForm"
   ],
+  "nonFiniteForm": [
+    "I_Form",
+    "Infinitive",
+    "RelativeIndeterminate",
+    "VH_Participle"
+  ],
   "number": [
     "Plural",
     "Singular"
@@ -76,7 +77,8 @@
   ],
   "polarity": [
     "Affirmative",
-    "Negative"
+    "Negative",
+    "positive"
   ],
   "pos": [
     "Pronoun",
@@ -99,7 +101,6 @@
     "Contrafactual",
     "ContrafactualStative",
     "Hypothetical",
-    "I_Form",
     "Imperative",
     "Imperfect",
     "ImperfectAnticipatory",
@@ -108,7 +109,6 @@
     "ImperfectPresent",
     "ImperfectProbable1",
     "ImperfectProbable2",
-    "Infinitive",
     "Intentive",
     "Jussive",
     "PastState1",
@@ -125,10 +125,12 @@
     "Probable",
     "Purposive1",
     "Purposive2",
-    "RelativeIndeterminate",
     "Requestive",
-    "Requestive_p1Only",
-    "VH_Participle"
+    "Requestive_p1Only"
+  ],
+  "tamParticiple": [
+    "ImperfectParticiple",
+    "PerfectParticiple"
   ]
 },
   "lexemes": {
@@ -322,12 +324,13 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-eedheg-Imperfect",
+    "label": "afr-VerbPrefix-eedheg-Imperfect",
     "note": "PH85p255-21",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "eedheg",
       "pos": "Verb",
+      "polarity": "positive",
       "tam": "Imperfect"
     },
     "terms": [
@@ -342,11 +345,12 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-eedheg-Perfect",
+    "label": "afr-VerbPrefix-eedheg-Perfect",
     "note": "PH85p255-21",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "eedheg",
+      "polarity": "positive",
       "pos": "Verb",
       "tam": "Perfect"
     },
@@ -362,15 +366,15 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-",
+    "label": "afr-VerbPrefix-uduur-nonFiniteForm",
     "note": "PH85p259-263-za,zb,zc,zd",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "pos": "Verb"
     },
     "terms": [
-      ["tam" ,"token"],
+      ["nonFiniteForm" ,"token"],
       ["I_Form" ,"aduùri"],
       ["Infinitive" ,"aduurìyya"],
       ["RelativeIndeterminate" ,"aduurinnaànih ~ aduurinnaàn"],
@@ -378,10 +382,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-AnticipatoryAffirmative",
+    "label": "afr-VerbPrefix-uduur-AnticipatoryAffirmative",
     "note": "PH85p259-263-i",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -399,10 +403,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-AnticipatoryNegative",
+    "label": "afr-VerbPrefix-uduur-AnticipatoryNegative",
     "note": "PH85p259-263-i",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -420,10 +424,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Conditional1Affirmative",
+    "label": "afr-VerbPrefix-uduur-Conditional1Affirmative",
     "note": "PH85p259-263-s",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -441,10 +445,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Conditional1Negative",
+    "label": "afr-VerbPrefix-uduur-Conditional1Negative",
     "note": "PH85p259-263-s",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -462,10 +466,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Conditional2Affirmative",
+    "label": "afr-VerbPrefix-uduur-Conditional2Affirmative",
     "note": "PH85p259-263-t",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -483,10 +487,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Conditional2Negative",
+    "label": "afr-VerbPrefix-uduur-Conditional2Negative",
     "note": "PH85p259-263-t",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -504,10 +508,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ContrafactualAffirmative",
+    "label": "afr-VerbPrefix-uduur-ContrafactualAffirmative",
     "note": "PH85p259-263-v",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -525,10 +529,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ContrafactualNegative",
+    "label": "afr-VerbPrefix-uduur-ContrafactualNegative",
     "note": "PH85p259-263-v",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -546,10 +550,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-HypotheticalAffirmative",
+    "label": "afr-VerbPrefix-uduur-HypotheticalAffirmative",
     "note": "PH85p259-263-y",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -567,10 +571,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-HypotheticalNegative",
+    "label": "afr-VerbPrefix-uduur-HypotheticalNegative",
     "note": "PH85p259-263-y",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -588,10 +592,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperativeAffirmative",
+    "label": "afr-VerbPrefix-uduur-ImperativeAffirmative",
     "note": "PH85p259-263-r",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -604,10 +608,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperativeNegative",
+    "label": "afr-VerbPrefix-uduur-ImperativeNegative",
     "note": "PH85p259-263-r",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -620,10 +624,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectAffirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectAffirmative",
     "note": "PH85p259-263-b",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -641,10 +645,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectAnticipatoryAffirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectAnticipatoryAffirmative",
     "note": "PH85p259-263-k",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -662,10 +666,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectAnticipatoryNegative",
+    "label": "afr-VerbPrefix-uduur-ImperfectAnticipatoryNegative",
     "note": "PH85p259-263-k",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -683,10 +687,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectNegative",
+    "label": "afr-VerbPrefix-uduur-ImperfectNegative",
     "note": "PH85p259-263-b",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -704,10 +708,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPast1Affirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPast1Affirmative",
     "note": "PH85p259-263-f",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -725,10 +729,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPast1Negative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPast1Negative",
     "note": "PH85p259-263-f",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -746,10 +750,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPast2Affirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPast2Affirmative",
     "note": "PH85p259-263-g",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -767,10 +771,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPast2Negative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPast2Negative",
     "note": "PH85p259-263-g",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -788,10 +792,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPresentAffirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPresentAffirmative",
     "note": "PH85p259-263-h",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -809,10 +813,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectPresentNegative",
+    "label": "afr-VerbPrefix-uduur-ImperfectPresentNegative",
     "note": "PH85p259-263-h",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -830,10 +834,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectProbable1Affirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectProbable1Affirmative",
     "note": "PH85p259-263-o",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -851,10 +855,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectProbable1Negative",
+    "label": "afr-VerbPrefix-uduur-ImperfectProbable1Negative",
     "note": "PH85p259-263-o",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -872,10 +876,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectProbable2Affirmative",
+    "label": "afr-VerbPrefix-uduur-ImperfectProbable2Affirmative",
     "note": "PH85p259-263-p",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -893,10 +897,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-ImperfectProbable2Negative",
+    "label": "afr-VerbPrefix-uduur-ImperfectProbable2Negative",
     "note": "PH85p259-263-p",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -914,10 +918,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-IntentiveAffirmative",
+    "label": "afr-VerbPrefix-uduur-IntentiveAffirmative",
     "note": "PH85p259-263-n",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -935,10 +939,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-IntentiveNegative",
+    "label": "afr-VerbPrefix-uduur-IntentiveNegative",
     "note": "PH85p259-263-n",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -956,10 +960,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-JussiveAffirmative",
+    "label": "afr-VerbPrefix-uduur-JussiveAffirmative",
     "note": "PH85p259-263-l",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -977,10 +981,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-JussiveNegative",
+    "label": "afr-VerbPrefix-uduur-JussiveNegative",
     "note": "PH85p259-263-l",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -998,10 +1002,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectAffirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectAffirmative",
     "note": "PH85p259-263-a",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1019,10 +1023,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectAnticipatoryAffirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectAnticipatoryAffirmative",
     "note": "PH85p259-263-j",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1040,10 +1044,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectAnticipatoryNegative",
+    "label": "afr-VerbPrefix-uduur-PerfectAnticipatoryNegative",
     "note": "PH85p259-263-j",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1061,10 +1065,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectConditionalAffirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectConditionalAffirmative",
     "note": "PH85p259-263-u",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1082,10 +1086,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectConditionalNegative",
+    "label": "afr-VerbPrefix-uduur-PerfectConditionalNegative",
     "note": "PH85p259-263-u",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1103,10 +1107,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectNegative",
+    "label": "afr-VerbPrefix-uduur-PerfectNegative",
     "note": "PH85p259-263-a",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1124,10 +1128,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPast1Affirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectPast1Affirmative",
     "note": "PH85p259-263-c",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1145,10 +1149,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPast1Negative",
+    "label": "afr-VerbPrefix-uduur-PerfectPast1Negative",
     "note": "PH85p259-263-c",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1166,10 +1170,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPast2Affirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectPast2Affirmative",
     "note": "PH85p259-263-d",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1187,10 +1191,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPast2Negative",
+    "label": "afr-VerbPrefix-uduur-PerfectPast2Negative",
     "note": "PH85p259-263-d",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1208,10 +1212,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPresentAffirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectPresentAffirmative",
     "note": "PH85p259-263-e",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1229,10 +1233,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectPresentNegative",
+    "label": "afr-VerbPrefix-uduur-PerfectPresentNegative",
     "note": "PH85p259-263-e",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1250,10 +1254,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectProbableAffirmative",
+    "label": "afr-VerbPrefix-uduur-PerfectProbableAffirmative",
     "note": "PH85p259-263-q",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1271,10 +1275,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-PerfectProbableNegative",
+    "label": "afr-VerbPrefix-uduur-PerfectProbableNegative",
     "note": "PH85p259-263-q",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1292,10 +1296,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Purposive1Affirmative",
+    "label": "afr-VerbPrefix-uduur-Purposive1Affirmative",
     "note": "PH85p259-263-w",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1313,10 +1317,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Purposive1Negative",
+    "label": "afr-VerbPrefix-uduur-Purposive1Negative",
     "note": "PH85p259-263-w",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1334,10 +1338,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Purposive2Affirmative",
+    "label": "afr-VerbPrefix-uduur-Purposive2Affirmative",
     "note": "PH85p259-263-x",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1355,10 +1359,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-Purposive2Negative",
+    "label": "afr-VerbPrefix-uduur-Purposive2Negative",
     "note": "PH85p259-263-x",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1376,10 +1380,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-RequestiveAffirmative",
+    "label": "afr-VerbPrefix-uduur-RequestiveAffirmative",
     "note": "PH85p259-263-m",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1392,10 +1396,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass1-uduur-RequestiveNegative",
+    "label": "afr-VerbPrefix-uduur-RequestiveNegative",
     "note": "PH85p259-263-m",
     "common": {
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "lexeme": "uduur",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1408,13 +1412,13 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-ab-Imperfect",
-    "note": "PH85p255-21",
+    "label": "afr-VerbSuffix-ab-Imperfect",
+    "note": "PH85p255-21. Cf. pp. 255-257 for other participial forms in -h. k-, and -Vh.",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "ab",
       "pos": "Verb",
-      "tam": "Imperfect"
+      "tamParticiple": "ImperfectParticiple"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
@@ -1428,13 +1432,13 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-ab-Perfect",
-    "note": "PH85p255-21",
+    "label": "afr-VerbSuffix-ab-Perfect",
+    "note": "PH85p255-21. Cf. pp. 255-257 for other participial forms in -h. k-, and -Vh",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "ab",
       "pos": "Verb",
-      "tam": "Perfect"
+      "tamParticiple": "PerfectParticiple"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
@@ -1448,15 +1452,15 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-",
+    "label": "afr-VerbSuffix-fak-nonFiniteForm",
     "note": "PH85p259-263-za,zb,zc,zd",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "pos": "Verb"
     },
     "terms": [
-      ["tam" ,"token"],
+      ["nonFiniteForm" ,"token"],
       ["I_Form" ,"fàki"],
       ["Infinitive" ,"fakìyya"],
       ["RelativeIndeterminate" ,"fakinnaànih / fakinnaàn"],
@@ -1464,10 +1468,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-AnticipatoryAffirmative",
+    "label": "afr-VerbSuffix-fak-AnticipatoryAffirmative",
     "note": "PH85p259-263-i",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1485,10 +1489,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-AnticipatoryNegative",
+    "label": "afr-VerbSuffix-fak-AnticipatoryNegative",
     "note": "PH85p259-263-i",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1506,10 +1510,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Conditional1Affirmative",
+    "label": "afr-VerbSuffix-fak-Conditional1Affirmative",
     "note": "PH85p259-263-s",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1527,10 +1531,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Conditional1Negative",
+    "label": "afr-VerbSuffix-fak-Conditional1Negative",
     "note": "PH85p259-263-s",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1548,10 +1552,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Conditional2Affirmative",
+    "label": "afr-VerbSuffix-fak-Conditional2Affirmative",
     "note": "PH85p259-263-t",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1569,10 +1573,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Conditional2Negative",
+    "label": "afr-VerbSuffix-fak-Conditional2Negative",
     "note": "PH85p259-263-t",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1590,10 +1594,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ContrafactualAffirmative",
+    "label": "afr-VerbSuffix-fak-ContrafactualAffirmative",
     "note": "PH85p259-263-v",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1611,10 +1615,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ContrafactualNegative",
+    "label": "afr-VerbSuffix-fak-ContrafactualNegative",
     "note": "PH85p259-263-v",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1632,10 +1636,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-HypotheticalAffirmative",
+    "label": "afr-VerbSuffix-fak-HypotheticalAffirmative",
     "note": "PH85p259-263-y",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1653,10 +1657,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-HypotheticalNegative",
+    "label": "afr-VerbSuffix-fak-HypotheticalNegative",
     "note": "PH85p259-263-y",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1674,10 +1678,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperativeAffirmative",
+    "label": "afr-VerbSuffix-fak-ImperativeAffirmative",
     "note": "PH85p259-263-r",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1690,10 +1694,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperativeNegative",
+    "label": "afr-VerbSuffix-fak-ImperativeNegative",
     "note": "PH85p259-263-r",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1706,10 +1710,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectAffirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectAffirmative",
     "note": "PH85p259-263-b",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1727,10 +1731,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectAnticipatoryAffirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectAnticipatoryAffirmative",
     "note": "PH85p259-263-k",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1748,10 +1752,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectAnticipatoryNegative",
+    "label": "afr-VerbSuffix-fak-ImperfectAnticipatoryNegative",
     "note": "PH85p259-263-k",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1769,10 +1773,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectNegative",
+    "label": "afr-VerbSuffix-fak-ImperfectNegative",
     "note": "PH85p259-263-b",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1790,10 +1794,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPast1Affirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectPast1Affirmative",
     "note": "PH85p259-263-f",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1811,10 +1815,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPast1Negative",
+    "label": "afr-VerbSuffix-fak-ImperfectPast1Negative",
     "note": "PH85p259-263-f",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1832,10 +1836,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPast2Affirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectPast2Affirmative",
     "note": "PH85p259-263-g",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1853,10 +1857,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPast2Negative",
+    "label": "afr-VerbSuffix-fak-ImperfectPast2Negative",
     "note": "PH85p259-263-g",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1874,10 +1878,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPresentAffirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectPresentAffirmative",
     "note": "PH85p259-263-h",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1895,10 +1899,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectPresentNegative",
+    "label": "afr-VerbSuffix-fak-ImperfectPresentNegative",
     "note": "PH85p259-263-h",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1916,10 +1920,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectProbable1Affirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectProbable1Affirmative",
     "note": "PH85p259-263-o",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1937,10 +1941,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectProbable1Negative",
+    "label": "afr-VerbSuffix-fak-ImperfectProbable1Negative",
     "note": "PH85p259-263-o",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -1958,10 +1962,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectProbable2Affirmative",
+    "label": "afr-VerbSuffix-fak-ImperfectProbable2Affirmative",
     "note": "PH85p259-263-p",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -1979,10 +1983,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-ImperfectProbable2Negative",
+    "label": "afr-VerbSuffix-fak-ImperfectProbable2Negative",
     "note": "PH85p259-263-p",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2000,10 +2004,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-IntentiveAffirmative",
+    "label": "afr-VerbSuffix-fak-IntentiveAffirmative",
     "note": "PH85p259-263-n",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2021,10 +2025,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-IntentiveNegative",
+    "label": "afr-VerbSuffix-fak-IntentiveNegative",
     "note": "PH85p259-263-n",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2042,10 +2046,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-JussiveAffirmative",
+    "label": "afr-VerbSuffix-fak-JussiveAffirmative",
     "note": "PH85p259-263-l",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2063,10 +2067,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-JussiveNegative",
+    "label": "afr-VerbSuffix-fak-JussiveNegative",
     "note": "PH85p259-263-l",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2084,10 +2088,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectAffirmative",
+    "label": "afr-VerbSuffix-fak-PerfectAffirmative",
     "note": "PH85p259-263-a",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2105,10 +2109,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectAnticipatoryAffirmative",
+    "label": "afr-VerbSuffix-fak-PerfectAnticipatoryAffirmative",
     "note": "PH85p259-263-j",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2126,10 +2130,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectAnticipatoryNegative",
+    "label": "afr-VerbSuffix-fak-PerfectAnticipatoryNegative",
     "note": "PH85p259-263-j",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2147,10 +2151,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectConditionalAffirmative",
+    "label": "afr-VerbSuffix-fak-PerfectConditionalAffirmative",
     "note": "PH85p259-263-u",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2168,10 +2172,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectConditionalNegative",
+    "label": "afr-VerbSuffix-fak-PerfectConditionalNegative",
     "note": "PH85p259-263-u",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2189,10 +2193,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectNegative",
+    "label": "afr-VerbSuffix-fak-PerfectNegative",
     "note": "PH85p259-263-a",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2210,10 +2214,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPast1Affirmative",
+    "label": "afr-VerbSuffix-fak-PerfectPast1Affirmative",
     "note": "PH85p259-263-c",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2231,10 +2235,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPast1Negative",
+    "label": "afr-VerbSuffix-fak-PerfectPast1Negative",
     "note": "PH85p259-263-c",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2252,10 +2256,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPast2Affirmative",
+    "label": "afr-VerbSuffix-fak-PerfectPast2Affirmative",
     "note": "PH85p259-263-d",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2273,10 +2277,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPast2Negative",
+    "label": "afr-VerbSuffix-fak-PerfectPast2Negative",
     "note": "PH85p259-263-d",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2294,10 +2298,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPresentAffirmative",
+    "label": "afr-VerbSuffix-fak-PerfectPresentAffirmative",
     "note": "PH85p259-263-e",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2315,10 +2319,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectPresentNegative",
+    "label": "afr-VerbSuffix-fak-PerfectPresentNegative",
     "note": "PH85p259-263-e",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2336,10 +2340,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectProbableAffirmative",
+    "label": "afr-VerbSuffix-fak-PerfectProbableAffirmative",
     "note": "PH85p259-263-q",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2357,10 +2361,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-PerfectProbableNegative",
+    "label": "afr-VerbSuffix-fak-PerfectProbableNegative",
     "note": "PH85p259-263-q",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2378,10 +2382,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Purposive1Affirmative",
+    "label": "afr-VerbSuffix-fak-Purposive1Affirmative",
     "note": "PH85p259-263-w",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2399,10 +2403,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Purposive1Negative",
+    "label": "afr-VerbSuffix-fak-Purposive1Negative",
     "note": "PH85p259-263-w",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2420,10 +2424,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Purposive2Affirmative",
+    "label": "afr-VerbSuffix-fak-Purposive2Affirmative",
     "note": "PH85p259-263-x",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2441,10 +2445,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-Purposive2Negative",
+    "label": "afr-VerbSuffix-fak-Purposive2Negative",
     "note": "PH85p259-263-x",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2462,10 +2466,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-RequestiveAffirmative",
+    "label": "afr-VerbSuffix-fak-RequestiveAffirmative",
     "note": "PH85p259-263-m",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2478,10 +2482,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass2-fak-RequestiveNegative",
+    "label": "afr-VerbSuffix-fak-RequestiveNegative",
     "note": "PH85p259-263-m",
     "common": {
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "lexeme": "fak",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2494,10 +2498,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-ContrafactualNegative",
+    "label": "afr-VerbStative-meq-ContrafactualNegative",
     "note": "PH85p268-269-vv",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2515,10 +2519,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-ContrafactualStativeAffirmative",
+    "label": "afr-VerbStative-meq-ContrafactualStativeAffirmative",
     "note": "PH85p268-269-vv",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2536,10 +2540,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PastState1Affirmative",
+    "label": "afr-VerbStative-meq-PastState1Affirmative",
     "note": "PH85p268-269-ff",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2557,10 +2561,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PastState1Negative",
+    "label": "afr-VerbStative-meq-PastState1Negative",
     "note": "PH85p268-269-tt",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2578,10 +2582,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PastState2Affirmative",
+    "label": "afr-VerbStative-meq-PastState2Affirmative",
     "note": "PH85p268-269-gg",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2599,10 +2603,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PastState2Negative",
+    "label": "afr-VerbStative-meq-PastState2Negative",
     "note": "PH85p268-269-gg",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2620,10 +2624,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PresentState1Affirmative",
+    "label": "afr-VerbStative-meq-PresentState1Affirmative",
     "note": "PH85p268-269-bb",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2641,10 +2645,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PresentState1Negative",
+    "label": "afr-VerbStative-meq-PresentState1Negative",
     "note": "PH85p268-269-bb",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2662,10 +2666,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PresentState2Affirmative",
+    "label": "afr-VerbStative-meq-PresentState2Affirmative",
     "note": "PH85p268-269-ee",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2683,10 +2687,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-PresentState2Negative",
+    "label": "afr-VerbStative-meq-PresentState2Negative",
     "note": "PH85p268-269-ee",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2704,10 +2708,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-ProbableAffirmative",
+    "label": "afr-VerbStative-meq-ProbableAffirmative",
     "note": "PH85p268-269-pp",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2725,10 +2729,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-ProbableNegative",
+    "label": "afr-VerbStative-meq-ProbableNegative",
     "note": "PH85p268-269-pp",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2746,24 +2750,23 @@
     ]
   },
   {
-    "label": "afr-VerbClass3-meq-VH_Participle",
+    "label": "afr-VerbStative-meq-VH_Participle",
     "note": "PH85p268-269-za",
     "common": {
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "lexeme": "meq",
-      "pos": "Verb",
-      "tam": "VH_Participle"
+      "pos": "Verb"
     },
     "terms": [
-      ["token"],
-      ["miʕih"]
+      ["nonFiniteForm", "token"],
+      ["VH_Participle", "miʕih"]
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-ContrafactualStativeAffirmative",
+    "label": "afr-VerbStativecmp-anay-qunda-ContrafactualStativeAffirmative",
     "note": "PH85p269-270-vv",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2781,10 +2784,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-ContrafactualStativeNegative",
+    "label": "afr-VerbStativeCmp-anay-qunda-ContrafactualStativeNegative",
     "note": "PH85p269-270-vv",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2802,10 +2805,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-ImperfectPast1Affirmative",
+    "label": "afr-VerbStativeCmp-anay-qunda-ImperfectPast1Affirmative",
     "note": "PH85p269-270-ff",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2823,10 +2826,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PastState1Negative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PastState1Negative",
     "note": "PH85p269-270-ff",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2844,10 +2847,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PastState2Affirmative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PastState2Affirmative",
     "note": "PH85p269-270-gg",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2865,10 +2868,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PastState2Negative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PastState2Negative",
     "note": "PH85p269-270-gg",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2886,10 +2889,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PresentState1Affirmative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PresentState1Affirmative",
     "note": "PH85p269-270-bb",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2907,10 +2910,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PresentState1Negative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PresentState1Negative",
     "note": "PH85p269-270-bb",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2928,10 +2931,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PresentState2Affirmative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PresentState2Affirmative",
     "note": "PH85p269-270-ee",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2949,10 +2952,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-PresentState2Negative",
+    "label": "afr-VerbStativeCmp-anay-qunda-PresentState2Negative",
     "note": "PH85p269-270-ee",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -2970,10 +2973,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-ProbableAffirmative",
+    "label": "afr-VerbStativeCmp-anay-qunda-ProbableAffirmative",
     "note": "PH85p269-270-pp",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -2991,10 +2994,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-ProbableNegative",
+    "label": "afr-VerbStativeCmp-anay-qunda-ProbableNegative",
     "note": "PH85p269-270-pp",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3012,25 +3015,23 @@
     ]
   },
   {
-    "label": "afr-VerbClass3cmp-anay-qunda-VH_ParticipleNegative",
+    "label": "afr-VerbStativeCmp-anay-qunda-VH_Participle",
     "note": "PH85p269-270-za",
     "common": {
-      "conjClass": "Class3cmp",
+      "conjClass": "StativeCmp",
       "lexeme": "anay-qunda",
-      "polarity": "Negative",
-      "pos": "Verb",
-      "tam": "VH_Participle"
+      "pos": "Verb"
     },
     "terms": [
-      ["token"],
-      ["anày-ʕùnɗih"]
+      ["nonFiniteForm", "token"],
+      ["VH_Participle","anày-ʕùnɗih"]
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-AnticipatoryAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-AnticipatoryAffirmative",
     "note": "PH85p270-274-i",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3048,10 +3049,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-AnticipatoryNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-AnticipatoryNegative",
     "note": "PH85p270-274-i",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3069,10 +3070,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Conditional1Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Conditional1Affirmative",
     "note": "PH85p270-274-s",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3090,10 +3091,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Conditional1Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Conditional1Negative",
     "note": "PH85p270-274-s",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3111,10 +3112,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Conditional2Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Conditional2Affirmative",
     "note": "PH85p270-274-t",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3132,10 +3133,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Conditional2Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Conditional2Negative",
     "note": "PH85p270-274-t",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3153,10 +3154,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ContrafactualAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ContrafactualAffirmative",
     "note": "PH85p270-274-v",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3174,10 +3175,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ContrafactualNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ContrafactualNegative",
     "note": "PH85p270-274-v",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3195,10 +3196,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-HypotheticalAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-HypotheticalAffirmative",
     "note": "PH85p270-274-y",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3216,10 +3217,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-HypotheticalNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-HypotheticalNegative",
     "note": "PH85p270-274-y",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3237,12 +3238,12 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperativeAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperativeAffirmative",
     "note": "PH85p270-274-r",
     "common": {
       "pos": "Verb",
       "lexeme": "ruffa-edh",
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "polarity": "Affirmative",
       "tam": "Imperative"
     },
@@ -3253,26 +3254,26 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperativeNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperativeNegative",
     "note": "PH85p270-274-r",
     "common": {
       "pos": "Verb",
       "lexeme": "ruffa-edh",
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "polarity": "Negative",
       "tam": "Imperative"
     },
     "terms": [
-      ["number" ,"token"],
+      ["number" , "person" , "gender" ,"token"],
       ["Singular" ,"Person2" ,"Common" ,"rùffa-màɗḥin"],
       ["Plural" ,"Person2" ,"Common" ,"rùffa-màɗḥina"]
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectAffirmative",
     "note": "PH85p270-274-b",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3290,10 +3291,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectAnticipatoryAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectAnticipatoryAffirmative",
     "note": "PH85p270-274-k",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3311,10 +3312,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectAnticipatoryNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectAnticipatoryNegative",
     "note": "PH85p270-274-k",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3332,10 +3333,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectNegative",
     "note": "PH85p270-274-b",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3353,10 +3354,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPast1Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPast1Affirmative",
     "note": "PH85p270-274-f",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3374,10 +3375,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPast1Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPast1Negative",
     "note": "PH85p270-274-f",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3395,10 +3396,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPast2Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPast2Affirmative",
     "note": "PH85p270-274-g",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3416,10 +3417,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPast2Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPast2Negative",
     "note": "PH85p270-274-g",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3437,10 +3438,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPresentAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPresentAffirmative",
     "note": "PH85p270-274-h",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3458,10 +3459,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectPresentNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectPresentNegative",
     "note": "PH85p270-274-h",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3479,10 +3480,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectProbable1Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectProbable1Affirmative",
     "note": "PH85p270-274-o",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3500,10 +3501,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectProbable1Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectProbable1Negative",
     "note": "PH85p270-274-o",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3521,10 +3522,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectProbable2Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectProbable2Affirmative",
     "note": "PH85p270-274-p",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3542,10 +3543,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-ImperfectProbable2Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-ImperfectProbable2Negative",
     "note": "PH85p270-274-p",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3563,10 +3564,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-IntentiveAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-IntentiveAffirmative",
     "note": "PH85p270-274-n",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3584,10 +3585,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-IntentiveNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-IntentiveNegative",
     "note": "PH85p270-274-n",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3605,10 +3606,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-JussiveAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-JussiveAffirmative",
     "note": "PH85p270-274-l",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3626,10 +3627,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-JussiveNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-JussiveNegative",
     "note": "PH85p270-274-l",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3647,16 +3648,15 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-nonFinite",
     "note": "PH85p270-274-za",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
-      "polarity": "Negative",
       "pos": "Verb"
     },
     "terms": [
-      ["tam" ,"token"],
+      ["nonFiniteForm" ,"token"],
       ["I_Form" ,"rùffa-àɗḥi"],
       ["Infinitive" ,"rùffa-àɗḥiyya"],
       ["RelativeIndeterminate" ,"rùffa-àɗḥi nnaànih / nnaàn"],
@@ -3664,10 +3664,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectAffirmative",
     "note": "PH85p270-274-a",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3685,10 +3685,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectAnticipatoryAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectAnticipatoryAffirmative",
     "note": "PH85p270-274-j",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3706,10 +3706,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectAnticipatoryNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectAnticipatoryNegative",
     "note": "PH85p270-274-j",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3727,10 +3727,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectConditionalAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectConditionalAffirmative",
     "note": "PH85p270-274-u",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3748,10 +3748,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectConditionalNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectConditionalNegative",
     "note": "PH85p270-274-u",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3769,10 +3769,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectNegative",
     "note": "PH85p270-274-a",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3790,10 +3790,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPast1Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPast1Affirmative",
     "note": "PH85p270-274-c",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3811,10 +3811,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPast1Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPast1Negative",
     "note": "PH85p270-274-c",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3832,10 +3832,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPast2Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPast2Affirmative",
     "note": "PH85p270-274-d",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3853,10 +3853,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPast2Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPast2Negative",
     "note": "PH85p270-274-d",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3874,10 +3874,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPresentAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPresentAffirmative",
     "note": "PH85p270-274-e",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3895,10 +3895,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectPresentNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectPresentNegative",
     "note": "PH85p270-274-e",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3916,10 +3916,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectProbableAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectProbableAffirmative",
     "note": "PH85p270-274-q",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3937,10 +3937,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-PerfectProbableNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-PerfectProbableNegative",
     "note": "PH85p270-274-q",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -3958,10 +3958,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Purposive1Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Purposive1Affirmative",
     "note": "PH85p270-274-w",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -3979,10 +3979,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Purposive1Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Purposive1Negative",
     "note": "PH85p270-274-w",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4000,10 +4000,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Purposive2Affirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Purposive2Affirmative",
     "note": "PH85p270-274-x",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4021,10 +4021,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-Purposive2Negative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-Purposive2Negative",
     "note": "PH85p270-274-x",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4042,10 +4042,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-RequestiveAffirmative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-RequestiveAffirmative",
     "note": "PH85p270-274-m",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4058,10 +4058,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4int-ruffa-edh-RequestiveNegative",
+    "label": "afr-VerbCompoundInt-ruffa-edh-RequestiveNegative",
     "note": "PH85p270-274-m",
     "common": {
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "lexeme": "ruffa-edh",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4074,15 +4074,15 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-",
+    "label": "afr-VerbCompoundTrns-kad-hee-nonFinite",
     "note": "PH85p274-279-zaz-zc-zd",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "pos": "Verb"
     },
     "terms": [
-      ["tam" ,"token"],
+      ["nonFiniteForm" ,"token"],
       ["I_Form" ,"kàɗ-hàyi"],
       ["Infinitive" ,"kàɗ-hayìyya"],
       ["RelativeIndeterminate" ,"kàɗ-hannaànih / kàɗ-hannaàn"],
@@ -4090,10 +4090,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-AnticipatoryAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-AnticipatoryAffirmative",
     "note": "PH85p274-279-i",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4111,10 +4111,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-AnticipatoryNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-AnticipatoryNegative",
     "note": "PH85p274-279-i",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4132,10 +4132,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Conditional1Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Conditional1Affirmative",
     "note": "PH85p274-279-s",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4153,10 +4153,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Conditional1Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Conditional1Negative",
     "note": "PH85p274-279-s",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4174,10 +4174,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Conditional2Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Conditional2Affirmative",
     "note": "PH85p274-279-t",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4195,10 +4195,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Conditional2Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Conditional2Negative",
     "note": "PH85p274-279-t",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4216,10 +4216,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ContrafactualAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ContrafactualAffirmative",
     "note": "PH85p274-279-v",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4237,10 +4237,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ContrafactualNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ContrafactualNegative",
     "note": "PH85p274-279-v",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4258,10 +4258,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-HypotheticalAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-HypotheticalAffirmative",
     "note": "PH85p274-279-y",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4279,10 +4279,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-HypotheticalNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-HypotheticalNegative",
     "note": "PH85p274-279-y",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4300,12 +4300,12 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperativeAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperativeAffirmative",
     "note": "PH85p274-279-r",
     "common": {
       "pos": "Verb",
       "lexeme": "kad-hee",
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "polarity": "Affirmative",
       "tam": "Imperative"
     },
@@ -4316,12 +4316,12 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperativeNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperativeNegative",
     "note": "PH85p274-279-r",
     "common": {
       "pos": "Verb",
       "lexeme": "kad-hee",
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "polarity": "Negative",
       "tam": "Imperative"
     },
@@ -4332,10 +4332,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectAffirmative",
     "note": "PH85p274-279-b",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4353,10 +4353,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectAnticipatoryAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectAnticipatoryAffirmative",
     "note": "PH85p274-279-k",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4374,10 +4374,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectAnticipatoryNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectAnticipatoryNegative",
     "note": "PH85p274-279-k",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4395,10 +4395,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectNegative",
     "note": "PH85p274-279-b",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4416,10 +4416,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPast1Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPast1Affirmative",
     "note": "PH85p274-279-f",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4437,10 +4437,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPast1Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPast1Negative",
     "note": "PH85p274-279-f",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4458,10 +4458,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPast2Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPast2Affirmative",
     "note": "PH85p274-279-g",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4479,10 +4479,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPast2Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPast2Negative",
     "note": "PH85p274-279-g",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4500,10 +4500,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPresentAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPresentAffirmative",
     "note": "PH85p274-279-h",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4521,10 +4521,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectPresentNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectPresentNegative",
     "note": "PH85p274-279-h",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4542,10 +4542,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectProbable1Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectProbable1Affirmative",
     "note": "PH85p274-279-o",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4563,10 +4563,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectProbable1Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectProbable1Negative",
     "note": "PH85p274-279-o",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4584,10 +4584,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectProbable2Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectProbable2Affirmative",
     "note": "PH85p274-279-p",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4605,10 +4605,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-ImperfectProbable2Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-ImperfectProbable2Negative",
     "note": "PH85p274-279-p",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4626,10 +4626,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-IntentiveAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-IntentiveAffirmative",
     "note": "PH85p274-279-n",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4647,10 +4647,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-IntentiveNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-IntentiveNegative",
     "note": "PH85p274-279-n",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4668,10 +4668,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-JussiveAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-JussiveAffirmative",
     "note": "PH85p274-279-l",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4689,10 +4689,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-JussiveNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-JussiveNegative",
     "note": "PH85p274-279-l",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4710,10 +4710,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectAffirmative",
     "note": "PH85p274-279-a",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4731,10 +4731,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectAnticipatoryAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectAnticipatoryAffirmative",
     "note": "PH85p274-279-j",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4752,10 +4752,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectAnticipatoryNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectAnticipatoryNegative",
     "note": "PH85p274-279-j",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4773,10 +4773,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectConditionalAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectConditionalAffirmative",
     "note": "PH85p274-279-u",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4794,10 +4794,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectConditionalNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectConditionalNegative",
     "note": "PH85p274-279-u",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4815,10 +4815,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectNegative",
     "note": "PH85p274-279-a",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4836,10 +4836,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPast1Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPast1Affirmative",
     "note": "PH85p274-279-c",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4857,10 +4857,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPast1Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPast1Negative",
     "note": "PH85p274-279-c",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4878,10 +4878,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPast2Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPast2Affirmative",
     "note": "PH85p274-279-d",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4899,10 +4899,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPast2Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPast2Negative",
     "note": "PH85p274-279-d",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4920,10 +4920,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPresentAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPresentAffirmative",
     "note": "PH85p274-279-e",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4941,10 +4941,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectPresentNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectPresentNegative",
     "note": "PH85p274-279-e",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -4962,10 +4962,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectProbableAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectProbableAffirmative",
     "note": "PH85p274-279-q",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -4983,10 +4983,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-PerfectProbableNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-PerfectProbableNegative",
     "note": "PH85p274-279-q",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -5004,10 +5004,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Purposive1Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Purposive1Affirmative",
     "note": "PH85p274-279-w",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -5025,10 +5025,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Purposive1Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Purposive1Negative",
     "note": "PH85p274-279-w",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -5046,10 +5046,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Purposive2Affirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Purposive2Affirmative",
     "note": "PH85p274-279-x",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -5067,10 +5067,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-Purposive2Negative",
+    "label": "afr-VerbCompoundTrns-kad-hee-Purposive2Negative",
     "note": "PH85p274-279-x",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -5088,10 +5088,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-RequestiveAffirmative",
+    "label": "afr-VerbCompoundTrns-kad-hee-RequestiveAffirmative",
     "note": "PH85p274-279-m",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Affirmative",
       "pos": "Verb",
@@ -5104,10 +5104,10 @@
     ]
   },
   {
-    "label": "afr-VerbClass4trns-kad-hee-RequestiveNegative",
+    "label": "afr-VerbCompoundTrns-kad-hee-RequestiveNegative",
     "note": "PH85p274-279-m",
     "common": {
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "lexeme": "kad-hee",
       "polarity": "Negative",
       "pos": "Verb",
@@ -5120,41 +5120,41 @@
     ]
   },
   {
-    "label": "afr-morphVerb-SubjMarkerClass1",
+    "label": "afr-morphVerb-SubjMarkerPrefix",
     "note": "PH85p252-18",
     "common": {
       "pos": "Verb",
-      "conjClass": "Class1",
+      "conjClass": "Prefix",
       "morphClass": "SubjMarker"
     },
     "terms": [
-      ["conjClass" ,"number" ,"person" ,"gender" ,"token"],
-      ["Class1" ,"Singular" ,"Person1" ,"Common" ,"Ø"],
-      ["Class1" ,"Singular" ,"Person2" ,"Common" ,"t-"],
-      ["Class1" ,"Singular" ,"Person3" ,"Masc" ,"y-"],
-      ["Class1" ,"Singular" ,"Person3" ,"Fem" ,"t-"],
-      ["Class1" ,"Plural" ,"Person1" ,"Common" ,"n-"],
-      ["Class1" ,"Plural" ,"Person2" ,"Common" ,"t- -n"],
-      ["Class1" ,"Plural" ,"Person3" ,"Common" ,"y- -n"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"t-"],
+      ["Singular" ,"Person3" ,"Masc" ,"y-"],
+      ["Singular" ,"Person3" ,"Fem" ,"t-"],
+      ["Plural" ,"Person1" ,"Common" ,"n-"],
+      ["Plural" ,"Person2" ,"Common" ,"t- -n"],
+      ["Plural" ,"Person3" ,"Common" ,"y- -n"]
     ]
   },
   {
-    "label": "afr-morphVerb-SubjMarkerClass2",
+    "label": "afr-morphVerb-SubjMarkerSuffix",
     "note": "PH85p252-18",
     "common": {
       "pos": "Verb",
-      "conjClass": "Class2",
+      "conjClass": "Suffix",
       "morphClass": "SubjMarker"
     },
     "terms": [
-      ["conjClass" ,"number" ,"person" ,"gender" ,"token"],
-      ["Class2" ,"Singular" ,"Person1" ,"Common" ,"Ø"],
-      ["Class2" ,"Singular" ,"Person2" ,"Common" ,"-t"],
-      ["Class2" ,"Singular" ,"Person3" ,"Masc" ,"Ø"],
-      ["Class2" ,"Singular" ,"Person3" ,"Fem" ,"-t"],
-      ["Class2" ,"Plural" ,"Person1" ,"Common" ,"-n"],
-      ["Class2" ,"Plural" ,"Person2" ,"Common" ,"-t-n"],
-      ["Class2" ,"Plural" ,"Person3" ,"Common" ,"Ø-n"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-t"],
+      ["Singular" ,"Person3" ,"Masc" ,"Ø"],
+      ["Singular" ,"Person3" ,"Fem" ,"-t"],
+      ["Plural" ,"Person1" ,"Common" ,"-n"],
+      ["Plural" ,"Person2" ,"Common" ,"-t-n"],
+      ["Plural" ,"Person3" ,"Common" ,"Ø-n"]
     ]
   },
   {
@@ -5162,118 +5162,123 @@
     "note": "PH85p252-18",
     "common": {
       "pos": "Verb",
-      "conjClass": "Class3",
+      "conjClass": "Stative",
       "morphClass": "SubjMarker"
     },
     "terms": [
-      ["conjClass" ,"number" ,"person" ,"gender" ,"token"],
-      ["Class3" ,"Singular" ,"Person1" ,"Common" ,"-iyo"],
-      ["Class3" ,"Singular" ,"Person2" ,"Common" ,"-ito"],
-      ["Class3" ,"Singular" ,"Person3" ,"Masc" ,"-V"],
-      ["Class3" ,"Singular" ,"Person3" ,"Fem" ,"-V"],
-      ["Class3" ,"Plural" ,"Person1" ,"Common" ,"-ino"],
-      ["Class3" ,"Plural" ,"Person2" ,"Common" ,"-iton"],
-      ["Class3" ,"Plural" ,"Person3" ,"Common" ,"-on"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-iyo"],
+      ["Singular" ,"Person2" ,"Common" ,"-ito"],
+      ["Singular" ,"Person3" ,"Masc" ,"-V"],
+      ["Singular" ,"Person3" ,"Fem" ,"-V"],
+      ["Plural" ,"Person1" ,"Common" ,"-ino"],
+      ["Plural" ,"Person2" ,"Common" ,"-iton"],
+      ["Plural" ,"Person3" ,"Common" ,"-on"]
     ]
   },
   {
-    "label": "afr-morphVerb-SubjMarkerClass4int",
+    "label": "afr-morphVerb-SubjMarkerCompoundInt",
     "note": "PH85p252-18",
     "common": {
       "pos": "Verb",
-      "conjClass": "Class4int",
+      "conjClass": "CompoundInt",
       "morphClass": "SubjMarker"
     },
     "terms": [
-      ["conjClass" ,"number" ,"person" ,"gender" ,"token"],
-      ["Class4int" ,"Singular" ,"Person1" ,"Common" ,"Ø"],
-      ["Class4int" ,"Singular" ,"Person2" ,"Common" ,"-t"],
-      ["Class4int" ,"Singular" ,"Person3" ,"Masc" ,"-y"],
-      ["Class4int" ,"Singular" ,"Person3" ,"Fem" ,"-t"],
-      ["Class4int" ,"Plural" ,"Person1" ,"Common" ,"-n"],
-      ["Class4int" ,"Plural" ,"Person2" ,"Common" ,"-t-n"],
-      ["Class4int" ,"Plural" ,"Person3" ,"Common" ,"-y-n"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-t"],
+      ["Singular" ,"Person3" ,"Masc" ,"-y"],
+      ["Singular" ,"Person3" ,"Fem" ,"-t"],
+      ["Plural" ,"Person1" ,"Common" ,"-n"],
+      ["Plural" ,"Person2" ,"Common" ,"-t-n"],
+      ["Plural" ,"Person3" ,"Common" ,"-y-n"]
     ]
   },
   {
-    "label": "afr-morphVerb-SubjMarkerClass4trns",
+    "label": "afr-morphVerb-SubjMarkerCompoundTrns",
     "note": "PH85p252-18",
     "common": {
       "pos": "Verb",
-      "conjClass": "Class4trns",
+      "conjClass": "CompoundTrns",
       "morphClass": "SubjMarker"
     },
     "terms": [
-      ["conjClass" ,"number" ,"person" ,"gender" ,"token"],
-      ["Class4trns" ,"Singular" ,"Person1" ,"Common" ,"Ø"],
-      ["Class4trns" ,"Singular" ,"Person2" ,"Common" ,"-t"],
-      ["Class4trns" ,"Singular" ,"Person3" ,"Masc" ,"Ø"],
-      ["Class4trns" ,"Singular" ,"Person3" ,"Fem" ,"-t"],
-      ["Class4trns" ,"Plural" ,"Person1" ,"Common" ,"-n"],
-      ["Class4trns" ,"Plural" ,"Person2" ,"Common" ,"-t-n"],
-      ["Class4trns" ,"Plural" ,"Person3" ,"Common" ,"Ø-n"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-t"],
+      ["Singular" ,"Person3" ,"Masc" ,"Ø"],
+      ["Singular" ,"Person3" ,"Fem" ,"-t"],
+      ["Plural" ,"Person1" ,"Common" ,"-n"],
+      ["Plural" ,"Person2" ,"Common" ,"-t-n"],
+      ["Plural" ,"Person3" ,"Common" ,"Ø-n"]
     ]
   },
   {
     "label": "afr-morphVerb-TamStemForm-fak-",
-    "note": "PH85p257-22 :: This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open.",
+    "note": "PH85p257-22 :: This paradigm gives the form structure, affirmative and negative, for each of the 26 tam forms recognized by Hayward. In the absence of a detailed analysis, an approximate gloss (that of Hayward, in fact) is given for the affirmative forms. As example of each polarity-tam comination we give the 3msg form of the suffixing verb fak- open. [TODO: transpose 'token-note' and 'token']",
     "common": {
       "lexeme": "fak",
       "morphClass": "TamStemForm",
-      "pos": "Verb"
+      "pos": "Verb",
+      "number": "Singular",
+      "person": "Person3",
+      "gender": "Masc"
     },
     "terms": [
-      ["tam" ,"polarity" ,"mainStem" ,"token-note" ,"token"],
-      ["Anticipatory" ,"Affirmative" ,"EForm_invar" ,"-le enclitic verb have, 'he will open'" ,"fakè-le"],
-      ["Anticipatory" ,"Negative" ,"Mà_imperfect" ,"Common, '_NULL'" ,"mà-fak-a"],
-      ["Conditional1" ,"Affirmative" ,"Perfect" ,"k_invar, 'if he opens'" ,"fak-e-k"],
-      ["Conditional1" ,"Negative" ,"EForm_invar" ,"wa perf-k, '_NULL'" ,"fakè we-e-k"],
-      ["Conditional2" ,"Affirmative" ,"Perfect" ,"pro absolutive tekkek_invar, 'if he opens'" ,"fak-è kaa tekkek"],
-      ["Conditional2" ,"Negative" ,"EForm_invar" ,"wa imperf proabsolutive tekkek, '_NULL'" ,"fakè wa-a kaa tekkek"],
-      ["Contrafactual" ,"Affirmative" ,"Stem" ,"-inn-subordinate-y, 'if he had opened / had he opened'" ,"fak-inn-a-y"],
-      ["Contrafactual" ,"Negative" ,"EForm_invar" ,"wa-inn-subordinate-y, '_NULL'" ,"fakè wa-nn-a-y"],
-      ["Hypothetical" ,"Affirmative" ,"EForm_invar" ,"ɗaaɗ perf, 'he would have opened'" ,"fakè ɗaaɗ-e"],
-      ["Hypothetical" ,"Negative" ,"EForm_invar" ,"mà-ɗaaɗ perf, '_NULL'" ,"fakè mà- ɗaaɗ-e"],
-      ["Imperative" ,"Affirmative" ,"Imperative" ,"Common, 'open!'" ,"fàk"],
-      ["Imperative" ,"Negative" ,"Mà_stem_in_imperative" ,"Common, '_NULL'" ,"mà-fak-in"],
-      ["Imperfect" ,"Affirmative" ,"Imperfect" ,"(-h)_invar, 'he opens / is opening / will open'" ,"fak-a(-h)"],
-      ["Imperfect" ,"Negative" ,"Mà_imperfect" ,"Common, '_NULL'" ,"mà-fak-a"],
-      ["ImperfectAnticipatory" ,"Affirmative" ,"Participle_k_invar" ,"sug anticipatory, 'he will be opening'" ,"fàk-ak sug-è-le"],
-      ["ImperfectAnticipatory" ,"Negative" ,"Participle_k_invar" ,"mà-sug imperf, '_NULL'" ,"fàkak mà-sug-a"],
-      ["ImperfectPast1" ,"Affirmative" ,"Participle_k_invar" ,"en perf, 'he was opening / used to open /had been opening'" ,"fàkak y-en"],
-      ["ImperfectPast1" ,"Negative" ,"Participle_k_invar" ,"mà-en-(i)nn-subordinate, '_NULL'" ,"fàkak mà-na-nn-a"],
-      ["ImperfectPast2" ,"Affirmative" ,"Participle_k_invar" ,"sug perf, 'he was opening / used to open /had been opening'" ,"fàkak y-an"],
-      ["ImperfectPast2" ,"Negative" ,"Participle_k_invar" ,"mà-sug-inn-subordinate, '_NULL'" ,"fàkak mà-sug-inn-a"],
-      ["ImperfectPresent" ,"Affirmative" ,"ImperfectParticiple" ,"en imperf, 'he is opening'" ,"fak-à-h y-an"],
-      ["ImperfectPresent" ,"Negative" ,"ImperfectParticiple" ,"mà-en imperf, '_NULL'" ,"fak-à-h mà-y-an"],
-      ["ImperfectProbable1" ,"Affirmative" ,"U_Form" ,"takkeh_invar, 'he may open'" ,"fàk-u takkeh"],
-      ["ImperfectProbable1" ,"Negative" ,"EForm_invar" ,"wa u_Form takkeh_invar, '_NULL'" ,"fakè wày-u(-h) takkeh"],
-      ["ImperfectProbable2" ,"Affirmative" ,"Imperfect_m" ,"takkeh_invar, 'he may open'" ,"fak-à-m takkeh"],
-      ["ImperfectProbable2" ,"Negative" ,"EForm_invar" ,"wa imperf–m takkeh_invar, '_NULL'" ,"fakè wa-a-m takkeh"],
-      ["Intentive" ,"Affirmative" ,"U_Form" ,"wa-, 'he is intending / about to open'" ,"fàk-u wa-a"],
-      ["Intentive" ,"Negative" ,"U_Form" ,"mà-waimperf, '_NULL'" ,"fàk-u mà-wa-a"],
-      ["Jussive" ,"Affirmative" ,"Jussive" ,"Common, 'let him open'" ,"fàk-ay"],
-      ["Jussive" ,"Negative" ,"EForm_invar" ,"wajussive, '_NULL'" ,"fakè wà-ay"],
-      ["Perfect" ,"Affirmative" ,"Perfect" ,"(-h)_invar, 'he opened / has opened'" ,"fak-e(-h)"],
-      ["Perfect" ,"Negative" ,"Mà_stem" ,"-inn-subordinate, '_NULL'" ,"mà-fak-inn-a"],
-      ["PerfectAnticipatory" ,"Affirmative" ,"PerfectParticiple" ,"sug anticipatory, 'he will have opened'" ,"fak-è-h sug-è-le"],
-      ["PerfectAnticipatory" ,"Negative" ,"PerfectParticiple" ,"mà-sug imperf, '_NULL'" ,"fak-è-h mà-sug-a"],
-      ["PerfectConditional" ,"Affirmative" ,"PerfectParticiple" ,"sug perf_k_invar, 'if he has opened'" ,"fak-è-h sug-e-k"],
-      ["PerfectConditional" ,"Negative" ,"PerfectParticiple" ,"sug eForm waperf-k, '_NULL'" ,"fak-è-h sugè we-e-k"],
-      ["PerfectPast1" ,"Affirmative" ,"PerfectParticiple" ,"en perf, 'he had opened'" ,"fak-è-h y-en"],
-      ["PerfectPast1" ,"Negative" ,"PerfectParticiple" ,"mà-en-(i)nn-subordinate, '_NULL'" ,"fak-è-h mà-na-nn-a"],
-      ["PerfectPast2" ,"Affirmative" ,"PerfectParticiple" ,"sug perf, 'he had opened'" ,"fak-è-h sug-e"],
-      ["PerfectPast2" ,"Negative" ,"PerfectParticiple" ,"mà-sug-inn-subordinate, '_NULL'" ,"fak-è-h mà-sug-inn-a"],
-      ["PerfectPresent" ,"Affirmative" ,"PerfectParticiple" ,"en imperf, 'he has opened'" ,"fak-è-h y-an"],
-      ["PerfectPresent" ,"Negative" ,"PerfectParticiple" ,"mà-en imperf, '_NULL'" ,"fak-è-h mà-y-an"],
-      ["PerfectProbable" ,"Affirmative" ,"Perfect_m" ,"takkeh_invar, 'he may / might have opened'" ,"fak-è-m takkeh"],
-      ["PerfectProbable" ,"Negative" ,"Perfect_m" ,"wa perf–m takkeh_invar, '_NULL'" ,"fakè we-e-m takkeh"],
-      ["Purposive1" ,"Affirmative" ,"U_Form" ,"-h_invar, 'that he open'" ,"fàk-u-h"],
-      ["Purposive1" ,"Negative" ,"EForm_invar" ,"wa uForm-h, '_NULL'" ,"fakè wày-u-h"],
-      ["Purposive2" ,"Affirmative" ,"Imperfect" ,"-nkeh_invar, 'that he open'" ,"fak-à-nkeh"],
-      ["Purposive2" ,"Negative" ,"EForm_invar" ,"wa imperf-nkeh, '_NULL'" ,"fak-è wa-à-nkeh"],
-      ["Requestive_p1Only" ,"Affirmative" ,"Requestive" ,"Common, 'may I open?'" ,"fak-o"],
-      ["Requestive" ,"Negative" ,"Ma_requestive" ,"Common, '_NULL'" ,"ma-fako"]
+      ["tam" ,"polarity" ,"mainStem" ,"token" ,"token-note"],
+      ["Anticipatory" ,"Affirmative" ,"EForm_invar" ,"fakè-le" ,"'-le enclitic verb have' [TRANS] 'he will open'"],
+      ["Anticipatory" ,"Negative" ,"Mà_imperfect" ,"mà-fak-a" ,"'Common' [TRANS] '[neg]'"],
+      ["Conditional1" ,"Affirmative" ,"Perfect" ,"fak-e-k" ,"'k_invar' [TRANS] 'if he opens"],
+      ["Conditional1" ,"Negative" ,"EForm_invar" ,"fakè we-e-k" ,"''wa perf-k' [TRANS] '[neg]'"],
+      ["Conditional2" ,"Affirmative" ,"Perfect" ,"fak-è kaa tekkek" ,"'pro absolutive tekkek_invar' [TRANS] 'if he opens'"],
+      ["Conditional2" ,"Negative" ,"EForm_invar" ,"fakè wa-a kaa tekkek" ,"'wa imperf proabsolutive tekkek' [TRANS] '[neg]'"],
+      ["Contrafactual" ,"Affirmative" ,"Stem" ,"fak-inn-a-y" ,"'-inn-subordinate-y' [TRANS] 'if he had opened / had he opened'"],
+      ["Contrafactual" ,"Negative" ,"EForm_invar" ,"fakè wa-nn-a-y" ,"'wa-inn-subordinate-y' [TRANS] '[neg]'"],
+      ["Hypothetical" ,"Affirmative" ,"EForm_invar" ,"fakè ɗaaɗ-e" ,"'ɗaaɗ perf' [TRANS] 'he would have opened'"],
+      ["Hypothetical" ,"Negative" ,"EForm_invar" ,"fakè mà- ɗaaɗ-e" ,"'mà-ɗaaɗ perf' [TRANS] '[neg]'"],
+      ["Imperative" ,"Affirmative" ,"Imperative" ,"fàk" ,"'Common' [TRANS] 'open!'"],
+      ["Imperative" ,"Negative" ,"Mà_stem_in_imperative" ,"mà-fak-in" ,"'Common' [TRANS] '[neg]'"],
+      ["Imperfect" ,"Affirmative" ,"Imperfect" ,"fak-a(-h)" ,"'(-h)_invar' [TRANS] 'he opens / is opening / will open'"],
+      ["Imperfect" ,"Negative" ,"Mà_imperfect" ,"mà-fak-a" ,"'Common' [TRANS] '[neg]'"],
+      ["ImperfectAnticipatory" ,"Affirmative" ,"Participle_k_invar" ,"fàk-ak sug-è-le" ,"'sug anticipatory' [TRANS] 'he will be opening'"],
+      ["ImperfectAnticipatory" ,"Negative" ,"Participle_k_invar" ,"fàkak mà-sug-a" ,"'mà-sug imperf' [TRANS] '[neg]'"],
+      ["ImperfectPast1" ,"Affirmative" ,"Participle_k_invar" ,"fàkak y-en" ,"'en perf' [TRANS] 'he was opening / used to open /had been opening'"],
+      ["ImperfectPast1" ,"Negative" ,"Participle_k_invar" ,"fàkak mà-na-nn-a" ,"'mà-en-(i)nn-subordinate' [TRANS] '[neg]'"],
+      ["ImperfectPast2" ,"Affirmative" ,"Participle_k_invar" ,"fàkak y-an" ,"'sug perf' [TRANS] 'he was opening / used to open /had been opening'"],
+      ["ImperfectPast2" ,"Negative" ,"Participle_k_invar" ,"fàkak mà-sug-inn-a" ,"'mà-sug-inn-subordinate' [TRANS] '[neg]'"],
+      ["ImperfectPresent" ,"Affirmative" ,"ImperfectParticiple" ,"fak-à-h y-an" ,"'en imperf' [TRANS] 'he is opening'"],
+      ["ImperfectPresent" ,"Negative" ,"ImperfectParticiple" ,"fak-à-h mà-y-an" ,"'mà-en imperf' [TRANS] '[neg]'"],
+      ["ImperfectProbable1" ,"Affirmative" ,"U_Form" ,"fàk-u takkeh" ,"'takkeh_invar' [TRANS] 'he may open'"],
+      ["ImperfectProbable1" ,"Negative" ,"EForm_invar" ,"fakè wày-u(-h) takkeh" ,"'wa u_Form takkeh_invar' [TRANS] '[neg]'"],
+      ["ImperfectProbable2" ,"Affirmative" ,"Imperfect_m" ,"fak-à-m takkeh" ,"'takkeh_invar' [TRANS] 'he may open'"],
+      ["ImperfectProbable2" ,"Negative" ,"EForm_invar" ,"fakè wa-a-m takkeh" ,"'wa imperf–m takkeh_invar' [TRANS] '[neg]'"],
+      ["Intentive" ,"Affirmative" ,"U_Form" ,"fàk-u wa-a" ,"'wa-' [TRANS] 'he is intending / about to open'"],
+      ["Intentive" ,"Negative" ,"U_Form" ,"fàk-u mà-wa-a" ,"'mà-waimperf' [TRANS] '[neg]'"],
+      ["Jussive" ,"Affirmative" ,"Jussive" ,"fàk-ay" ,"'Common' [TRANS] 'let him open'"],
+      ["Jussive" ,"Negative" ,"EForm_invar" ,"fakè wà-ay" ,"'wajussive' [TRANS] '[neg]'"],
+      ["Perfect" ,"Affirmative" ,"Perfect" ,"fak-e(-h)" ,"'(-h)_invar' [TRANS] 'he opened / has opened'"],
+      ["Perfect" ,"Negative" ,"Mà_stem" ,"mà-fak-inn-a" ,"'-inn-subordinate' [TRANS] '[neg]'"],
+      ["PerfectAnticipatory" ,"Affirmative" ,"PerfectParticiple" ,"fak-è-h sug-è-le" ,"'sug anticipatory' [TRANS] 'he will have opened'"],
+      ["PerfectAnticipatory" ,"Negative" ,"PerfectParticiple" ,"fak-è-h mà-sug-a" ,"'mà-sug imperf' [TRANS] '[neg]'"],
+      ["PerfectConditional" ,"Affirmative" ,"PerfectParticiple" ,"fak-è-h sug-e-k" ,"'sug perf_k_invar' [TRANS] 'if he has opened'"],
+      ["PerfectConditional" ,"Negative" ,"PerfectParticiple" ,"fak-è-h sugè we-e-k" ,"'sug eForm waperf-k' [TRANS] '[neg]'"],
+      ["PerfectPast1" ,"Affirmative" ,"PerfectParticiple" ,"fak-è-h y-en" ,"'en perf' [TRANS] 'he had opened'"],
+      ["PerfectPast1" ,"Negative" ,"PerfectParticiple" ,"fak-è-h mà-na-nn-a" ,"'mà-en-(i)nn-subordinate' [TRANS] '[neg]'"],
+      ["PerfectPast2" ,"Affirmative" ,"PerfectParticiple" ,"fak-è-h sug-e" ,"'sug perf' [TRANS] 'he had opened'"],
+      ["PerfectPast2" ,"Negative" ,"PerfectParticiple" ,"fak-è-h mà-sug-inn-a" ,"'mà-sug-inn-subordinate' [TRANS] '[neg]'"],
+      ["PerfectPresent" ,"Affirmative" ,"PerfectParticiple" ,"fak-è-h y-an" ,"'en imperf' [TRANS] 'he has opened'"],
+      ["PerfectPresent" ,"Negative" ,"PerfectParticiple" ,"fak-è-h mà-y-an" ,"'mà-en imperf' [TRANS] '[neg]'"],
+      ["PerfectProbable" ,"Affirmative" ,"Perfect_m" ,"fak-è-m takkeh" ,"'takkeh_invar' [TRANS] 'he may / might have opened'"],
+      ["PerfectProbable" ,"Negative" ,"Perfect_m" ,"fakè we-e-m takkeh" ,"'wa perf–m takkeh_invar' [TRANS] '[neg]'"],
+      ["Purposive1" ,"Affirmative" ,"U_Form" ,"fàk-u-h" ,"'-h_invar' [TRANS] 'that he open'"],
+      ["Purposive1" ,"Negative" ,"EForm_invar" ,"fakè wày-u-h" ,"'wa uForm-h' [TRANS] '[neg]'"],
+      ["Purposive2" ,"Affirmative" ,"Imperfect" ,"fak-à-nkeh" ,"'-nkeh_invar' [TRANS] 'that he open'"],
+      ["Purposive2" ,"Negative" ,"EForm_invar" ,"fak-è wa-à-nkeh" ,"'wa imperf-nkeh' [TRANS] '[neg]'"],
+      ["Requestive_p1Only" ,"Affirmative" ,"Requestive" ,"fak-o" ,"'Common' [TRANS] 'may I open?'"]
     ]
   }
 ]}
+ 
+
+ 
